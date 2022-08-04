@@ -13,7 +13,7 @@ public class Login_Page extends Base_Pace
 	@FindBy(id = "email")
 	WebElement user_email;
 	
-	@FindBy(id = "passwordd")
+	@FindBy(id = "password")
 	WebElement user_pass;
 	
 	@FindBy(xpath = "//input[@value='Sign In']")
