@@ -188,8 +188,8 @@ public class Special_Offer_Project_Page extends Base_Pace
 		@FindBy(xpath="//span[@class='validate-text']")
 		WebElement Validate_Btn;
 
-		//@FindBy(xpath="//input[@value='Void & Resign Contract in Browser']") 
-
+		//	@FindBy(xpath="//input[@value='Void & Resign Contract in Browser']") 
+		
 		@FindBy(xpath="//input[@value='Sign Contract in Browser']")
 		WebElement Sign_Contract_Btn;
 			
@@ -247,11 +247,17 @@ public class Special_Offer_Project_Page extends Base_Pace
 		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[5]/div[12]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 			  
 		WebElement Initial_Sign_Btn_9;
 
-		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[2]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[15]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
 		WebElement Initial_Sign_Btn_10;
 
-		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[1]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[18]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
 		WebElement Initial_Sign_Btn_11;
+		
+		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[2]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
+		WebElement Initial_Sign_Btn_12;
+		
+		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[11]/div[1]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
+		WebElement Initial_Sign_Btn_13;
 
 
 		@FindBy(xpath="//body/div[@id='container']/div[5]/div[1]/div[1]/div[1]/button[1]") 
@@ -279,7 +285,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[6]/button[1]/div[1]/div[1]") 
 		WebElement Tax_Benefits_Sign;
 		
-		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[8]/button[1]/div[1]/div[1]") 
+		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[8]/button[1]/div[1]/div[1]") 		   
 		WebElement Insurance_Sign;
 		
 		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[5]/div[7]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 
@@ -288,10 +294,17 @@ public class Special_Offer_Project_Page extends Base_Pace
 		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[5]/div[11]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 
 		WebElement Term_Conditon_Sign;
 		
-		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[1]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 
+		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[15]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 
+		WebElement Reconveyance_Sign;
+		
+		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[18]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]/i[1]") 
 		WebElement Borrower_Sign;
 		
-		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[2]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 
+		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[2]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 
+		WebElement Oral_agrmnt_Sign;
+		
+		
+		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[11]/div[1]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 
 		WebElement Disbursement_Sign;
 		
 		// End Sign for contributor	
@@ -394,10 +407,11 @@ public class Special_Offer_Project_Page extends Base_Pace
 		
 		VERIFIED_INCOME.clear();
 		Thread.sleep(4000);
-		VERIFIED_INCOME.sendKeys("700000");
+		VERIFIED_INCOME.sendKeys("7000000");
 		Thread.sleep(1000);
 		VERIFIED_INCOME.sendKeys(Keys.TAB);
 		Thread.sleep(3000);
+		System.out.println("******* Add New Contributor *********");
 		
 		// Add First Contributor ------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -461,7 +475,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 				driver.switchTo().window(cc.get(1));
 
 				Thread.sleep(2000);
-
+				System.out.println("****** Contributor Added Successfully  *****");
 		
 		
 		JavascriptExecutor js2 = (JavascriptExecutor) driver;
@@ -510,8 +524,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 		driver.close();
 		driver.switchTo().window(ww.get(0));	
 		Thread.sleep(1000);
-		
-		
+	
 		System.out.println("**** Credit Status Approved Successfully ****");
 
 	}
@@ -594,12 +607,12 @@ public class Special_Offer_Project_Page extends Base_Pace
 			Proceed_Btn.click();
 			Thread.sleep(1000);
 			
-//			driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
-//			Thread.sleep(30000);
+		//	driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
+	
 			
-			Thread.sleep(27000);
+			Thread.sleep(35000);
 			Signature_Btn.click();
-			
+			System.out.println("****** Waiting for the Doc-sign ******");
 			ArrayList<String> w = new ArrayList<String>(driver.getWindowHandles());
 			//switch to open tab
 			driver.switchTo().window(w.get(1));	
@@ -615,6 +628,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 		
 		//	Thread.sleep(2000);	
 			Initial_Sign_Btn_1.click();
+			System.out.println("***** Sign 1 ****");
 			Thread.sleep(2000);
 			
 		//	Choose_Btn1.click();
@@ -623,44 +637,63 @@ public class Special_Offer_Project_Page extends Base_Pace
 			Thread.sleep(4000);
 			
 			Adopt_and_Initial_Btn.click();
+			System.out.println("***** Sign 2 ****");
 			Thread.sleep(5000);
 			
 			Initial_Sign_Btn_3.click();
+			System.out.println("***** Sign 3 ****");
 			Thread.sleep(2000);
 			
 			Initial_Sign_Btn_4.click();
+			System.out.println("***** Sign 4 ****");
 			Thread.sleep(2000);
 			
 			Initial_Sign_Btn_5.click();
+			System.out.println("***** Sign 5 ****");
 			Thread.sleep(2000);
 			
 			Initial_Sign_Btn_6.click();
+			System.out.println("***** Sign 6 ****");
 			Thread.sleep(2000);
 			
 			Initial_Sign_Btn_7.click();
+			System.out.println("***** Sign 7 ****");
 			Thread.sleep(2000);
 			
 			Initial_Sign_Btn_8.click();
+			System.out.println("***** Sign 8 ****");
 			Thread.sleep(2000);
 			
 			Initial_Sign_Btn_9.click();
+			System.out.println("***** Sign 9 ****");
 			Thread.sleep(2000);
 			
 			Initial_Sign_Btn_10.click();
+			System.out.println("***** Sign 10 ****");
 			Thread.sleep(2000);
 
 			Initial_Sign_Btn_11.click();
+			System.out.println("***** Sign 11 ****");
+			Thread.sleep(2000);
+			
+			Initial_Sign_Btn_12.click();
+			System.out.println("***** Sign 12 ****");
+			Thread.sleep(2000);
+			
+			Initial_Sign_Btn_13.click();
+			System.out.println("***** Sign 14 ****");
 			Thread.sleep(2000);
 			
 			Thread.sleep(2000);
 			
 			Finish_Btn.click();
 			Thread.sleep(9000);
+			System.out.println("******* Sign for First Applicant Completed ********");
 			
 			// Doc-Sign for Contributor
 			
 			Second_Signature_Btn.click();
-							
+			System.out.println("******* Sign for Second Applicant started ********");			
 			ArrayList<String> con = new ArrayList<String>(driver.getWindowHandles());
 			//switch to open tab
 			driver.switchTo().window(con.get(2));	
@@ -675,36 +708,57 @@ public class Special_Offer_Project_Page extends Base_Pace
 			Thread.sleep(2000);
 
 			Loan_Essesment_Sign.click();
+			System.out.println("***** Loan_Essesment_Sign ****");
 			Thread.sleep(2000);
 			
 			Adopt_and_Sign_Btn.click();
+			System.out.println("***** Adopt_and_Sign_Btn ****");
 			Thread.sleep(5000);
 			
 			Lien_On_My_Imp_Sign.click();
+			System.out.println("***** Lien_On_My_Imp_Sign ****");
+			
 			Thread.sleep(2000);
 			
 			Late_Payment_Sign.click();
+			System.out.println("***** Late_Payment_Sign ****");
 			Thread.sleep(2000);
 			
 			Tax_Benefits_Sign.click();
+			System.out.println("***** Tax_Benefits_Sign ****");
 			Thread.sleep(2000);
 			
 			Insurance_Sign.click();
+			System.out.println("***** Insurance_Sign ****");
 			Thread.sleep(2000);
 			
 			Loan_Agreement_Sign.click();
+			System.out.println("***** Loan_Agreement_Sign ****");
 			Thread.sleep(2000);
 			
 			Term_Conditon_Sign.click();
+			System.out.println("***** Term_Conditon_Sign ****");
+			Thread.sleep(2000);
+			
+			Reconveyance_Sign.click();
+			System.out.println("***** Reconveyance_Sign ****");
 			Thread.sleep(2000);
 			
 			Borrower_Sign.click();
+			System.out.println("***** Oral_agrmnt_Sign ****");
+			Thread.sleep(2000);
+			
+			Oral_agrmnt_Sign.click();
+			System.out.println("***** Oral_agrmnt_Sign ****");
 			Thread.sleep(2000);
 			
 			Disbursement_Sign.click();
+			System.out.println("***** Disbursement_Sign ****");
+			
 			Thread.sleep(2000);
 			
 			Finish_Btn.click();
+			System.out.println("******* Sign for Second Applicant Completed ********");
 			Thread.sleep(5000);
 			
 			driver.close();
@@ -726,6 +780,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 
 		public void Submit_NTP() throws InterruptedException
 		{
+			System.out.println("****** User on NTP Tab ********");
 			// Assessment Contract Sign
 						WebElement Contract = driver.findElement(By.xpath("//div[@class='custom-upload-box']//input[@name='file']"));
 						
@@ -739,7 +794,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 						Thread.sleep(1000);
 						driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
 						
-						
+						System.out.println("***** Assessment Contract Sign *****");
 						
 					//	Term Confirmation Call
 						
@@ -752,6 +807,8 @@ public class Special_Offer_Project_Page extends Base_Pace
 						Thread.sleep(2000);
 						TCC_English_Done.click();
 						Thread.sleep(3000);
+						System.out.println("***** Term Confirmation Call *****");
+						
 					
 					// Curtsy Call 
 						CC_English_Btn.click();
@@ -760,11 +817,15 @@ public class Special_Offer_Project_Page extends Base_Pace
 						Thread.sleep(2000);
 						CC_English_Done.click();
 						Thread.sleep(2000);
+						System.out.println("***** Curtsy Call *****");
+						
 						
 						WebElement p=driver.findElement(By.xpath("//div[@class='custom-bread-left']//li[3]"));
 					    //getText() to obtain text
 						String s= p.getText();
 						System.out.println("Project Number is : " + s);
+						System.out.println("***** Project Number Get *****");
+						
 						
 						driver.switchTo().newWindow(WindowType.TAB);
 						ArrayList<String> w = new ArrayList<String>(driver.getWindowHandles());
@@ -807,7 +868,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 						
 						Thread.sleep(3000);
 						driver.findElement(By.xpath("//div[@class='modal-dialog modal-add custom-modal modal-lock-project']//button[@aria-label='Close']")).click();
-						
+						logger.info("***** Additional Review  *****");
 						
 						driver.switchTo().newWindow(WindowType.TAB);
 						ArrayList<String> ww = new ArrayList<String>(driver.getWindowHandles());
@@ -858,7 +919,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 		@SuppressWarnings("deprecation")
 		public void Funding_Tab() throws Exception 
 		{
-			
+			System.out.println("******* User on Funding Tab ******");
 			Generate_coi.click();
 			Thread.sleep(2000);
 			
@@ -918,6 +979,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 			driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
 			Thread.sleep(5000);
 			
+			
 		// Inspection Report Approve
 			driver.findElement(By.xpath("//button[normalize-space()='Approve']")).click();
 			
@@ -932,14 +994,16 @@ public class Special_Offer_Project_Page extends Base_Pace
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//label[normalize-space()='No']")).click();
 			
+			System.out.println("****** Inspection Report Approved *****");
+			
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//button[@id='Completion-Call']")).click();
 			Thread.sleep(5000);
 			
 			JavascriptExecutor Per = (JavascriptExecutor) driver;
-			Per.executeScript("window.scrollBy(0,400)", "");			
-			// Building Permit Approve
+			Per.executeScript("window.scrollBy(0,400)", "");	
 			
+			// Building Permit Approve
 			WebElement Permit = driver.findElement(By.xpath("//div[@id='building-permit_div']//input[@name='file']"));
 			
 			
@@ -957,6 +1021,8 @@ public class Special_Offer_Project_Page extends Base_Pace
 			
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
+			
+			System.out.println("****** Building Permit Approve *****");
 			Thread.sleep(2000);
 			
 			WebElement invoice =driver.findElement(By.xpath("//div[@class='custom-bread-left']//li[3]"));

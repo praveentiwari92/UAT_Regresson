@@ -31,18 +31,19 @@ public class TC_Special_Offer_Project extends Base_Pace{
 		PACE = login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		
 		logger.info("******* Verify Login Successfully ********");
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//div[@class='project-details-box']//li[5]")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Funding')]")).click();
+//		Thread.sleep(1000);
+//		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
+//		Thread.sleep(3000);
+//		driver.findElement(By.xpath("//div[@class='project-details-box']//li[3]")).click();
+//		Thread.sleep(1000);
+//		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Contract')]")).click();
 		
 	}
 	
 	
 	@Test(priority = 1)
 	public void New_Project() throws InterruptedException {
+		System.out.println("****** Special_Offer_Project *******");
 		PACE.New_Project();
 	}
 	

@@ -1,41 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="TC_Increasing_price_at_COC(failed)">
+  <test thread-count="5" name="TC_Doc_Sign_History(failed)">
     <classes>
-      <class name="com.Super_Admin.TC_Increasing_price_at_COC">
+      <class name="com.Super_Admin.TC_Doc_Sign_History">
         <methods>
-          <include name="Select_Contractor"/>
-          <include name="Submit_NTP"/>
-          <include name="Funding_Tab"/>
           <include name="TestSetup"/>
-          <include name="Submit_Contract"/>
-          <include name="View_Project"/>
-          <include name="Credit_Application_Tab"/>
+          <include name="Search_Project"/>
         </methods>
-      </class> <!-- com.Super_Admin.TC_Increasing_price_at_COC -->
+      </class> <!-- com.Super_Admin.TC_Doc_Sign_History -->
     </classes>
-  </test> <!-- TC_Increasing_price_at_COC(failed) -->
-  <test thread-count="5" name="TC_Decrease_Price_at_COC(failed)">
-    <classes>
-      <class name="com.Super_Admin.TC_Decrease_Price_at_COC">
-        <methods>
-          <include name="Funding_Tab"/>
-          <include name="TestSetup"/>
-        </methods>
-      </class> <!-- com.Super_Admin.TC_Decrease_Price_at_COC -->
-    </classes>
-  </test> <!-- TC_Decrease_Price_at_COC(failed) -->
-  <test thread-count="5" name="TC_Project_By_Vanity_URL(failed)">
-    <classes>
-      <class name="com.Super_Admin.TC_Project_By_Vanity_URL">
-        <methods>
-          <include name="Funding_Tab"/>
-          <include name="TestSetup"/>
-          <include name="Contract_page"/>
-          <include name="Submit_NTP"/>
-        </methods>
-      </class> <!-- com.Super_Admin.TC_Project_By_Vanity_URL -->
-    </classes>
-  </test> <!-- TC_Project_By_Vanity_URL(failed) -->
+  </test> <!-- TC_Doc_Sign_History(failed) -->
 </suite> <!-- Failed suite [Suite] -->

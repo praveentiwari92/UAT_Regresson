@@ -436,7 +436,7 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,450)", "");
 
-		Thread.sleep(9000);	
+		Thread.sleep(10000);	
 		Next_Btn.click();
 		System.out.println("**** Address Eligible Verified Successfully ****");
 		
@@ -449,16 +449,16 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		js.executeScript("window.scrollBy(0,450)", "");
 		Thread.sleep(1000);
 		F_Name.clear();
-		Thread.sleep(1000);
-		F_Name.sendKeys("Ramesh");
+		Thread.sleep(2000);
+		F_Name.sendKeys("Love");
 		Thread.sleep(1000);
 		L_Name.clear();
 		Thread.sleep(1000);
 		L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Email.sendKeys("ram@yopmail.com");
+		Email.sendKeys("ram3@yopmail.com");
 		Thread.sleep(1000);
-		Phone.sendKeys("(945) 354-6389");
+		Phone.sendKeys("(945) 354-6383");
 		Thread.sleep(1000);
 		EstProjectCost.sendKeys("500000");
 		
@@ -564,7 +564,7 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		Credit_Final_btn.click();
 		Thread.sleep(3000);
 		Credit_Final_Popup.click();
-		
+		Thread.sleep(3000);
 		// store window handle ids
 		ArrayList<String> ww = new ArrayList<String>(driver.getWindowHandles());
 		//switch to open tab
@@ -577,7 +577,7 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		
 	public void Submit_Contract() throws InterruptedException
 	{
-			
+		System.out.println("******* User On Contract Screen *******");	
 		contract_tabs.click();
 		
 		Product_drp.click();
@@ -612,7 +612,7 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		Thread.sleep(2000);
 		Validate_Btn.click();
 		Thread.sleep(3000);
-		
+		System.out.println("******* User Click on Sign Contract Button *******");
 		Sign_Contract_Btn.click();
 		Thread.sleep(3000);
 		
@@ -621,7 +621,7 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		
 		Proceed_Btn.click();
 		
-		Thread.sleep(25000);
+		Thread.sleep(35000);
 		Signature_Btn.click();
 //		driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
 //		Thread.sleep(30000);
@@ -635,7 +635,7 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		Thread.sleep(2000);
 		Continue_Btn.click();
 		Thread.sleep(2000);
-		
+		System.out.println("******* User Signing Documents *******");
 		Start_Btn.click();
 	
 		Thread.sleep(2000);	
@@ -684,12 +684,9 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		Initial_Sign_Btn_14.click();
 		Thread.sleep(2000);
 		
-//		Initial_Sign_Btn_15.click();
-//		Thread.sleep(2000);
-		
 		Finish_Btn.click();
 		Thread.sleep(9000);
-		
+		System.out.println("******* Documents Signed Successfully *******");
 		driver.close();
 		driver.switchTo().window(w.get(0));	
 		
@@ -711,44 +708,49 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 	
 	public void Submit_NTP() throws InterruptedException
 	{
+		System.out.println("**** User On NTP Screen ****");
 		//Upoad_Jurisdiction_Form.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		driver.navigate().refresh();
+		Thread.sleep(1000);
 		
-//		WebElement browse = driver.findElement(By.xpath("//div[@class='NFU-form-left S3filesContainer']//input[@name='file']"));
-//		
-//		String projectRootPath = TC_TestUtil.getProjectDirectory();
-//		
-//		if(TC_TestUtil.isWindows()) {
-//			browse.sendKeys(projectRootPath + "\\" +"Documents\\Document.pdf"); //Uploading the file using sendKeys
-//		}else {
-//			browse.sendKeys(projectRootPath + "/" +"Documents/Document.pdf"); //Uploading the file using sendKeys
-//		}
-//		Thread.sleep(1000);
-//		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
+		WebElement browse = driver.findElement(By.xpath("//div[@class='NFU-form-left S3filesContainer']//input[@name='file']"));
 		
-//		JavascriptExecutor js = (JavascriptExecutor) driver;
-//		js.executeScript("window.scrollBy(0,250)", "");
+		String projectRootPath = TC_TestUtil.getProjectDirectory();
 		
-//		Thread.sleep(2000);
-//		Approve_Btn.click();
-//		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
-//		Thread.sleep(2000);
-//		TCC_Success_Btn.click();
-//		Thread.sleep(2000);
-//		TCC_English.click();
-//		Thread.sleep(2000);
-//		TCC_English_No.click();
-//		Thread.sleep(2000);
-//		TCC_English_Done.click();
-//		Thread.sleep(3000);
-//		
-//		CC_English_Btn.click();
-//		Thread.sleep(2000);
-//		CC_English.click();	
-//		Thread.sleep(2000);
-//		CC_English_Done.click();
-//		Thread.sleep(2000);
+		if(TC_TestUtil.isWindows()) {
+			browse.sendKeys(projectRootPath + "\\" +"Documents\\Document.pdf"); //Uploading the file using sendKeys
+		}else {
+			browse.sendKeys(projectRootPath + "/" +"Documents/Document.pdf"); //Uploading the file using sendKeys
+		}
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,250)", "");
+		
+		Thread.sleep(2000);
+		Approve_Btn.click();
+		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
+		Thread.sleep(2000);
+		TCC_Success_Btn.click();
+		Thread.sleep(2000);
+		TCC_English.click();
+		Thread.sleep(2000);
+		TCC_English_No.click();
+		Thread.sleep(2000);
+		TCC_English_Done.click();
+		Thread.sleep(3000);
+		System.out.println("**** TCC Call Submited****");
+		
+		CC_English_Btn.click();
+		Thread.sleep(2000);
+		CC_English.click();	
+		Thread.sleep(2000);
+		CC_English_Done.click();	
+		System.out.println("**** CC Call Submited****");
+		
+		Thread.sleep(2000);
 		
 		WebElement p=driver.findElement(By.xpath("//div[@class='custom-bread-left']//li[3]"));
 	    //getText() to obtain text
@@ -777,7 +779,7 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		driver.switchTo().window(wr.get(0));
 		
 		driver.navigate().refresh();
-	
+		System.out.println("**** Checking Additional Review ****");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[normalize-space()='More ...']")).click();
 		Thread.sleep(1000);
@@ -875,6 +877,7 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		@SuppressWarnings("deprecation")
 		public void Funding_Tab() throws InterruptedException, IOException
 		{
+			System.out.println("**** User On Funding Screen ****");
 			Thread.sleep(2000);
 			Generate_coi.click();
 			Thread.sleep(2000);
@@ -926,7 +929,7 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 			Contphonel_Confirm_Btn.click();
 			Attest_Confirm_Btn.click();
 			Proceed_Confirm_Btn.click();
-			
+			System.out.println("**** COI Send Successfully ****");
 			Thread.sleep(2000);
 			
 			WebElement browse = driver.findElement(By.xpath("//form[@id='completion-ceritificate']//input[@name='file']"));
@@ -1097,8 +1100,7 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 			Thread.sleep(2000);
 
 			WebElement Invoice_Status = driver.findElement(By.xpath("//div[@id='change-invoice-status']//input[@name='importcsv']"));
-
-			
+		
 
 			if(TC_TestUtil.isWindows()) {
 				Invoice_Status.sendKeys(projectRootPath + "\\" +"Documents\\Sample.csv"); //Uploading the file using sendKeys
@@ -1111,13 +1113,14 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//a[@id='funding-tab-link']")).click();
 			
-			 String t = "Paid";
+			  String t = "Paid";
 		      // getPageSource() to get page source
 		      if ( driver.getPageSource().contains("Paid")){
-		         System.out.println("Text: " + t + "**** Project Funded **** ");
+		         System.out.println("**** Project Status: " + t );
 		      } else {
-		         System.out.println("Text: " + t + "**** Project Not Funded **** ");
+		         System.out.println(" **** Project Status is Not Funded **** ");
 		      }
+
 
 		}
 	

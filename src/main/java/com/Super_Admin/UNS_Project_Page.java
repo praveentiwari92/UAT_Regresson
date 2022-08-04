@@ -183,7 +183,6 @@ public class UNS_Project_Page extends Base_Pace{
 	WebElement Choose_Btn1;
 	
 	
-
 	@FindBy(xpath="//span[normalize-space()='Required - AchDecision - No']") 			  
 	WebElement Initial_Sign_Btn_1;
 
@@ -200,7 +199,7 @@ public class UNS_Project_Page extends Base_Pace{
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 			  
 	WebElement Initial_Sign_Btn_4;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[3]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[3]/button[1]/div[1]/div[1]") 			  		 
 	WebElement Initial_Sign_Btn_5;
 
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[4]/button[1]/div[1]/div[1]") 			  
@@ -215,11 +214,17 @@ public class UNS_Project_Page extends Base_Pace{
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[5]/div[12]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 			  
 	WebElement Initial_Sign_Btn_9;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[2]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[15]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
 	WebElement Initial_Sign_Btn_10;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[1]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[18]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
 	WebElement Initial_Sign_Btn_11;
+	
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[2]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
+	WebElement Initial_Sign_Btn_12;
+	
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[11]/div[1]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
+	WebElement Initial_Sign_Btn_13;
 
 
 	@FindBy(xpath="//body/div[@id='container']/div[5]/div[1]/div[1]/div[1]/button[1]") 
@@ -325,7 +330,7 @@ public class UNS_Project_Page extends Base_Pace{
 			
 			VERIFIED_INCOME.clear();
 			Thread.sleep(4000);
-			VERIFIED_INCOME.sendKeys("700000");
+			VERIFIED_INCOME.sendKeys("7000000");
 			Thread.sleep(1000);
 			VERIFIED_INCOME.sendKeys(Keys.TAB);
 			
@@ -415,7 +420,7 @@ public class UNS_Project_Page extends Base_Pace{
 //				driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
 //				Thread.sleep(30000);
 				
-				Thread.sleep(25000);
+				Thread.sleep(28000);
 				Signature_Btn.click();
 				
 				
@@ -432,7 +437,6 @@ public class UNS_Project_Page extends Base_Pace{
 				
 				Start_Btn.click();
 				Thread.sleep(2000);
-
 			
 			//	Thread.sleep(2000);	
 				Initial_Sign_Btn_1.click();
@@ -450,31 +454,34 @@ public class UNS_Project_Page extends Base_Pace{
 				Thread.sleep(2000);
 				
 				Initial_Sign_Btn_4.click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				
 				Initial_Sign_Btn_5.click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				
 				Initial_Sign_Btn_6.click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				
 				Initial_Sign_Btn_7.click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				
 				Initial_Sign_Btn_8.click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				
 				Initial_Sign_Btn_9.click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				
 				Initial_Sign_Btn_10.click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 
 				Initial_Sign_Btn_11.click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				
-				Thread.sleep(2000);
+				Initial_Sign_Btn_12.click();
+				Thread.sleep(1000);
+				Initial_Sign_Btn_13.click();
 				
+				Thread.sleep(3000);
 				Finish_Btn.click();
 				Thread.sleep(9000);
 				driver.close();
@@ -821,10 +828,11 @@ public class UNS_Project_Page extends Base_Pace{
 			 String t = "Paid";
 		      // getPageSource() to get page source
 		      if ( driver.getPageSource().contains("Paid")){
-		         System.out.println("**** Project Funded **** ");
+		         System.out.println("**** Project Status: " + t );
 		      } else {
-		         System.out.println("**** Project Not Funded **** ");
+		         System.out.println(" **** Project Status is Not Funded **** ");
 		      }
+
 			
 		}
 

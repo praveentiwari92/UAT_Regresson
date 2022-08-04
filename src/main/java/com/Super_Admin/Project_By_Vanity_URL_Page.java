@@ -196,9 +196,10 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 	@FindBy(xpath="//span[normalize-space()='Required - AchDecision - No']") 			  
 	WebElement Initial_Sign_Btn_1;
 
+
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[1]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
 	WebElement Initial_Sign_Btn_2;
-
+	
 	@FindBy(xpath="//button[normalize-space()='Adopt and Sign']") 
 	WebElement Adopt_and_Initial_Btn;
 
@@ -223,11 +224,18 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[5]/div[12]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 			  
 	WebElement Initial_Sign_Btn_9;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[2]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[15]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
 	WebElement Initial_Sign_Btn_10;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[1]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[18]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
 	WebElement Initial_Sign_Btn_11;
+	
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[2]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
+	WebElement Initial_Sign_Btn_12;
+	
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[11]/div[1]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
+	WebElement Initial_Sign_Btn_13;
+
 
 
 	@FindBy(xpath="//body/div[@id='container']/div[5]/div[1]/div[1]/div[1]/button[1]") 
@@ -325,7 +333,7 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 		Thread.sleep(2000);
 		F_Name.sendKeys("Pari");
 		L_Name.sendKeys("TestCase");
-		Email.sendKeys("pari@yopmail.com");
+		Email.sendKeys("pari1@yopmail.com");
 		Thread.sleep(2000);
 		Address.sendKeys("3785 Wilshire Boulevard");
 		Thread.sleep(2000);
@@ -342,7 +350,7 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 		Thread.sleep(1000);
 		DOB.sendKeys("12/12/1989");
 		Thread.sleep(1000);
-		Phone_No.sendKeys("(934) 673-8253");
+		Phone_No.sendKeys("(934) 673-8254");
 		Thread.sleep(1000);
 		Annual_Income.sendKeys("800000");
 		Thread.sleep(1000);
@@ -388,7 +396,7 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 
 		VERIFIED_INCOME.clear();
 		Thread.sleep(4000);
-		VERIFIED_INCOME.sendKeys("700000");
+		VERIFIED_INCOME.sendKeys("7000000");
 		Thread.sleep(1000);
 		VERIFIED_INCOME.sendKeys(Keys.TAB);
 
@@ -469,8 +477,8 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 		Proceed_Btn.click();
 		Thread.sleep(1000);
 
-		//			driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
-		//			Thread.sleep(30000);
+	//	driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
+		Thread.sleep(30000);
 
 		Thread.sleep(25000);
 		Signature_Btn.click();
@@ -529,7 +537,11 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 
 		Initial_Sign_Btn_11.click();
 		Thread.sleep(2000);
-
+		
+		Initial_Sign_Btn_12.click();
+		Thread.sleep(2000);
+		
+		Initial_Sign_Btn_13.click();
 		Thread.sleep(2000);
 
 		Finish_Btn.click();
@@ -868,13 +880,14 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[@id='funding-tab-link']")).click();
 
-		String t = "Paid";
-		// getPageSource() to get page source
-		if ( driver.getPageSource().contains("Paid")){
-			System.out.println("**** Project Funded **** ");
-		} else {
-			System.out.println("**** Project Not Funded **** ");
-		}
+		 String t = "Paid";
+	      // getPageSource() to get page source
+	      if ( driver.getPageSource().contains("Paid")){
+	         System.out.println("**** Project Status: " + t );
+	      } else {
+	         System.out.println(" **** Project Status is Not Funded **** ");
+	      }
+
 
 	}
 }

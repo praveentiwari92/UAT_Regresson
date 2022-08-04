@@ -42,6 +42,7 @@ public class TC_Create_PACE_Project_Test extends Base_Pace
 	
 	@Test(priority = 1)
 	public void New_Project() throws InterruptedException {
+		System.out.println("******* PACE Project  ******");
 		create_project.New_Project();
 	}
 	

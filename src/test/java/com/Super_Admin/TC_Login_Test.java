@@ -31,7 +31,7 @@ public class TC_Login_Test extends Base_Pace
 		try {
 			Thread.sleep(6000);
 			PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
-			System.out.println("Student Login Successfully");
+			System.out.println("******* Admin Login Successfully *********");
 			
 		} catch (InterruptedException e) {
 			

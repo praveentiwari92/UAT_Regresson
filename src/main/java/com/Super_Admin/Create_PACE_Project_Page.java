@@ -433,7 +433,7 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		Search_Contractor.sendKeys("Dell Contractor");
 		Select_Contractor.click();
 		Enter_Address.clear();
-		Enter_Address.sendKeys("3410 Montgomery Drive");
+		Enter_Address.sendKeys("2363 Cottonwood Avenue");
 		Thread.sleep(2000);
 		Enter_Address.sendKeys(Keys.DOWN);
 		Enter_Address.sendKeys(Keys.ENTER);
@@ -457,7 +457,7 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,450)", "");
 
-		Thread.sleep(5000);	
+		Thread.sleep(8000);	
 		Next_Btn.click();
 		System.out.println("**** Address Eligible Verified Successfully ****");
 
@@ -470,15 +470,15 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		Thread.sleep(1000);
 		F_Name.clear();
 		Thread.sleep(1000);
-		F_Name.sendKeys("pradeep");
+		F_Name.sendKeys("Rut");
 		Thread.sleep(1000);
 		L_Name.clear();
 		Thread.sleep(1000);
 		L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Email.sendKeys("prad@yopmail.com");
+		Email.sendKeys("rut2@yopmail.com");
 		Thread.sleep(1000);
-		Phone.sendKeys("(963) 715-6221");
+		Phone.sendKeys("(963) 715-5233");
 		Thread.sleep(1000);
 		EstProjectCost.sendKeys("500000");
 
@@ -528,7 +528,9 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		popup_checkbox.click();
 
 		Credit_Signature_submit_button.click();
-
+		
+		Thread.sleep(2000);
+		
 		System.out.println("**** Applicant Details Send to Credit Portal Successfully ****");
 
 
@@ -598,6 +600,9 @@ public class Create_PACE_Project_Page  extends Base_Pace
 
 	public void Submit_Contract() throws InterruptedException
 	{
+		// store window handle ids
+			
+		
 		contract_tabs.click();
 
 		Product_drp.click();
@@ -656,7 +661,7 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		Thread.sleep(2000);
 
 		Start_Btn.click();
-
+		System.out.println("***** Doc-sign Started *******");
 		Thread.sleep(2000);	
 		Initial_Sign_Btn_1.click();
 		Thread.sleep(2000);
@@ -708,7 +713,7 @@ public class Create_PACE_Project_Page  extends Base_Pace
 
 		Finish_Btn.click();
 		Thread.sleep(9000);
-
+		System.out.println("***** Doc-sign completed *******");
 		driver.close();
 		driver.switchTo().window(w.get(0));	
 
@@ -730,6 +735,8 @@ public class Create_PACE_Project_Page  extends Base_Pace
 
 	public void Submit_NTP() throws InterruptedException
 	{
+		
+		System.out.println("**** User On NTP Screen****");
 		//Upoad_Jurisdiction_Form.click();
 		Thread.sleep(3000);
 				WebElement Jurisdiction_Form = driver.findElement(By.xpath("//div[@class='NFU-form-left S3filesContainer']//input[@name='file']"));
@@ -860,6 +867,7 @@ public class Create_PACE_Project_Page  extends Base_Pace
 
 		ArrayList<String> sndNtp = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(sndNtp.get(0));
+		System.out.println("**** NTP API Running ****");
 
 		driver.get(Get_msg);
 		Thread.sleep(2000);
@@ -917,6 +925,7 @@ public class Create_PACE_Project_Page  extends Base_Pace
 	@SuppressWarnings("deprecation")
 	public void Funding_Tab() throws InterruptedException, IOException
 	{
+		System.out.println("**** User On Funding Tab ****");
 		Thread.sleep(2000);
 		Generate_coi.click();
 		
@@ -1126,13 +1135,14 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[@id='funding-tab-link']")).click();
 
-		String t = "Paid";
-		// getPageSource() to get page source
-		if ( driver.getPageSource().contains("Paid")){
-			System.out.println("Text: " + t + "**** Project Funded **** ");
-		} else {
-			System.out.println("Text: " + t + "**** Project Not Funded **** ");
-		}
+		 String t = "Paid";
+	      // getPageSource() to get page source
+	      if ( driver.getPageSource().contains("Paid")){
+	         System.out.println("**** Project Status: " + t );
+	      } else {
+	         System.out.println(" **** Project Status is Not Funded **** ");
+	      }
+
 
 	}
 

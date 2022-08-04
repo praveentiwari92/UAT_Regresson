@@ -34,7 +34,7 @@ public class TC_Project_By_Vanity_URL extends Base_Pace
 	@Test(priority = 1)
 	public void Submit_Application() throws InterruptedException
 	{
-		//driver.get("https://uat.homerunportal.com/v/Dellcontractor");
+		System.out.println("***** vanity_url Project ********");
 		driver.get(prop.getProperty("vanity_url"));
 		Vanity.Submit_Application();
 		Thread.sleep(2000);

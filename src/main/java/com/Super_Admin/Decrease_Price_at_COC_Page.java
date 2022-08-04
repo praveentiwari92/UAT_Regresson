@@ -396,7 +396,7 @@ public class Decrease_Price_at_COC_Page extends Base_Pace
 		Search_Contractor.sendKeys("Dell Contractor");
 		Select_Contractor.click();
 		Enter_Address.clear();
-		Enter_Address.sendKeys("5142 Walrond Avenue");
+		Enter_Address.sendKeys("5143 Walrond Avenue");
 		Thread.sleep(2000);
 		Enter_Address.sendKeys(Keys.DOWN);
 		Enter_Address.sendKeys(Keys.ENTER);
@@ -440,9 +440,9 @@ public class Decrease_Price_at_COC_Page extends Base_Pace
 		Thread.sleep(1000);
 		L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Email.sendKeys("nehru@yopmail.com");
+		Email.sendKeys("nehru3@yopmail.com");
 		Thread.sleep(1000);
-		Phone.sendKeys("(945) 324-6783");
+		Phone.sendKeys("(945) 324-6724");
 		Thread.sleep(1000);
 		EstProjectCost.sendKeys("500000");
 		
@@ -619,7 +619,7 @@ public class Decrease_Price_at_COC_Page extends Base_Pace
 		
 		Proceed_Btn.click();
 		
-		Thread.sleep(25000);
+		Thread.sleep(35000);
 		Signature_Btn.click();
 //		driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
 //		Thread.sleep(30000);
@@ -889,6 +889,7 @@ public class Decrease_Price_at_COC_Page extends Base_Pace
 			
 			Proceed_Btn.click();
 			Thread.sleep(2000);
+			System.out.println("****** Project Cost Updated *****");
 			TPC_Confirm_Btn.click();
 						
 			Term_Confirm_Btn.click();
@@ -1022,7 +1023,7 @@ public class Decrease_Price_at_COC_Page extends Base_Pace
 			csvPrinter.close();
 			
 			WebElement ele = driver.findElement(By.xpath("//a[normalize-space()='More']"));
-
+			System.out.println("****** User Click on More Memu  *****");
 			//Creating object of an Actions class
 			Actions action = new Actions(driver);
 
@@ -1058,7 +1059,7 @@ public class Decrease_Price_at_COC_Page extends Base_Pace
 			
 			
 			WebElement elem = driver.findElement(By.xpath("//a[normalize-space()='More']"));
-
+			System.out.println("****** User proceed for Bulk Upload  *****");
 			//Creating object of an Actions class
 			Actions action3 = new Actions(driver);
 
@@ -1093,9 +1094,9 @@ public class Decrease_Price_at_COC_Page extends Base_Pace
 			 String t = "Paid";
 		      // getPageSource() to get page source
 		      if ( driver.getPageSource().contains("Paid")){
-		         System.out.println("Text: " + t + "**** Project Funded **** ");
+		         System.out.println("**** Project Status: " + t );
 		      } else {
-		         System.out.println("Text: " + t + "**** Project Not Funded **** ");
+		         System.out.println(" **** Project Status is Not Funded **** ");
 		      }
 
 		}

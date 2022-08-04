@@ -30,16 +30,17 @@ public class TC_Decrease_Price_at_COC extends Base_Pace {
 		PACE = Login_Page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		logger.info("****** Verify Login Successfully ******");
 		
-		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//div[@class='project-details-box']//li[3]")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Contract')]")).click();
+//		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
+//		Thread.sleep(3000);
+//		driver.findElement(By.xpath("//div[@class='project-details-box']//li[3]")).click();
+//		Thread.sleep(1000);
+//		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Contract')]")).click();
 }
 	
 	
 	@Test(priority = 1)
 	public void New_Project() throws InterruptedException {
+		System.out.println("****** Decrease_Price_Project *******");
 		Decrease_Amount.New_Project();
 
 	}

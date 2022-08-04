@@ -34,14 +34,12 @@ public class SendMailSSLWithMessage {
 
 		//Authenticator
 		private static final String AUTHENTICATOR_EMAIL = "qateampace@gmail.com"; //"$guser"; //"devprogramdks@gmail.com"; //"guser@gmail.com"; //"devprogramdks@gmail.com"
-		private static final String AUTHENTICATOR_PWD =  "Closeloop@123"; //"$gpass"; //"d@@pak123"; //"gpass"; //"d@@pak123"
+		private static final String AUTHENTICATOR_PWD =  "ldgkvfldvnwqgbgf"; //"$gpass"; //"d@@pak123"; //"gpass"; //"d@@pak123"
 		
 		// Set the from address
 		private static final String FROM_EMAIL = "qateampace@gmail.com"; //"$guser";//"devprogramdks@gmail.com"; //"guser@gmail.com";
-		private static final Utill Util = null;
-		
 		// Set the recipient address
-		private static final String RECIPIENT_EMAIL = Utill.getPropertyByKey("recipient_email"); //"deepak.khandal@sarvika.com,rsharma@sarvika.com"; //,rsharma@sarvika.com, apoorva.joshi@sarvika.com
+		private static final String RECIPIENT_EMAIL = Utill.getPropertyByKey("recipient_email"); 
 		
 		// Add the subject link
 		private static final String SUBJECT_EMAIL = "Report Date " + Utill.getLocalDate(CONSTANTS.DATE_FORMATE2) + " (Run by: " + CONSTANTS.CREDENTIALS_USER_NAME + " )";
@@ -116,7 +114,7 @@ public class SendMailSSLWithMessage {
 
 				try {
 					// Set the from address
-					message.setFrom(new InternetAddress(FROM_EMAIL, "SIS Project Regression Test Report"));
+					message.setFrom(new InternetAddress(FROM_EMAIL, "PACE Project Regression Test Report"));
 			    } catch (UnsupportedEncodingException e) {
 			        e.printStackTrace();
 			    }
@@ -140,7 +138,7 @@ public class SendMailSSLWithMessage {
 				String projectRootPath = Utill.getProjectDirectory();
 				String rootPath = "";
 		    	  if(Utill.isWindows()) {
-		    		  rootPath = projectRootPath + "\\" + "target\\surefire-reports" + "\\" + "emailable-report.html";
+		    		  rootPath = projectRootPath + "\\" + "target\\surefire-reports" + "\\" + "index.html";
 		    		  
 		    		  
 		    	  }else {
@@ -155,7 +153,7 @@ public class SendMailSSLWithMessage {
 				messageBodyPart2.setDataHandler(new DataHandler(source));
 	
 				// set the file
-				messageBodyPart2.setFileName("emailable-report.html");
+				messageBodyPart2.setFileName("index.html");
 			//	htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
 	
 				// Create object of MimeMultipart class

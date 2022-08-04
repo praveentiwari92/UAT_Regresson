@@ -44,7 +44,7 @@ public class Doc_Sign_History_Page extends Base_Pace {
 		Search_Project.sendKeys("7002251");
 		Search_Project.sendKeys(Keys.ENTER);
 		
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		Open_Project.click();
 		Thread.sleep(2000);
 		
@@ -77,7 +77,7 @@ public class Doc_Sign_History_Page extends Base_Pace {
 	public void Activity_Logs() throws InterruptedException {
 	
 	  // Open Activity Log
-	        System.out.println("***************** Activity Logs Started **************************");
+	        
 	        Thread.sleep(2000);
 	        Open_More_Menu.click();
 	        Thread.sleep(1000);
@@ -98,13 +98,14 @@ public class Doc_Sign_History_Page extends Base_Pace {
 
 			 while(!nextButtonClassName.contains("next"))
 			 {
-				 driver.findElement(By.xpath("//img[@alt='next']")).click();
+				 driver.findElement(By.xpath("//img[@alt='nextt']")).click();
 				 Thread.sleep(2000);
 				 namesElements = driver.findElements(By.xpath("//div[@class='customize-table-body']"));
 
 				 for (WebElement namesElement : namesElements) 
 				 {
 					 names.add(namesElement.getText());
+					 System.out.println("***************** Activity Logs Started **************************");
 					 
 				 }
 				
