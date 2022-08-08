@@ -10,6 +10,8 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.devtools.v100.browser.Browser;
+import org.testng.annotations.AfterTest;
 
 import com.qa.Util.TC_TestUtil;
 
@@ -78,7 +80,7 @@ public class Base_Pace {
 		
 			ChromeOptions options =new ChromeOptions();
 			options.addArguments("window-size=1820,1080");
-			options.addArguments("headless", "no-sandbox");
+		//	options.addArguments("headless", "no-sandbox");
 			options.addArguments("enable-automation");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--disable-infobars");
@@ -134,6 +136,12 @@ public class Base_Pace {
 			
 
 	}
-
+	
+	@AfterTest
+	public void teardown()
+	{
+		
+		driver.close();
+	}
 
 }

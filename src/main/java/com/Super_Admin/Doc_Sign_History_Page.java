@@ -55,7 +55,7 @@ public class Doc_Sign_History_Page extends Base_Pace {
 		Thread.sleep(1000);
 		Open_Doc_Sign_History.click();
 		
-		 System.out.println("***************** Doc-Sign History **************************"); 
+		 
 		 
 			WebElement table = driver.findElement(By.xpath("//div[@class='doc-signing-area']"));
 			
@@ -68,9 +68,8 @@ public class Doc_Sign_History_Page extends Base_Pace {
 	            String text = headername.getText();
 	            System.out.println(text);
 	        }
-	        
-	        System.out.println("******************************************");
-		Thread.sleep(1000);
+	      
+		Thread.sleep(3000);
         Close_popup.click();
 	}
 	
@@ -98,14 +97,14 @@ public class Doc_Sign_History_Page extends Base_Pace {
 
 			 while(!nextButtonClassName.contains("next"))
 			 {
-				 driver.findElement(By.xpath("//img[@alt='nextt']")).click();
+				 driver.findElement(By.xpath("//img[@alt='next']")).click();
 				 Thread.sleep(2000);
 				 namesElements = driver.findElements(By.xpath("//div[@class='customize-table-body']"));
 
 				 for (WebElement namesElement : namesElements) 
 				 {
 					 names.add(namesElement.getText());
-					 System.out.println("***************** Activity Logs Started **************************");
+					
 					 
 				 }
 				
@@ -122,7 +121,7 @@ public class Doc_Sign_History_Page extends Base_Pace {
 			 {
 				 System.out.println(name);
 			 }
-			 System.out.println("******************************************");
+			 System.out.println("******************** Activity Logs Started **********************");
 			 int totalNames = names.size();
 			 System.out.println("Total Number of Pages:" + totalNames);
 
@@ -132,7 +131,7 @@ public class Doc_Sign_History_Page extends Base_Pace {
 			 System.out.println("***************** Activity Logs Ended **************************");
 
 			 // Assert.assertEquals(DisplayedCount, String.valueOf(totalNames));
-			 Thread.sleep(20000);
+			 Thread.sleep(2000);
 	}
 
 	

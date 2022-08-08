@@ -1,29 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-01T11:06:22 IST" name="Default suite" finished-at="2022-08-01T11:08:41 IST" duration-ms="139072">
+  <suite started-at="2022-08-05T10:38:22 IST" name="Suite" finished-at="2022-08-05T10:40:39 IST" duration-ms="137339">
     <groups>
     </groups>
-    <test started-at="2022-08-01T11:06:22 IST" name="Default test" finished-at="2022-08-01T11:08:41 IST" duration-ms="139072">
+    <test started-at="2022-08-05T10:38:22 IST" name="TC_Doc_Sign_History" finished-at="2022-08-05T10:40:16 IST" duration-ms="114475">
       <class name="com.Super_Admin.TC_Doc_Sign_History">
-        <test-method is-config="true" signature="TestSetup()[pri:0, instance:com.Super_Admin.TC_Doc_Sign_History@2beee7ff]" started-at="2022-08-01T11:06:22 IST" name="TestSetup" finished-at="2022-08-01T11:06:49 IST" duration-ms="27018" status="PASS">
+        <test-method is-config="true" signature="TestSetup()[pri:0, instance:com.Super_Admin.TC_Doc_Sign_History@5939a379]" started-at="2022-08-05T10:38:22 IST" name="TestSetup" finished-at="2022-08-05T10:38:41 IST" duration-ms="18927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSetup -->
-        <test-method signature="Search_Project()[pri:1, instance:com.Super_Admin.TC_Doc_Sign_History@2beee7ff]" started-at="2022-08-01T11:06:49 IST" name="Search_Project" finished-at="2022-08-01T11:06:59 IST" duration-ms="10534" status="PASS">
+        <test-method signature="Search_Project()[pri:1, instance:com.Super_Admin.TC_Doc_Sign_History@5939a379]" started-at="2022-08-05T10:38:41 IST" name="Search_Project" finished-at="2022-08-05T10:38:49 IST" duration-ms="8607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Project -->
-        <test-method signature="Doc_Sign_History()[pri:2, instance:com.Super_Admin.TC_Doc_Sign_History@2beee7ff]" started-at="2022-08-01T11:06:59 IST" name="Doc_Sign_History" finished-at="2022-08-01T11:07:04 IST" duration-ms="4404" status="PASS">
+        <test-method signature="Doc_Sign_History()[pri:2, instance:com.Super_Admin.TC_Doc_Sign_History@5939a379]" started-at="2022-08-05T10:38:49 IST" name="Doc_Sign_History" finished-at="2022-08-05T10:38:55 IST" duration-ms="5232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Doc_Sign_History -->
-        <test-method signature="Activity_Logs()[pri:3, instance:com.Super_Admin.TC_Doc_Sign_History@2beee7ff]" started-at="2022-08-01T11:07:04 IST" name="Activity_Logs" finished-at="2022-08-01T11:08:41 IST" duration-ms="96943" status="PASS">
+        <test-method signature="Activity_Logs()[pri:3, instance:com.Super_Admin.TC_Doc_Sign_History@5939a379]" started-at="2022-08-05T10:38:55 IST" name="Activity_Logs" finished-at="2022-08-05T10:40:12 IST" duration-ms="77382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Activity_Logs -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Super_Admin.TC_Doc_Sign_History@5939a379]" started-at="2022-08-05T10:40:12 IST" name="teardown" finished-at="2022-08-05T10:40:16 IST" duration-ms="4211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- com.Super_Admin.TC_Doc_Sign_History -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TC_Doc_Sign_History -->
+    <test started-at="2022-08-05T10:40:16 IST" name="TC_Login_Test" finished-at="2022-08-05T10:40:39 IST" duration-ms="22755">
+      <class name="com.Super_Admin.TC_Login_Test">
+        <test-method is-config="true" signature="TestSetup()[pri:0, instance:com.Super_Admin.TC_Login_Test@625732]" started-at="2022-08-05T10:40:16 IST" name="TestSetup" finished-at="2022-08-05T10:40:23 IST" duration-ms="6862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSetup -->
+        <test-method signature="Admin_Login()[pri:1, instance:com.Super_Admin.TC_Login_Test@625732]" started-at="2022-08-05T10:40:23 IST" name="Admin_Login" finished-at="2022-08-05T10:40:35 IST" duration-ms="11601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Admin_Login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Super_Admin.TC_Login_Test@625732]" started-at="2022-08-05T10:40:35 IST" name="teardown" finished-at="2022-08-05T10:40:39 IST" duration-ms="4284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.Super_Admin.TC_Login_Test -->
+    </test> <!-- TC_Login_Test -->
+  </suite> <!-- Suite -->
 </testng-results>
