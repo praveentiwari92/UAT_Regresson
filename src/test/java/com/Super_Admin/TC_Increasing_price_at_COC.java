@@ -32,9 +32,9 @@ public class TC_Increasing_price_at_COC extends Base_Pace
 
 //				driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
 //				Thread.sleep(3000);
-//				driver.findElement(By.xpath("//div[@class='project-details-box']//li[5]")).click();
+//				driver.findElement(By.xpath("//div[@class='project-details-box']//li[3]")).click();
 //				Thread.sleep(1000);
-//				driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Funding')]")).click();
+//				driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Contract')]")).click();
 				
 
 

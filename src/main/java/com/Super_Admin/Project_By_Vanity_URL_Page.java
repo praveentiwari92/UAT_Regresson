@@ -196,44 +196,48 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 	@FindBy(xpath="//span[normalize-space()='Required - AchDecision - No']") 			  
 	WebElement Initial_Sign_Btn_1;
 
-
+	
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[1]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
 	WebElement Initial_Sign_Btn_2;
 	
 	@FindBy(xpath="//button[normalize-space()='Adopt and Sign']") 
 	WebElement Adopt_and_Initial_Btn;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+	//@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[4]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]/i[1]")
 	WebElement Initial_Sign_Btn_3;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[4]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]/i[1]") 			  
 	WebElement Initial_Sign_Btn_4;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[3]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[4]/div[1]/div[4]/div[3]/button[1]/div[1]/div[1]/i[1]") 			  		 
 	WebElement Initial_Sign_Btn_5;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[4]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[4]/div[1]/div[4]/div[4]/button[1]/div[1]/div[1]/i[1]") 			  
 	WebElement Initial_Sign_Btn_6;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[5]/div[7]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[4]/div[1]/div[4]/div[5]/button[1]/div[1]/div[1]/i[1]") 			  
 	WebElement Initial_Sign_Btn_7;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[5]/div[11]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[4]/div[1]/div[4]/div[6]/button[1]/div[1]/div[1]/i[1]") 			  
 	WebElement Initial_Sign_Btn_8;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[5]/div[12]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[5]/div[11]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]/i[1]") 			  
 	WebElement Initial_Sign_Btn_9;
+	
+	@FindBy(xpath = "//span[normalize-space()='Sign']")
+	WebElement Sign_Btn_1;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[15]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[15]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]/i[1]") 			  
 	WebElement Initial_Sign_Btn_10;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[18]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[18]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]/i[1]") 			  		  
 	WebElement Initial_Sign_Btn_11;
 	
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[2]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[11]/div[1]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]/i[1]") 			  		  
 	WebElement Initial_Sign_Btn_12;
 	
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[11]/div[1]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  		  
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[2]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]/i[1]") 			  		  
 	WebElement Initial_Sign_Btn_13;
 
 
@@ -502,51 +506,58 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 		//	Thread.sleep(2000);	
 		Initial_Sign_Btn_1.click();
 		Thread.sleep(2000);
-
-		//	Choose_Btn1.click();
-
+		
+		Choose_Btn1.click();
+		
+		Thread.sleep(2000);
 		Initial_Sign_Btn_2.click();
 		Thread.sleep(4000);
-
+		
 		Adopt_and_Initial_Btn.click();
 		Thread.sleep(5000);
-
+		
 		Initial_Sign_Btn_3.click();
 		Thread.sleep(2000);
-
+		
 		Initial_Sign_Btn_4.click();
-		Thread.sleep(2000);
-
+		Thread.sleep(1000);
+		
 		Initial_Sign_Btn_5.click();
-		Thread.sleep(2000);
-
+		Thread.sleep(1000);
+		
 		Initial_Sign_Btn_6.click();
-		Thread.sleep(2000);
-
+		Thread.sleep(1000);
+		
 		Initial_Sign_Btn_7.click();
-		Thread.sleep(2000);
-
+		Thread.sleep(1000);
+		
 		Initial_Sign_Btn_8.click();
-		Thread.sleep(2000);
-
+		Thread.sleep(1000);
+		
 		Initial_Sign_Btn_9.click();
-		Thread.sleep(2000);
-
+		Thread.sleep(1000);
+		
+		Sign_Btn_1.click();
+		
 		Initial_Sign_Btn_10.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		Initial_Sign_Btn_11.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
+		Sign_Btn_1.click();
+		Thread.sleep(1000);
 		Initial_Sign_Btn_12.click();
-		Thread.sleep(2000);
 		
+		Thread.sleep(1000);
 		Initial_Sign_Btn_13.click();
+		
 		Thread.sleep(2000);
-
 		Finish_Btn.click();
+		
 		Thread.sleep(9000);
 		driver.close();
+		
 		driver.switchTo().window(w.get(0));	
 
 		Thread.sleep(2000);
@@ -557,6 +568,7 @@ public class Project_By_Vanity_URL_Page  extends Base_Pace
 		Thread.sleep(2000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,350)", "");
+		
 		Next_btnn.click();
 
 		System.out.println("**** Contract Send Successfully ****");

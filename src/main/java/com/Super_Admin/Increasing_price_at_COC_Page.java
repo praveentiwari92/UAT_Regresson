@@ -227,16 +227,17 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		@FindBy(xpath="//span[@class='validate-text']")
 		WebElement Validate_Btn;
 		
+	
+	//	@FindBy(xpath="//input[@value='Void & Resign Contract in Browser']") 
+		
+		@FindBy(xpath="//input[@value='Sign Contract in Browser']")
+		WebElement Sign_Contract_Btn;
+		
 		@FindBy(xpath="//button[normalize-space()='Attest']")
 		WebElement Attest_Btn;
 		
 		@FindBy(xpath="//button[normalize-space()='Proceed']")
 		WebElement Proceed_Btn;
-		
-		//	@FindBy(xpath="//input[@value='Void & Resign Contract in Browser']") 
-		
-		@FindBy(xpath="//input[@value='Sign Contract in Browser']")
-		WebElement Sign_Contract_Btn;
 		
 		@FindBy(xpath="//div[@class='mt-5 mb-5']")
 		WebElement Signature_Btn;
@@ -282,6 +283,9 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		
 		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[6]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 			  
 		WebElement Initial_Sign_Btn_10;
+		
+		@FindBy(xpath = "//span[normalize-space()='Sign']")
+		WebElement Sign_Btn;
 		
 		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[4]/div[17]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
 		WebElement Initial_Sign_Btn_11;
@@ -456,9 +460,9 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		Thread.sleep(1000);
 		L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Email.sendKeys("ram3@yopmail.com");
+		Email.sendKeys("ram5@yopmail.com");
 		Thread.sleep(1000);
-		Phone.sendKeys("(945) 354-6383");
+		Phone.sendKeys("(945) 390-6383");
 		Thread.sleep(1000);
 		EstProjectCost.sendKeys("500000");
 		
@@ -555,12 +559,16 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		Thread.sleep(1000);
 		Approve_Amount.sendKeys("500000");
 		Thread.sleep(2000);
+		
 		Amt_Submit_btn.click();
-		Thread.sleep(5000);
+		Thread.sleep(7000);
+		
 		submit_for_credit_final.click();
 		Thread.sleep(2000);
+		
 		Credit_Confirm_popup.click();
 		Thread.sleep(2000);
+		
 		Credit_Final_btn.click();
 		Thread.sleep(3000);
 		Credit_Final_Popup.click();
@@ -620,21 +628,27 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		Thread.sleep(1000);
 		
 		Proceed_Btn.click();
+		Thread.sleep(1000);
+		
+//		driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
 		
 		Thread.sleep(35000);
 		Signature_Btn.click();
-//		driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
-//		Thread.sleep(30000);
+		
+		
+		Thread.sleep(30000);
 		
 		ArrayList<String> w = new ArrayList<String>(driver.getWindowHandles());
 		//switch to open tab
 		driver.switchTo().window(w.get(1));	
-		Thread.sleep(15000);
+		Thread.sleep(10000);
 	
 		Signature_Discloser_checkbox.click();
 		Thread.sleep(2000);
+		
 		Continue_Btn.click();
 		Thread.sleep(2000);
+		
 		System.out.println("******* User Signing Documents *******");
 		Start_Btn.click();
 	
@@ -649,22 +663,22 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		Thread.sleep(2000);
 		
 		Initial_Sign_Btn_3.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		Initial_Sign_Btn_4.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		Initial_Sign_Btn_5.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		Initial_Sign_Btn_6.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		Initial_Sign_Btn_7.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		Initial_Sign_Btn_8.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		Initial_Sign_Btn_9.click();
 		Thread.sleep(2000);
@@ -672,8 +686,14 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		Initial_Sign_Btn_10.click();
 		Thread.sleep(2000);
 
+		Sign_Btn.click();
+		Thread.sleep(1000);
+		
 		Initial_Sign_Btn_11.click();
 		Thread.sleep(2000);
+		
+		Sign_Btn.click();
+		Thread.sleep(1000);
 		
 		Initial_Sign_Btn_12.click();
 		Thread.sleep(2000);
@@ -712,41 +732,49 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		//Upoad_Jurisdiction_Form.click();
 		Thread.sleep(2000);
 		driver.navigate().refresh();
-		Thread.sleep(1000);
-		
-		WebElement browse = driver.findElement(By.xpath("//div[@class='NFU-form-left S3filesContainer']//input[@name='file']"));
-		
-		String projectRootPath = TC_TestUtil.getProjectDirectory();
-		
-		if(TC_TestUtil.isWindows()) {
-			browse.sendKeys(projectRootPath + "\\" +"Documents\\Document.pdf"); //Uploading the file using sendKeys
-		}else {
-			browse.sendKeys(projectRootPath + "/" +"Documents/Document.pdf"); //Uploading the file using sendKeys
-		}
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
-		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,250)", "");
-		
 		Thread.sleep(2000);
-		Approve_Btn.click();
-		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
-		Thread.sleep(2000);
+		driver.navigate().refresh();
+//		WebElement browse = driver.findElement(By.xpath("//div[@class='NFU-form-left S3filesContainer']//input[@name='file']"));
+//		
+//		String projectRootPath = TC_TestUtil.getProjectDirectory();
+//		
+//		if(TC_TestUtil.isWindows()) {
+//			browse.sendKeys(projectRootPath + "\\" +"Documents\\Document.pdf"); //Uploading the file using sendKeys
+//		}else {
+//			browse.sendKeys(projectRootPath + "/" +"Documents/Document.pdf"); //Uploading the file using sendKeys
+//		}
+//		Thread.sleep(1000);
+//		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
+//		
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("window.scrollBy(0,250)", "");
+//		
+//		Thread.sleep(2000);
+//		Approve_Btn.click();
+//		
+//		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
+//		Thread.sleep(2000);
+		
 		TCC_Success_Btn.click();
 		Thread.sleep(2000);
+		
 		TCC_English.click();
 		Thread.sleep(2000);
+		
 		TCC_English_No.click();
 		Thread.sleep(2000);
+		
 		TCC_English_Done.click();
 		Thread.sleep(3000);
+		
 		System.out.println("**** TCC Call Submited****");
 		
 		CC_English_Btn.click();
 		Thread.sleep(2000);
+		
 		CC_English.click();	
 		Thread.sleep(2000);
+		
 		CC_English_Done.click();	
 		System.out.println("**** CC Call Submited****");
 		
@@ -826,13 +854,16 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 		
 		driver.get(Get_msg);
 		Thread.sleep(2000);
+		
 		driver.navigate().refresh();
 		
 		Thread.sleep(4000);
 		driver.navigate().back();
 		Thread.sleep(4000);
+		
 		driver.switchTo().window(sndNtp.get(0));
 		Thread.sleep(2000);
+		
 		driver.findElement(By.xpath("//a[normalize-space()='More ...']")).click();
 		Thread.sleep(1000);
 		
@@ -844,8 +875,10 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 						
 		cheklist2.click();
 		Thread.sleep(3000);
+		
 		driver.findElement(By.xpath("//div[@class='modal-dialog modal-add custom-modal modal-lock-project']//button[@aria-label='Close']")).click();
 		Thread.sleep(1000);
+		
 		driver.get(Send_NTP+s); 
 		Thread.sleep(4000);
 
@@ -1011,6 +1044,9 @@ public class Increasing_price_at_COC_Page extends Base_Pace
 			Thread.sleep(5000);
 			driver.navigate().refresh();
 			Thread.sleep(2000);
+			driver.close();
+			
+			Thread.sleep(1000);
 			driver.switchTo().window(w.get(0));
 			
 			driver.get(Get_msg);

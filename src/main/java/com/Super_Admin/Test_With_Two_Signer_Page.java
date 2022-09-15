@@ -218,7 +218,6 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 	WebElement Proceed_Btn;
 
 	//	@FindBy(xpath="//input[@value='Void & Resign Contract in Browser']") 
-
 	@FindBy(xpath="//input[@value='Sign Contract in Browser']")
 	WebElement Sign_Contract_Btn;
 
@@ -273,13 +272,21 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[11]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
 	WebElement Initial_Sign_Btn_12;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[17]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 
+	@FindBy(xpath = "//span[normalize-space()='Next']")
+	WebElement Sign_initial;
+	
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[17]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]/i[1]") 			   
 	WebElement Initial_Sign_Btn_13;
 
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[3]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 
 	WebElement Initial_Sign_Btn_14;
 
-
+	@FindBy(xpath = "//span[normalize-space()='Initial']")
+	WebElement Sign_Btn;
+	
+	@FindBy(xpath = "//span[normalize-space()='Next']")
+	WebElement Sign_Btn2;
+	
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[13]/div[2]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			   
 	WebElement Initial_Sign_Btn_15;
 
@@ -640,9 +647,11 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			Thread.sleep(1000);
 			
 			Proceed_Btn.click();
+			
+			// hide
 		//	driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
 		
-			Thread.sleep(30000);
+			Thread.sleep(35000);
 			Signature_Btn.click();
 		
 		
@@ -651,18 +660,20 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			//switch to open tab
 			driver.switchTo().window(w.get(1));	
 			Thread.sleep(15000);
-		
+			
+			//unhide
 			Signature_Discloser_checkbox.click();
 			Thread.sleep(2000);
 			Continue_Btn.click();
 			Thread.sleep(2000);
 			
 			Start_Btn.click();
-		
 			Thread.sleep(2000);	
+			
 			Initial_Sign_Btn_1.click();
 			Thread.sleep(2000);
 			
+			// Unhide
 			Adopt_and_Initial_Btn.click();
 			Thread.sleep(5000);
 			
@@ -670,25 +681,25 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			Thread.sleep(2000);
 			
 			Initial_Sign_Btn_3.click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			Initial_Sign_Btn_4.click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			Initial_Sign_Btn_5.click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			Initial_Sign_Btn_6.click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			Initial_Sign_Btn_7.click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			Initial_Sign_Btn_8.click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			Initial_Sign_Btn_9.click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			Initial_Sign_Btn_10.click();
 			Thread.sleep(2000);
@@ -698,13 +709,18 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			
 			Initial_Sign_Btn_12.click();
 			Thread.sleep(2000);
-			
-			
+						
 			Initial_Sign_Btn_13.click();
 			Thread.sleep(2000);
 			
+			Sign_Btn.click();
+			Thread.sleep(1000);
+			
 			Initial_Sign_Btn_14.click();
 			Thread.sleep(2000);
+			
+			Sign_Btn2.click();
+			Thread.sleep(1000);
 			
 			Initial_Sign_Btn_15.click();
 			Thread.sleep(2000);
@@ -765,10 +781,12 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			
 			Sign_Btn_12.click();
 			Thread.sleep(2000);
-			
-			
+					
 			Sign_Btn_13.click();
 			Thread.sleep(2000);
+			
+			Sign_Btn.click();
+			Thread.sleep(1000);
 			
 			Sign_Btn_14.click();
 			Thread.sleep(2000);

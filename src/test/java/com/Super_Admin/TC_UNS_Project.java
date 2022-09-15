@@ -32,12 +32,12 @@ public class TC_UNS_Project extends Base_Pace
 		PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		logger.info("****** Verify Login Successfully ******");
 		Thread.sleep(1000);
-//		driver.navigate().refresh();
+
 //		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
 //		Thread.sleep(3000);
-//		driver.findElement(By.xpath("//div[@class='project-details-box']//li[5]")).click();
+//		driver.findElement(By.xpath("//div[@class='project-details-box']//li[3]")).click();
 //		Thread.sleep(1000);
-//		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Funding')]")).click();
+//		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Contract')]")).click();
 	
 	}
 	

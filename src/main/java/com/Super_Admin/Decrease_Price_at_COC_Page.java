@@ -21,6 +21,8 @@ import org.openqa.selenium.support.ui.Select;
 import com.Pace_Base.Base_Pace;	
 import com.qa.Util.TC_TestUtil;
 
+import io.opentelemetry.exporter.logging.SystemOutLogExporter;
+
 public class Decrease_Price_at_COC_Page extends Base_Pace 
 {
 	String Send_NTP = "https://uat.homerunportal.com/crons/sendProjectNtp/";
@@ -635,8 +637,9 @@ public class Decrease_Price_at_COC_Page extends Base_Pace
 		Thread.sleep(2000);
 		
 		Start_Btn.click();
-	
+		System.out.println(" ***** Doc-sign started *******");
 		Thread.sleep(2000);	
+		
 		Initial_Sign_Btn_1.click();
 		Thread.sleep(2000);
 		
@@ -675,7 +678,7 @@ public class Decrease_Price_at_COC_Page extends Base_Pace
 				
 		Finish_Btn.click();
 		Thread.sleep(9000);
-		
+		System.out.println(" ***** Doc-sign Completd *******");
 		driver.close();
 		driver.switchTo().window(w.get(0));	
 		
