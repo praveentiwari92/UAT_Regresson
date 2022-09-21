@@ -1,5 +1,9 @@
 package com.Super_Admin;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
 import javax.print.Doc;
 
 import org.testng.annotations.BeforeClass;
@@ -21,8 +25,9 @@ public class TC_Doc_Sign_History extends Base_Pace {
 	}
 	
 	@BeforeClass
-	public void TestSetup() throws InterruptedException {
+	public void TestSetup() throws InterruptedException, FileNotFoundException {
 		Initialization();
+		System.setOut(new PrintStream(new FileOutputStream("C:\\Users\\User\\git\\Regresson_On_UAT\\Log.txt")));
 		Login_page = new Login_Page();
 		PACE = new Create_PACE_Project_Page();
 		Doc_History = new Doc_Sign_History_Page();

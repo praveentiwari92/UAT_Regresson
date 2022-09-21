@@ -35,7 +35,7 @@ public class TestJiraListener  implements ITestListener{
 			JiraServiceProvider jiraSp = new JiraServiceProvider("https://paceppt.atlassian.net/",
 					"praveen.tiwari@closeloop.com", "VOPr0pXp2XK8h6IRWqgL79C8", "PACE");
 			String issueSummary = result.getMethod().getConstructorOrMethod().getMethod().getName()
-					+ "got failed due to some assertion or exception";
+					+ " got failed due to some assertion or exception";
 			String issueDescription = result.getThrowable().getMessage() + "\n";
 			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
 
