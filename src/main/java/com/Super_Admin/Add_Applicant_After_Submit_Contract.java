@@ -408,10 +408,10 @@ public class Add_Applicant_After_Submit_Contract extends Base_Pace
 		Thread.sleep(1000);
 		Product_drp.click();
 		Select_Product_type.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		Salesperson_drp.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		Select se = new Select(driver.findElement(By.xpath("//select[@id='home-salesperson-id']")));
 		se.selectByValue("30002");
@@ -532,9 +532,9 @@ public class Add_Applicant_After_Submit_Contract extends Base_Pace
 		Thread.sleep(1000);
 		Applicant_L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Applicant_Email.sendKeys("rex@yopmail.com");
+		Applicant_Email.sendKeys("rex2@yopmail.com");
 		Thread.sleep(1000);
-		Applicant_Phone.sendKeys("(937) 382-8282");
+		Applicant_Phone.sendKeys("(932) 382-8282");
 		Thread.sleep(1000);
 		Fill_Applicant.click();
 		

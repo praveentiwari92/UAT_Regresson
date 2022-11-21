@@ -66,7 +66,7 @@ Login_Page Login_page;
 	public void View_UNS_Project() throws InterruptedException
 	{	
 		Thread.sleep(3000);
-		Income.View_UNS_Project();
+		Income.View_PACE_Project();
 						
 	}
 	

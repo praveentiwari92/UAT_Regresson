@@ -17,6 +17,7 @@ import org.testng.annotations.Test;
 
 import com.Pace_Base.Base_Pace;
 import com.qa.Util.JiraPolicy;
+import com.qa.Util.TC_TestUtil;
 
 
 public class TC_Login_Test extends Base_Pace
@@ -34,7 +35,15 @@ public class TC_Login_Test extends Base_Pace
 	@BeforeClass
 	public void TestSetup() throws FileNotFoundException {
 		Initialization();
-		System.setOut(new PrintStream(new FileOutputStream("C:\\Users\\User\\git\\Regresson_On_UAT\\Log.txt")));
+		
+		String projectRootPath = TC_TestUtil.getProjectDirectory();
+		
+		if(TC_TestUtil.isWindows()) {
+			System.setOut(new PrintStream(new FileOutputStream(projectRootPath + "\\" +"Log.txt"))); //Uploading the file using sendKeys
+		}else {
+			System.setOut(new PrintStream(new FileOutputStream(projectRootPath + "/" +"Log.txt"))); //Uploading the file using sendKeys
+		}
+
 		Login_page = new Login_Page();
 	
 	}

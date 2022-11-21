@@ -188,9 +188,9 @@ public class Special_Offer_Project_Page extends Base_Pace
 		@FindBy(xpath="//span[@class='validate-text']")
 		WebElement Validate_Btn;
 
-		//	@FindBy(xpath="//input[@value='Void & Resign Contract in Browser']") 
+		@FindBy(xpath="//input[@value='Void & Resign Contract in Browser']") 
 		
-		@FindBy(xpath="//input[@value='Sign Contract in Browser']")
+		//@FindBy(xpath="//input[@value='Sign Contract in Browser']")
 		WebElement Sign_Contract_Btn;
 			
 		@FindBy(xpath="//button[normalize-space()='Attest']")
@@ -226,7 +226,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 		@FindBy(xpath="//button[normalize-space()='Adopt and Sign']") 
 		WebElement Adopt_and_Initial_Btn;
 
-		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]") 			  
+		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]/i[1]") 			  
 		WebElement Initial_Sign_Btn_3;
 
 		@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[3]/div[3]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 			  
@@ -535,67 +535,67 @@ public class Special_Offer_Project_Page extends Base_Pace
 		JavascriptExecutor js2 = (JavascriptExecutor) driver;
 		js2.executeScript("window.scrollBy(0,-550)", "");
 			
-			contract_tabs.click();
-			
-			Product_drp.click();
-			Select_Product_type.click();
-			Thread.sleep(2000);
-			
-			Salesperson_drp.click();
-			Thread.sleep(2000);
-	
-			Select se = new Select(driver.findElement(By.xpath("//select[@id='home-salesperson-id']")));
-			se.selectByValue("30002");
-			Thread.sleep(1000);
-			
-			Select Prog = new Select(driver.findElement(By.xpath("//select[@id='program-id']")));			
-			Prog.selectByValue("471");
-			Thread.sleep(2000);
-			
-			Select Term = new Select(driver.findElement(By.xpath("//select[@id='term']")));
-			Term.selectByValue("20");
-			
-			Cost_Value.sendKeys("700000");
-			Thread.sleep(2000);				
-			
-			Select improve= new Select(driver.findElement(By.xpath("//select[@id='contract-addendum-improvement-types-0-improvement-type-id']")));
-			improve.selectByValue("13");
-			
-			Thread.sleep(2000);
-			Quantity_Value.sendKeys("1");
-			
-			Thread.sleep(2000);
-			Validate_Btn.click();
-			Thread.sleep(3000);
-			
-			String actualString = driver.findElement(By.xpath("//div[@id='assessment-limit-exceed-uns']//strong[contains(text(),'Exceeds Limit')]")).getText();
-			
-			assertTrue(actualString.contains("Exceeds Limit"));
-			
-			if(actualString.contains("Exceeds Limit")) {
-				System.out.println("**** Amount Validate Successfully for Limit Exceed ******");
-			}
-			else if(actualString.contains("Credit declined")){
-			System.out.println("**** Amount Validate Successfully for Credit declined ******");
-			}
-			else {
-				System.out.println("**** Something Went Wrong ******");
-			}
-			
-			Thread.sleep(2000);	
-			Cost_Value.clear();
-			Thread.sleep(1000);	
-			Cost_Value.sendKeys("40000");
-			Thread.sleep(2000);	
-			Validate_Btn.click();
-			Thread.sleep(3000);	
-			String actualString1 = driver.findElement(By.xpath("//div[@id='assessment-approve-uns']//strong[contains(text(),'Approved')]")).getText();
-			assertTrue(actualString1.contains("Approved")); 
-			
-			if(actualString1.contains("Approved"))
-			{
-			System.out.println("**** Amount Approved Successfully ******");
-			}
+//			contract_tabs.click();
+//			
+//			Product_drp.click();
+//			Select_Product_type.click();
+//			Thread.sleep(2000);
+//			
+//			Salesperson_drp.click();
+//			Thread.sleep(2000);
+//	
+//			Select se = new Select(driver.findElement(By.xpath("//select[@id='home-salesperson-id']")));
+//			se.selectByValue("30002");
+//			Thread.sleep(1000);
+//			
+//			Select Prog = new Select(driver.findElement(By.xpath("//select[@id='program-id']")));			
+//			Prog.selectByValue("471");
+//			Thread.sleep(2000);
+//			
+//			Select Term = new Select(driver.findElement(By.xpath("//select[@id='term']")));
+//			Term.selectByValue("20");
+//			
+//			Cost_Value.sendKeys("700000");
+//			Thread.sleep(2000);				
+//			
+//			Select improve= new Select(driver.findElement(By.xpath("//select[@id='contract-addendum-improvement-types-0-improvement-type-id']")));
+//			improve.selectByValue("13");
+//			
+//			Thread.sleep(2000);
+//			Quantity_Value.sendKeys("1");
+//			
+//			Thread.sleep(2000);
+//			Validate_Btn.click();
+//			Thread.sleep(3000);
+//			
+//			String actualString = driver.findElement(By.xpath("//div[@id='assessment-limit-exceed-uns']//strong[contains(text(),'Exceeds Limit')]")).getText();
+//			
+//			assertTrue(actualString.contains("Exceeds Limit"));
+//			
+//			if(actualString.contains("Exceeds Limit")) {
+//				System.out.println("**** Amount Validate Successfully for Limit Exceed ******");
+//			}
+//			else if(actualString.contains("Credit declined")){
+//			System.out.println("**** Amount Validate Successfully for Credit declined ******");
+//			}
+//			else {
+//				System.out.println("**** Something Went Wrong ******");
+//			}
+//			
+//			Thread.sleep(2000);	
+//			Cost_Value.clear();
+//			Thread.sleep(1000);	
+//			Cost_Value.sendKeys("40000");
+//			Thread.sleep(2000);	
+//			Validate_Btn.click();
+//			Thread.sleep(3000);	
+//			String actualString1 = driver.findElement(By.xpath("//div[@id='assessment-approve-uns']//strong[contains(text(),'Approved')]")).getText();
+//			assertTrue(actualString1.contains("Approved")); 
+//			
+//			if(actualString1.contains("Approved"))
+//			{
+//			System.out.println("**** Amount Approved Successfully ******");
+//			}
 			
 			Thread.sleep(1000);
 			Sign_Contract_Btn.click();
@@ -607,7 +607,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 			Proceed_Btn.click();
 			Thread.sleep(1000);
 			
-		//	driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
+			driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
 	
 			
 			Thread.sleep(35000);

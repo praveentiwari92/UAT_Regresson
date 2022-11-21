@@ -290,15 +290,9 @@ public class Create_PACE_Project_Page  extends Base_Pace
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[7]/div[17]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]/i[1]") 			   
 	WebElement Initial_Sign_Btn_13;
 
-	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[3]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]") 
+	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[9]/div[3]/div[1]/div[4]/div[2]/button[1]/div[1]/div[1]/i[1]") 
 	WebElement Initial_Sign_Btn_14;
 
-	@FindBy(xpath = "//span[normalize-space()='Initial']")
-	WebElement Sign_Btn;
-	
-	@FindBy(xpath = "//span[normalize-space()='Next']")
-	WebElement Sign_Btn2;
-	
 	@FindBy(xpath="//body/div[@id='container']/div[@id='envelope']/div[1]/section[1]/div[1]/div[1]/div[2]/div[4]/div[1]/section[11]/div[2]/div[1]/div[4]/div[1]/button[1]/div[1]/div[1]/i[1]") 			   
 	WebElement Initial_Sign_Btn_15;
 
@@ -720,9 +714,7 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		Initial_Sign_Btn_13.click();
 		Thread.sleep(2000);
 		
-		Sign_Btn.click();
-		Thread.sleep(1000);
-		
+				
 		Initial_Sign_Btn_14.click();
 		Thread.sleep(2000);
 		

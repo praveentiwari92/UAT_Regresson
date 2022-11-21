@@ -16,8 +16,8 @@ public class Income_Reminder_Page extends Base_Pace {
 	@FindBy(xpath = "//tbody/tr[2]/td[11]/div[1]/a[1]")
 	WebElement project_no;
 
-	@FindBy(xpath = "//span[normalize-space()='Unsecured']")
-	WebElement UNS_Project;
+	@FindBy(xpath = "//span[normalize-space()='PACE']")
+	WebElement PACE_Project;
 	
 	@FindBy(xpath = "//a[@class='income-document stop-propagation doc-pending']//img")
 	WebElement View_Documents;
@@ -34,11 +34,11 @@ public class Income_Reminder_Page extends Base_Pace {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void View_UNS_Project() throws InterruptedException
+	public void View_PACE_Project() throws InterruptedException
 	{
 		project_no.click();
 		Thread.sleep(2000);
-		UNS_Project.click();
+		PACE_Project.click();
 		Thread.sleep(3000);
 		
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;

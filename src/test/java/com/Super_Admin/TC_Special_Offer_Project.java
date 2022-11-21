@@ -31,54 +31,54 @@ public class TC_Special_Offer_Project extends Base_Pace{
 		PACE = login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		
 		logger.info("******* Verify Login Successfully ********");
-//		Thread.sleep(1000);
-//		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
-//		Thread.sleep(3000);
-//		driver.findElement(By.xpath("//div[@class='project-details-box']//li[3]")).click();
-//		Thread.sleep(1000);
-//		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Contract')]")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//div[@class='project-details-box']//li[3]")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Contract')]")).click();
 		
 	}
 	
 	
-	@Test(priority = 1)
-	public void New_Project() throws InterruptedException {
-		System.out.println("****** Special_Offer_Project *******");
-		PACE.New_Project();
-	}
+//	@Test(priority = 1)
+//	public void New_Project() throws InterruptedException {
+//		System.out.println("****** Special_Offer_Project *******");
+//		PACE.New_Project();
+//	}
+//	
+//	// Eligibility Tab
+//	@Test(priority = 2)
+//	public void Select_Contractor() throws InterruptedException
+//	{		
+//		PACE.Select_Contractor();
+//
+//	}
 	
-	// Eligibility Tab
-	@Test(priority = 2)
-	public void Select_Contractor() throws InterruptedException
-	{		
-		PACE.Select_Contractor();
-
-	}
+//	@Test(priority = 3)
+//	public void Credit_Application_Tab() throws InterruptedException
+//	{		
+//		PACE.Credit_Application_Tab();
+//	
+//	}
+//	
+//	@Test(priority = 4)
+//	public void Login_to_Credit_Portal() throws InterruptedException
+//	{	
+//		Thread.sleep(3000);
+//		driver.get(prop.getProperty("credit_portal_url")); 
+//		Thread.sleep(2000);
+//		PACE.Credit_portal_Login();
+//						
+//	}
 	
-	@Test(priority = 3)
-	public void Credit_Application_Tab() throws InterruptedException
-	{		
-		PACE.Credit_Application_Tab();
-	
-	}
-	
-	@Test(priority = 4)
-	public void Login_to_Credit_Portal() throws InterruptedException
-	{	
-		Thread.sleep(3000);
-		driver.get(prop.getProperty("credit_portal_url")); 
-		Thread.sleep(2000);
-		PACE.Credit_portal_Login();
-						
-	}
-	
-	@Test(priority = 5)
-	public void View_UNS_Project() throws InterruptedException
-	{	
-		Thread.sleep(3000);
-		SO.View_UNS_Project();
-						
-	}
+//	@Test(priority = 5)
+//	public void View_UNS_Project() throws InterruptedException
+//	{	
+//		Thread.sleep(3000);
+//		SO.View_UNS_Project();
+//						
+//	}
 	
 	@Test(priority = 6)
 	public void Submit_SO_Contract() throws InterruptedException
