@@ -4,8 +4,8 @@ import java.time.LocalDateTime;
 
 public class TC_TestUtil {
 	
-	public static long PAGE_LOAD_TIMEOUT = 50;
-	public static long IMPLICIT_WAIT = 50;
+	public static long PAGE_LOAD_TIMEOUT = 290;
+	public static long IMPLICIT_WAIT = 290;
 	
 	// General
 	public static String OS = System.getProperty("os.name").toLowerCase();

@@ -437,7 +437,7 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		Search_Contractor.sendKeys("Dell Contractor");
 		Select_Contractor.click();
 		Enter_Address.clear();
-		Enter_Address.sendKeys("2363 Cottonwood Avenue");
+		Enter_Address.sendKeys("2367 Cottonwood Avenue");
 		Thread.sleep(2000);
 		Enter_Address.sendKeys(Keys.DOWN);
 		Enter_Address.sendKeys(Keys.ENTER);
@@ -474,15 +474,15 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		Thread.sleep(1000);
 		F_Name.clear();
 		Thread.sleep(1000);
-		F_Name.sendKeys("Rut");
+		F_Name.sendKeys("Josh");
 		Thread.sleep(1000);
 		L_Name.clear();
 		Thread.sleep(1000);
 		L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Email.sendKeys("rut4@yopmail.com");
+		Email.sendKeys("josh1@yopmail.com");
 		Thread.sleep(1000);
-		Phone.sendKeys("(963) 710-5433");
+		Phone.sendKeys("(963) 770-5533");
 		Thread.sleep(1000);
 		EstProjectCost.sendKeys("500000");
 
@@ -610,6 +610,7 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		contract_tabs.click();
 
 		Product_drp.click();
+		
 		Select_Product_type.click();
 		Thread.sleep(2000);
 
@@ -767,7 +768,7 @@ public class Create_PACE_Project_Page  extends Base_Pace
 				driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
 
 		// Upload Assessment Documents
-		Thread.sleep(3000);
+	
 		WebElement Assessment = driver.findElement(By.xpath("//div[@class='notice-form-upload long-notice-upload S3filesContainer']//div[@class='custom-upload-box S3filesContainer']//input[@name='file']"));
 
 		if(TC_TestUtil.isWindows()) {
@@ -775,15 +776,17 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		}else {
 			Assessment.sendKeys(projectRootPath + "/" +"Documents/Document.pdf"); //Uploading the file using sendKeys
 		}
-		Thread.sleep(1000);
+		
+		
+		
 		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
-		Thread.sleep(2000);
+	
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,550)", "");
 
 		
-		Thread.sleep(2000);
+		
 		driver.navigate().refresh();
 		Thread.sleep(2000);
 		TCC_Success_Btn.click();
@@ -959,7 +962,6 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		Attest_Confirm_Btn.click();
 		Proceed_Confirm_Btn.click();
 
-		Thread.sleep(20000);
 
 		WebElement browse = driver.findElement(By.xpath("//form[@id='completion-ceritificate']//input[@name='file']"));
 
@@ -970,11 +972,12 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		}else {
 			browse.sendKeys(projectRootPath + "/" +"Documents/Document.pdf"); //Uploading the file using sendKeys
 		}
-		Thread.sleep(1000);
+		
+		
 		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
 
 
-		Thread.sleep(5000);
+
 		WebElement Inspection = driver.findElement(By.xpath("//div[contains(@class,'u-left NFU-form-left NFUFL-img link-with-upload S3filesContainer ml-2')]//input[@name='file']"));
 
 		if(TC_TestUtil.isWindows()) 
@@ -983,7 +986,8 @@ public class Create_PACE_Project_Page  extends Base_Pace
 		}else {
 			Inspection.sendKeys(projectRootPath + "/" +"Documents/Document.pdf"); //Uploading the file using sendKeys
 		}
-		Thread.sleep(1000);
+		
+
 		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
 		Thread.sleep(3000);
 
