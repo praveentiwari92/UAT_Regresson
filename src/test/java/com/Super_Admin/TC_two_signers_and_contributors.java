@@ -10,7 +10,7 @@ public class TC_two_signers_and_contributors extends Base_Pace
 
 	Login_Page Login_page;
 	Two_Signers_and_Contributors_Page two_signer_and_Contributor;
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	
 	public TC_two_signers_and_contributors()
 	{

@@ -10,7 +10,7 @@ public class TC_Delete_Applicant_In_Mobile_App extends Base_Pace{
 	
 	Login_Page Login_Page;
 	Delete_Applicant_In_Mobile_App_Page Delete_Applicant;
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	
 	public TC_Delete_Applicant_In_Mobile_App()
 	{

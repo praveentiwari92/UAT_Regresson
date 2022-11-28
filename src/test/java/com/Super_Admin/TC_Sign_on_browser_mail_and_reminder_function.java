@@ -10,7 +10,7 @@ public class TC_Sign_on_browser_mail_and_reminder_function extends Base_Pace
 {
 	Login_Page Login_page;
 	
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	
 	Sign_on_browser_mail_and_reminder_function_Page notification;
 	
@@ -25,7 +25,7 @@ public class TC_Sign_on_browser_mail_and_reminder_function extends Base_Pace
 	public void TestSetup() throws InterruptedException {
 		Initialization();
 		Login_page = new Login_Page();
-		PACE = new Create_PACE_Project_Page();
+		PACE = new PACE_CA_Project_Page();
 		notification = new Sign_on_browser_mail_and_reminder_function_Page();
 		PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		logger.info("****** Verify Login Successfully ******");

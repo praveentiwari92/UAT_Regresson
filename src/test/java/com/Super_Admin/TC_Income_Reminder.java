@@ -12,7 +12,7 @@ public class TC_Income_Reminder extends Base_Pace
 
 Login_Page Login_page;
 	
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	
 	Income_Reminder_Page Income;
 	
@@ -25,7 +25,7 @@ Login_Page Login_page;
 	public void TestSetup() throws InterruptedException {
 		Initialization();
 		Login_page = new Login_Page();
-		PACE = new Create_PACE_Project_Page();
+		PACE = new PACE_CA_Project_Page();
 		Income = new Income_Reminder_Page();
 		PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		logger.info("****** Verify Login Successfully ******");

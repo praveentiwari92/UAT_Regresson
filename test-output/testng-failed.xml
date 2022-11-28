@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Super_Admin.TC_UNS_Non_Solar_Project">
+      <class name="com.Super_Admin.PACE_FL_Increasing_price_at_COC">
         <methods>
-          <include name="View_UNS_Solar_Project"/>
-          <include name="Test_Setup"/>
           <include name="teardown"/>
-          <include name="Funding_Tab"/>
           <include name="Submit_NTP"/>
-          <include name="Submit_UNS_Solar_Contract"/>
+          <include name="TestSetup"/>
+          <include name="Funding_Tab"/>
         </methods>
-      </class> <!-- com.Super_Admin.TC_UNS_Non_Solar_Project -->
+      </class> <!-- com.Super_Admin.PACE_FL_Increasing_price_at_COC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

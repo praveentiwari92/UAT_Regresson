@@ -24,7 +24,7 @@ public class TC_Login_Test extends Base_Pace
 {
 
 	Login_Page Login_page;
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	
 	public TC_Login_Test() {
 		

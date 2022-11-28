@@ -11,7 +11,7 @@ public class TC_Test_With_Two_Signer extends Base_Pace{
 	
 	Login_Page Login_page;
 	Test_With_Two_Signer_Page Multi_Signer_project;
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	
 	public TC_Test_With_Two_Signer()
 	{

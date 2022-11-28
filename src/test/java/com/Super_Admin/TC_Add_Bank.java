@@ -10,7 +10,7 @@ public class TC_Add_Bank extends Base_Pace{
 	
 	Login_Page Login_page;
 	Add_Bank_Page Add_Bank;
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	
 	public TC_Add_Bank()
 	{
@@ -21,7 +21,7 @@ public class TC_Add_Bank extends Base_Pace{
 	public void TestSetup() throws InterruptedException {
 		Initialization();
 		Login_page = new Login_Page();
-		PACE = new Create_PACE_Project_Page();
+		PACE = new PACE_CA_Project_Page();
 		Add_Bank = new Add_Bank_Page();
 		PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		logger.info("****** Verify Login Successfully ******");

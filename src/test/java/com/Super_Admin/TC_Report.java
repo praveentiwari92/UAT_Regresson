@@ -8,7 +8,7 @@ import com.Pace_Base.Base_Pace;
 public class TC_Report extends Base_Pace {
 
 	Login_Page Login_page;
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	Report_Page report;
 	
 	public TC_Report()
@@ -21,7 +21,7 @@ public class TC_Report extends Base_Pace {
 	public void TestSetup() throws InterruptedException {
 		Initialization();
 		Login_page = new Login_Page();
-		PACE = new Create_PACE_Project_Page();
+		PACE = new PACE_CA_Project_Page();
 		report = new Report_Page();
 		PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		logger.info("****** Verify Login Successfully ******");

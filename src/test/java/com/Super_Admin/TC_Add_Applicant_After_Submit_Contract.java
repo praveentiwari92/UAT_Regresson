@@ -8,7 +8,7 @@ import com.Pace_Base.Base_Pace;
 public class TC_Add_Applicant_After_Submit_Contract extends Base_Pace{
 
 	Login_Page login_Page;
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	Add_Applicant_After_Submit_Contract Submit_Contract;
 	
 	public TC_Add_Applicant_After_Submit_Contract()

@@ -11,7 +11,7 @@ public class TC_Special_Offer_Project extends Base_Pace{
 
 	Login_Page login_page;
 	Special_Offer_Project_Page SO;
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	
 	int i=0;
 	
@@ -26,7 +26,7 @@ public class TC_Special_Offer_Project extends Base_Pace{
 	{
 		Initialization();
 		login_page = new Login_Page();
-		PACE = new Create_PACE_Project_Page();
+		PACE = new PACE_CA_Project_Page();
 		SO = new Special_Offer_Project_Page();
 		PACE = login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		

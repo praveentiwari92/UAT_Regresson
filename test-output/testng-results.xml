@@ -2,52 +2,52 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-22T15:36:53 IST" name="Default suite" finished-at="2022-11-22T15:51:57 IST" duration-ms="903378">
+  <suite started-at="2022-11-28T12:56:17 IST" name="Default suite" finished-at="2022-11-28T13:11:35 IST" duration-ms="918339">
     <groups>
     </groups>
-    <test started-at="2022-11-22T15:36:53 IST" name="Default test" finished-at="2022-11-22T15:51:57 IST" duration-ms="903378">
-      <class name="com.Super_Admin.TC_UNS_Non_Solar_Project">
-        <test-method is-config="true" signature="Test_Setup()[pri:0, instance:com.Super_Admin.TC_UNS_Non_Solar_Project@51f116b8]" started-at="2022-11-22T15:36:53 IST" name="Test_Setup" finished-at="2022-11-22T15:37:16 IST" duration-ms="22565" status="PASS">
+    <test started-at="2022-11-28T12:56:17 IST" name="Default test" finished-at="2022-11-28T13:11:35 IST" duration-ms="918339">
+      <class name="com.Super_Admin.PACE_FL_Increasing_price_at_COC">
+        <test-method is-config="true" signature="TestSetup()[pri:0, instance:com.Super_Admin.PACE_FL_Increasing_price_at_COC@51f116b8]" started-at="2022-11-28T12:56:17 IST" name="TestSetup" finished-at="2022-11-28T12:56:36 IST" duration-ms="19242" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_Setup -->
-        <test-method signature="New_Project()[pri:1, instance:com.Super_Admin.TC_UNS_Non_Solar_Project@51f116b8]" started-at="2022-11-22T15:37:16 IST" name="New_Project" finished-at="2022-11-22T15:37:21 IST" duration-ms="5142" status="PASS">
+        </test-method> <!-- TestSetup -->
+        <test-method signature="New_Project()[pri:1, instance:com.Super_Admin.PACE_FL_Increasing_price_at_COC@51f116b8]" started-at="2022-11-28T12:56:36 IST" name="New_Project" finished-at="2022-11-28T12:56:43 IST" duration-ms="6709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- New_Project -->
-        <test-method signature="Select_Contractor()[pri:2, instance:com.Super_Admin.TC_UNS_Non_Solar_Project@51f116b8]" started-at="2022-11-22T15:37:21 IST" name="Select_Contractor" finished-at="2022-11-22T15:38:10 IST" duration-ms="49296" status="PASS">
+        <test-method signature="Select_Contractor()[pri:2, instance:com.Super_Admin.PACE_FL_Increasing_price_at_COC@51f116b8]" started-at="2022-11-28T12:56:43 IST" name="Select_Contractor" finished-at="2022-11-28T12:57:40 IST" duration-ms="56793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select_Contractor -->
-        <test-method signature="Credit_Application_Tab()[pri:3, instance:com.Super_Admin.TC_UNS_Non_Solar_Project@51f116b8]" started-at="2022-11-22T15:38:10 IST" name="Credit_Application_Tab" finished-at="2022-11-22T15:39:00 IST" duration-ms="49215" status="PASS">
+        <test-method signature="Credit_Application_Tab()[pri:3, instance:com.Super_Admin.PACE_FL_Increasing_price_at_COC@51f116b8]" started-at="2022-11-28T12:57:40 IST" name="Credit_Application_Tab" finished-at="2022-11-28T12:58:28 IST" duration-ms="48332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Credit_Application_Tab -->
-        <test-method signature="Login_to_Credit_Portal()[pri:4, instance:com.Super_Admin.TC_UNS_Non_Solar_Project@51f116b8]" started-at="2022-11-22T15:39:00 IST" name="Login_to_Credit_Portal" finished-at="2022-11-22T15:39:25 IST" duration-ms="25586" status="PASS">
+        <test-method signature="Login_to_Credit_Portal()[pri:4, instance:com.Super_Admin.PACE_FL_Increasing_price_at_COC@51f116b8]" started-at="2022-11-28T12:58:28 IST" name="Login_to_Credit_Portal" finished-at="2022-11-28T12:58:37 IST" duration-ms="8988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_to_Credit_Portal -->
-        <test-method signature="View_UNS_Solar_Project()[pri:5, instance:com.Super_Admin.TC_UNS_Non_Solar_Project@51f116b8]" started-at="2022-11-22T15:39:25 IST" name="View_UNS_Solar_Project" finished-at="2022-11-22T15:42:20 IST" duration-ms="174957" status="PASS">
+        <test-method signature="View_Project()[pri:5, instance:com.Super_Admin.PACE_FL_Increasing_price_at_COC@51f116b8]" started-at="2022-11-28T12:58:37 IST" name="View_Project" finished-at="2022-11-28T13:01:42 IST" duration-ms="184377" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- View_UNS_Solar_Project -->
-        <test-method signature="Submit_UNS_Solar_Contract()[pri:6, instance:com.Super_Admin.TC_UNS_Non_Solar_Project@51f116b8]" started-at="2022-11-22T15:42:20 IST" name="Submit_UNS_Solar_Contract" finished-at="2022-11-22T15:44:36 IST" duration-ms="135951" status="PASS">
+        </test-method> <!-- View_Project -->
+        <test-method signature="Submit_Contract()[pri:6, instance:com.Super_Admin.PACE_FL_Increasing_price_at_COC@51f116b8]" started-at="2022-11-28T13:01:42 IST" name="Submit_Contract" finished-at="2022-11-28T13:04:10 IST" duration-ms="148391" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Submit_UNS_Solar_Contract -->
-        <test-method signature="Submit_NTP()[pri:7, instance:com.Super_Admin.TC_UNS_Non_Solar_Project@51f116b8]" started-at="2022-11-22T15:44:36 IST" name="Submit_NTP" finished-at="2022-11-22T15:46:53 IST" duration-ms="136426" status="PASS">
+        </test-method> <!-- Submit_Contract -->
+        <test-method signature="Submit_NTP()[pri:7, instance:com.Super_Admin.PACE_FL_Increasing_price_at_COC@51f116b8]" started-at="2022-11-28T13:04:10 IST" name="Submit_NTP" finished-at="2022-11-28T13:07:48 IST" duration-ms="218008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Submit_NTP -->
-        <test-method signature="Funding_Tab()[pri:8, instance:com.Super_Admin.TC_UNS_Non_Solar_Project@51f116b8]" started-at="2022-11-22T15:46:53 IST" name="Funding_Tab" finished-at="2022-11-22T15:51:57 IST" duration-ms="303975" status="PASS">
+        <test-method signature="Funding_Tab()[pri:8, instance:com.Super_Admin.PACE_FL_Increasing_price_at_COC@51f116b8]" started-at="2022-11-28T13:07:48 IST" name="Funding_Tab" finished-at="2022-11-28T13:11:35 IST" duration-ms="227004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Funding_Tab -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Super_Admin.TC_UNS_Non_Solar_Project@51f116b8]" started-at="2022-11-22T15:51:57 IST" name="teardown" finished-at="2022-11-22T15:51:57 IST" duration-ms="137" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Super_Admin.PACE_FL_Increasing_price_at_COC@51f116b8]" started-at="2022-11-28T13:11:35 IST" name="teardown" finished-at="2022-11-28T13:11:35 IST" duration-ms="407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.Super_Admin.TC_UNS_Non_Solar_Project -->
+      </class> <!-- com.Super_Admin.PACE_FL_Increasing_price_at_COC -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

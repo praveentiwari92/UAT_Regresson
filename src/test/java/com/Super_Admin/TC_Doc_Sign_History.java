@@ -15,7 +15,7 @@ public class TC_Doc_Sign_History extends Base_Pace {
 	
 	Login_Page Login_page;
 	
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	
 	Doc_Sign_History_Page Doc_History;
 	
@@ -29,7 +29,7 @@ public class TC_Doc_Sign_History extends Base_Pace {
 		Initialization();
 		System.setOut(new PrintStream(new FileOutputStream("C:\\Users\\User\\git\\Regresson_On_UAT\\Log.txt")));
 		Login_page = new Login_Page();
-		PACE = new Create_PACE_Project_Page();
+		PACE = new PACE_CA_Project_Page();
 		Doc_History = new Doc_Sign_History_Page();
 		PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		logger.info("****** Verify Login Successfully ******");

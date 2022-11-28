@@ -30,7 +30,7 @@
   
 <!--      <test thread-count="1" name="TC_Create_PACE_Project_Test"> -->
 <!--     <classes> -->
-<!--       <class name="com.Super_Admin.TC_Create_PACE_Project_Test"/> -->
+<!--       <class name="com.Super_Admin.PACE_CA_Project_Test"/> -->
 <!--     </classes> -->
 <!--   </test>	 -->
   
@@ -42,19 +42,19 @@
   
 <!--    <test thread-count="1" name="TC_Increasing_price_at_COC"> -->
 <!--     <classes> -->
-<!--       <class name="com.Super_Admin.TC_Increasing_price_at_COC"/> -->
+<!--       <class name="com.Super_Admin.PACE_FL_Increasing_price_at_COC"/> -->
 <!--     </classes> -->
 <!--   </test> -->
   
 <!--      <test thread-count="1" name="TC_Decrease_Price_at_COC"> -->
 <!--     <classes> -->
-<!--       <class name="com.Super_Admin.TC_Decrease_Price_at_COC"/> -->
+<!--       <class name="com.Super_Admin.PACE_MO_Decrease_Price_at_COC"/> -->
 <!--     </classes> -->
 <!--   </test> -->
   
 <!--     <test thread-count="1" name="TC_Project_By_Vanity_URL"> -->
 <!--     <classes> -->
-<!--       <class name="com.Super_Admin.TC_Project_By_Vanity_URL"/> -->
+<!--       <class name="com.Super_Admin.UNS_Solar_FL_Vanity_URL_Project_Page"/> -->
 <!--     </classes> -->
 <!--   </test>  -->
   
@@ -88,7 +88,7 @@
  
 <!--    <test thread-count="1" name="TC_Create_PACE_Project_Test"> -->
 <!--     <classes> -->
-<!--       <class name="com.Super_Admin.TC_Create_PACE_Project_Test"/> -->
+<!--       <class name="com.Super_Admin.PACE_CA_Project_Test"/> -->
 <!--     </classes> -->
 <!--   </test> -->
   
@@ -139,19 +139,19 @@
   
 <!--    <test thread-count="1" name="TC_Increasing_price_at_COC"> -->
 <!--     <classes> -->
-<!--       <class name="com.Super_Admin.TC_Increasing_price_at_COC"/> -->
+<!--       <class name="com.Super_Admin.PACE_FL_Increasing_price_at_COC"/> -->
 <!--     </classes> -->
 <!--   </test> -->
   
 <!--    <test thread-count="1" name="TC_Decrease_Price_at_COC"> -->
 <!--     <classes> -->
-<!--       <class name="com.Super_Admin.TC_Decrease_Price_at_COC"/> -->
+<!--       <class name="com.Super_Admin.PACE_MO_Decrease_Price_at_COC"/> -->
 <!--     </classes> -->
 <!--   </test> -->
   
 <!--     <test thread-count="1" name="TC_Project_By_Vanity_URL"> -->
 <!--     <classes> -->
-<!--       <class name="com.Super_Admin.TC_Project_By_Vanity_URL"/> -->
+<!--       <class name="com.Super_Admin.UNS_Solar_FL_Vanity_URL_Project_Page"/> -->
 <!--     </classes> -->
 <!--   </test>  -->
   

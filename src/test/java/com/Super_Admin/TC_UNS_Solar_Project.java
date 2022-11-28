@@ -14,7 +14,7 @@ public class TC_UNS_Solar_Project extends Base_Pace
 
 	Login_Page Login_page;
 	
-	Create_PACE_Project_Page PACE;
+	PACE_CA_Project_Page PACE;
 	
 	UNS_Solar_Project_Page UNS_Solar;
 	
@@ -28,7 +28,7 @@ public class TC_UNS_Solar_Project extends Base_Pace
 	public void Test_Setup() throws InterruptedException {
 		Initialization();
 		Login_page = new Login_Page();
-		PACE = new Create_PACE_Project_Page();
+		PACE = new PACE_CA_Project_Page();
 		UNS_Solar = new UNS_Solar_Project_Page();
 		PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		logger.info("****** Verify Login Successfully ******");
