@@ -188,7 +188,7 @@ public class PACE_FL_Increasing_price_at_COC_Page extends Base_Pace
 		@FindBy(xpath="//div[contains(text(),'Select In-Home Salesperson')]")
 		WebElement Salesperson_drp;
 			
-		@FindBy(xpath="//div[@class='dropdown bootstrap-select form-control home-salespersons show']//li[2]//a[1]//span[2]")
+		@FindBy(xpath="//option[@value='30002']")
 		WebElement Salesperson_drp_Value;
 		
 		@FindBy(xpath="//body/div[9]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]/div[1]/div[1]")
@@ -599,7 +599,7 @@ public class PACE_FL_Increasing_price_at_COC_Page extends Base_Pace
 		Salesperson_drp.click();
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//option[@value='30002']")).click();
+		Salesperson_drp_Value.click();
 		
 		Program_drp.click();
 		Thread.sleep(1000);

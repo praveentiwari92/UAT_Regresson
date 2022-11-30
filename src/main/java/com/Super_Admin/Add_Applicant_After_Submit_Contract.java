@@ -419,17 +419,17 @@ public class Add_Applicant_After_Submit_Contract extends Base_Pace
 		Program_drp.click();
 		Thread.sleep(1000);
 		Select Prog = new Select(driver.findElement(By.xpath("//select[@id='program-id']")));			
-		Prog.selectByValue("1097");
+		Prog.selectByValue("1072");
 		Thread.sleep(1000);
 		
 		Select Term = new Select(driver.findElement(By.xpath("//select[@id='term']")));
-		Term.selectByValue("10");
+		Term.selectByValue("15");
 		
 		Cost_Value.sendKeys("40000");
 		Thread.sleep(1000);				
 		
 		Select improve= new Select(driver.findElement(By.xpath("//select[@id='contract-addendum-improvement-types-0-improvement-type-id']")));
-		improve.selectByValue("1");
+		improve.selectByValue("178");
 		
 		Thread.sleep(500);
 		Quantity_Value.sendKeys("1");
@@ -446,7 +446,7 @@ public class Add_Applicant_After_Submit_Contract extends Base_Pace
 		
 		Proceed_Btn.click();
 		
-		Thread.sleep(25000);
+		Thread.sleep(35000);
 		Signature_Btn.click();
 		
 		ArrayList<String> w = new ArrayList<String>(driver.getWindowHandles());

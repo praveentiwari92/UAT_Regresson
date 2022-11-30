@@ -93,7 +93,7 @@ public class Add_Bank_Page extends Base_Pace{
 	@FindBy(xpath = "//button[normalize-space()='Open Here (Bank)']") 
 	WebElement Open_Here_Btn;
 	
-	@FindBy(xpath = "//button[normalize-space()='Continue']") 
+	@FindBy(xpath = "//span[normalize-space()='Continue']") 
 	WebElement Continue_Btn_1;
 	
 	@FindBy(xpath = "//h2[normalize-space()='Chase']") 
@@ -120,7 +120,7 @@ public class Add_Bank_Page extends Base_Pace{
 	@FindBy(id="submit-code")
 	WebElement submit_code;
 
-	@FindBy(id="checking")
+	@FindBy(xpath="(//div[normalize-space()='Plaid Checking'])[1]")
 	WebElement checking;
 	
 	@FindBy(id="submit-accounts")
@@ -192,7 +192,6 @@ public class Add_Bank_Page extends Base_Pace{
 	{
 		PageFactory.initElements(driver, this);
 	}
-
 	
 		
 		public void New_Project() throws InterruptedException
@@ -277,9 +276,8 @@ public class Add_Bank_Page extends Base_Pace{
 			Thread.sleep(3000);
 			PrpopetyInfo_Next_Btn.click();
 			Thread.sleep(2000);
-			SSN_No.sendKeys("00000000");
-			Thread.sleep(2000);
-			SSN_No.sendKeys("2");
+			SSN_No.sendKeys("000-00-0002");
+			
 			Thread.sleep(2000);
 			DOB.sendKeys("05/12/1988");
 			Thread.sleep(3000);
@@ -291,13 +289,17 @@ public class Add_Bank_Page extends Base_Pace{
 			Thread.sleep(2000);
 			
 			Open_Here_Btn.click();
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			
-			driver.switchTo().frame("plaid-link-iframe-1");
-			Thread.sleep(1000);
-			Continue_Btn_1.click();			
+			System.out.println("New tab title: " + driver.getTitle());
+			
+			driver.switchTo().frame(0);
+	
+			Continue_Btn_1.click();		
+			
 			Thread.sleep(2000);
 			Select_Chase.click();	
+			
 			Thread.sleep(2000);
 			Continue_Btn_2.click();	
 			Thread.sleep(2000);
@@ -349,19 +351,19 @@ public class Add_Bank_Page extends Base_Pace{
 			ArrayList<String> win = new ArrayList<String>(driver.getWindowHandles());
 			//switch to open tab
 			driver.switchTo().window(win.get(1));
-			driver.switchTo().frame("plaid-link-iframe-1");
+			driver.switchTo().frame(0);
 			Thread.sleep(2000);
 			driver.getTitle();
 			
-			Plaid_Checking.click();
-			Thread.sleep(1000);
-			
-			Continue_Btn_3.click();
+//			Plaid_Checking.click();
+//			Thread.sleep(1000);
+//			
+//			Continue_Btn_3.click();
 			
 			Thread.sleep(2000);
 			Continue_Btn_4.click();
 			
-		// Back to Main Window	
+			// Back to Main Window	
 			driver.switchTo().defaultContent();
 			
 			Thread.sleep(5000);
@@ -412,8 +414,11 @@ public class Add_Bank_Page extends Base_Pace{
 			Open_Here_Btn2.click();
 			Thread.sleep(2000);
 			
-			driver.switchTo().frame("plaid-link-iframe-1");
-			Thread.sleep(1000);
+			driver.switchTo().frame(0);
+			Thread.sleep(2000);
+			
+						
+			Thread.sleep(2000);
 			Continue_Btn_1.click();			
 			Thread.sleep(2000);
 			Select_Chase.click();	
@@ -469,17 +474,18 @@ public class Add_Bank_Page extends Base_Pace{
 			ArrayList<String> win = new ArrayList<String>(driver.getWindowHandles());
 			//switch to open tab
 			driver.switchTo().window(win.get(0));
-			driver.switchTo().frame("plaid-link-iframe-1");
+			
+			driver.switchTo().frame(0);
 			Thread.sleep(2000);
 			driver.getTitle();
 			
-			Plaid_Checking.click();
-			Thread.sleep(1000);
+//			Plaid_Checking.click();
+//			Thread.sleep(1000);
 			
 			Continue_Btn_3.click();
 			
 			Thread.sleep(2000);
-			Continue_Btn_4.click();
+//			Continue_Btn_4.click();
 			
 			
 			driver.switchTo().defaultContent();

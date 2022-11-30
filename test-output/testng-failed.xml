@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Super_Admin.PACE_FL_Increasing_price_at_COC">
+      <class name="com.Super_Admin.TC_Add_Bank">
         <methods>
+          <include name="Add_Bank_From_More_Menu"/>
           <include name="teardown"/>
-          <include name="Submit_NTP"/>
           <include name="TestSetup"/>
-          <include name="Funding_Tab"/>
         </methods>
-      </class> <!-- com.Super_Admin.PACE_FL_Increasing_price_at_COC -->
+      </class> <!-- com.Super_Admin.TC_Add_Bank -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

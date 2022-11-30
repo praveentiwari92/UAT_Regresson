@@ -27,11 +27,11 @@ public class TC_Add_Bank extends Base_Pace{
 		logger.info("****** Verify Login Successfully ******");
 		Thread.sleep(1000);
 		
-//		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
-//		Thread.sleep(3000);
-//		driver.findElement(By.xpath("//div[@class='project-details-box']//li[2]")).click();
-//		Thread.sleep(1000);
-//		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Application')]")).click();
+		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//div[@class='project-details-box']//li[2]")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Application')]")).click();
 		
 	}
 	
@@ -55,8 +55,6 @@ public class TC_Add_Bank extends Base_Pace{
 		Add_Bank.Credit_Application_Tab();
 	
 	}
-	
-	
 	
 	@Test(priority = 4)
 	public void Add_Bank_From_More_Menu() throws InterruptedException
