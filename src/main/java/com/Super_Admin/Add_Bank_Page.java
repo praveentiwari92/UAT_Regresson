@@ -196,6 +196,7 @@ public class Add_Bank_Page extends Base_Pace{
 		
 		public void New_Project() throws InterruptedException
 		{
+			System.out.println("Runnig Add_Bank_Page");
 			New_Project.click();
 			Thread.sleep(2000);
 			Eligibility.click();

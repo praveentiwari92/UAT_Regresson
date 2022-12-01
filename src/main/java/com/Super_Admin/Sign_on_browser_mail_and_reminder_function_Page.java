@@ -39,7 +39,7 @@ public class Sign_on_browser_mail_and_reminder_function_Page extends Base_Pace
 	@FindBy(xpath = "//input[@id='check-eligibility']")
 	WebElement Submit_Btn;
 	
-	@FindBy(id = "wma-wizard-btn") 
+	@FindBy(xpath = "(//div[@class='wmawb-img text-center'])[1]") 
 	WebElement Next_Btn;
 	
 	// Credit_Application_Tab
@@ -125,7 +125,7 @@ public class Sign_on_browser_mail_and_reminder_function_Page extends Base_Pace
 		WebElement Salesperson_drp;
 		
 		
-		@FindBy(xpath="//div[@class='dropdown bootstrap-select form-control home-salespersons show']//li[2]//a[1]//span[2]")
+		@FindBy(xpath="")
 		WebElement Salesperson_drp_Value;
 		
 		@FindBy(xpath="//body/div[9]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]/div[1]/div[1]")
@@ -225,7 +225,7 @@ public class Sign_on_browser_mail_and_reminder_function_Page extends Base_Pace
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0,450)", "");
 
-			Thread.sleep(7000);	
+			Thread.sleep(15000);
 			Next_Btn.click();
 			System.out.println("**** Address Eligible Verified Successfully ****");
 			
@@ -339,17 +339,17 @@ public class Sign_on_browser_mail_and_reminder_function_Page extends Base_Pace
 			Program_drp.click();
 			Thread.sleep(1000);
 			Select Prog = new Select(driver.findElement(By.xpath("//select[@id='program-id']")));			
-			Prog.selectByValue("1097");
+			Prog.selectByValue("1071");
 			Thread.sleep(2000);
 			
 			Select Term = new Select(driver.findElement(By.xpath("//select[@id='term']")));
-			Term.selectByValue("10");
+			Term.selectByValue("15");
 			
 			Cost_Value.sendKeys("40000");
 			Thread.sleep(2000);				
 			
 			Select improve= new Select(driver.findElement(By.xpath("//select[@id='contract-addendum-improvement-types-0-improvement-type-id']")));
-			improve.selectByValue("1");
+			improve.selectByValue("6");
 			
 			Thread.sleep(2000);
 			Quantity_Value.sendKeys("1");
@@ -366,7 +366,7 @@ public class Sign_on_browser_mail_and_reminder_function_Page extends Base_Pace
 			
 			Proceed_Btn.click();
 			
-			Thread.sleep(25000);
+			Thread.sleep(55000);
 			Signature_Btn.click();
 			
 			ArrayList<String> w = new ArrayList<String>(driver.getWindowHandles());

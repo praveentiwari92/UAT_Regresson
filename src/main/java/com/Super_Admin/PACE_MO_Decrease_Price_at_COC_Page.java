@@ -426,8 +426,8 @@ public class PACE_MO_Decrease_Price_at_COC_Page extends Base_Pace
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,450)", "");
 
-		Thread.sleep(5000);	
 		Next_Btn.click();
+		
 		System.out.println("**** Address Eligible Verified Successfully ****");
 
 	}

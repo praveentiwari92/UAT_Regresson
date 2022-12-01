@@ -432,13 +432,12 @@ public class UNS_Non_Solar_Project_Page extends Base_Pace{
 				Thread.sleep(1000);
 				
 				Proceed_Btn.click();
-				Thread.sleep(1000);
+		//		Thread.sleep(1000);
 			
 				// Uncomment this
 		//		driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
-				Thread.sleep(35000);
-				
-//				Thread.sleep(28000);
+				Thread.sleep(55000);
+
 				Signature_Btn.click();
 			
 				ArrayList<String> w = new ArrayList<String>(driver.getWindowHandles());

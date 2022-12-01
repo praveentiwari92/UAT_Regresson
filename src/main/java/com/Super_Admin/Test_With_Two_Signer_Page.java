@@ -39,7 +39,7 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 	@FindBy(xpath = "//input[@id='check-eligibility']")
 	WebElement Submit_Btn;
 	
-	@FindBy(id = "wma-wizard-btn") 
+	@FindBy(xpath = "(//div[@class='wmawb-img text-center'])[1]") 
 	WebElement Next_Btn;
 	
 	// Credit_Application_Tab
@@ -158,7 +158,7 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 	WebElement project_no;
 
 	@FindBy(xpath = "//span[contains(text(),'PACE')]")
-	WebElement PACE_Project;
+	WebElement UNS_Solar_Project;
 	
 	@FindBy(xpath = "//tbody/tr[2]/td[3]/p[1]/input[1]")
 	WebElement VERIFIED_INCOME;
@@ -221,7 +221,7 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 	@FindBy(xpath="//input[@value='Sign Contract in Browser']")
 	WebElement Sign_Contract_Btn;
 
-	@FindBy(xpath="//div[@class='mt-5 mb-5']")
+	@FindBy(xpath="//div[@class='mt-5 mb-5']") 
 	WebElement Signature_Btn;
 
 	@FindBy(xpath="//label[@for='disclosureAccepted']") 
@@ -372,17 +372,25 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 		{
 			Thread.sleep(2000);
 			OpenContractorDrp.click();
+			
 			Search_Contractor.sendKeys("Dell Contractor");
+			Thread.sleep(1000);
 			Select_Contractor.click();
+			
+			Thread.sleep(2000);
 			Enter_Address.clear();
+			
+			Thread.sleep(1000);
 			Enter_Address.sendKeys("3785 Wilshire Boulevard");
 			Thread.sleep(2000);
+			
 			Enter_Address.sendKeys(Keys.DOWN);
 			Enter_Address.sendKeys(Keys.ENTER);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			Enter_Unit.sendKeys("100");
 			Thread.sleep(2000);
 			Submit_Btn.click();
+			
 			Thread.sleep(4000);
 			if(driver.findElement(By.xpath("//strong[@id='AER-eligible-list']")).isDisplayed())
 			{
@@ -398,7 +406,7 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0,450)", "");
 
-			Thread.sleep(5000);	
+			
 			Next_Btn.click();
 			System.out.println("**** Address Eligible Verified Successfully ****");
 			
@@ -554,7 +562,7 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 		{
 			project_no.click();
 			Thread.sleep(2000);
-			PACE_Project.click();
+			UNS_Solar_Project.click();
 			Thread.sleep(3000);
 			
 			JavascriptExecutor js1 = (JavascriptExecutor) driver;
@@ -609,6 +617,7 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			contract_tabs.click();
 			
 			Product_drp.click();
+			
 			Select_Product_type.click();
 			Thread.sleep(2000);
 			
@@ -621,17 +630,17 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 		//	Program_drp.click();
 			Thread.sleep(1000);
 			Select Prog = new Select(driver.findElement(By.xpath("//select[@id='program-id']")));			
-			Prog.selectByValue("1097");
+			Prog.selectByValue("1071");
 			Thread.sleep(2000);
 			
 			Select Term = new Select(driver.findElement(By.xpath("//select[@id='term']")));
-			Term.selectByValue("10");
+			Term.selectByValue("15");
 			
 			Cost_Value.sendKeys("40000");
 			Thread.sleep(2000);				
 			
 			Select improve= new Select(driver.findElement(By.xpath("//select[@id='contract-addendum-improvement-types-0-improvement-type-id']")));
-			improve.selectByValue("1");
+			improve.selectByValue("6");
 			Thread.sleep(2000);
 			
 			Quantity_Value.sendKeys("1");
@@ -713,14 +722,14 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			Initial_Sign_Btn_13.click();
 			Thread.sleep(2000);
 			
-			Sign_Btn.click();
-			Thread.sleep(1000);
+//			Sign_Btn.click();
+//			Thread.sleep(1000);
 			
 			Initial_Sign_Btn_14.click();
 			Thread.sleep(2000);
 			
-			Sign_Btn2.click();
-			Thread.sleep(1000);
+//			Sign_Btn2.click();
+//			Thread.sleep(1000);
 			
 			Initial_Sign_Btn_15.click();
 			Thread.sleep(2000);
@@ -785,8 +794,8 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			Sign_Btn_13.click();
 			Thread.sleep(2000);
 			
-			Sign_Btn.click();
-			Thread.sleep(1000);
+//			Sign_Btn.click();
+//			Thread.sleep(1000);
 			
 			Sign_Btn_14.click();
 			Thread.sleep(2000);

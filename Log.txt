@@ -1,0 +1,50 @@
+Title Matched
+This is Windows
+******* PACE Project  ******
+Project is eligible for contract
+**** Address Eligible Verified Successfully ****
+New tab title: Start Application | Home Run Financing
+**** Applicant Details Send to Credit Portal Successfully ****
+**** Credit Portal Login Successfully ****
+**** Credit Status Final Successfully ****
+***** Doc-sign Started *******
+***** Doc-sign completed *******
+**** Contract Send Successfully ****
+**** User On NTP Screen****
+Project Number is : 7003192
+Element found using text: 
+**** NTP API Running ****
+**** NTP Send Successfully ****
+**** User On Funding Tab ****
+Project Number is : 7003192
+70599
+Invoice Id has been Written in the File
+**** Project Status: Paid
+This is Windows
+****** Increasing_price_Project *******
+Project is eligible for contract
+**** Address Eligible Verified Successfully ****
+New tab title: Start Application | Home Run Financing
+**** Applicant Details Send to Credit Portal Successfully ****
+**** Credit Portal Login Successfully ****
+**** Credit Status Final Successfully ****
+******* User On Contract Screen *******
+******* User Click on Sign Contract Button *******
+******* User Signing Documents *******
+******* Documents Signed Successfully *******
+**** Contract Send Successfully ****
+**** User On NTP Screen ****
+**** TCC Call Submited****
+**** CC Call Submited****
+Project Number is : 7003193
+**** Checking Additional Review ****
+**** NTP Send Successfully ****
+**** User On Funding Screen ****
+**** COI Send Successfully ****
+Project Number is : 7003193
+70600
+Invoice Id has been Written in the File
+**** Project Status: Paid
+This is Windows
+****** Decrease_Price_Project *******
+Project is eligible for contract

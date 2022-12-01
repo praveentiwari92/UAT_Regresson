@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Super_Admin.TC_Add_Bank">
+      <class name="com.Super_Admin.TC_Test_With_Two_Signer">
         <methods>
-          <include name="Add_Bank_From_More_Menu"/>
-          <include name="teardown"/>
           <include name="TestSetup"/>
+          <include name="Submit_Contract"/>
         </methods>
-      </class> <!-- com.Super_Admin.TC_Add_Bank -->
+      </class> <!-- com.Super_Admin.TC_Test_With_Two_Signer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

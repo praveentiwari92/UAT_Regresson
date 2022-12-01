@@ -282,11 +282,13 @@ public class Add_Applicant_After_Submit_Contract extends Base_Pace
 	
 	public void New_Project() throws InterruptedException
 	{
+		System.out.println("Running Add_Applicant_After_Submit_Contract");
+		
 		New_Project.click();
 		Thread.sleep(2000);
 		Eligibility.click();
 		
-	}		
+	}			
 	
 	public void Select_Contractor() throws InterruptedException
 	{		
@@ -366,9 +368,8 @@ public class Add_Applicant_After_Submit_Contract extends Base_Pace
 	Thread.sleep(3000);
 	PrpopetyInfo_Next_Btn.click();
 	Thread.sleep(2000);
-	SSN_No.sendKeys("00000000");
-	Thread.sleep(1000);
-	SSN_No.sendKeys("2");
+	SSN_No.sendKeys("000-00-0002");
+
 	Thread.sleep(1000);
 	DOB.sendKeys("05/12/1988");
 	Thread.sleep(2000);
@@ -436,7 +437,7 @@ public class Add_Applicant_After_Submit_Contract extends Base_Pace
 		
 		Thread.sleep(1000);
 		Validate_Btn.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		Sign_Contract_Btn.click();
 		Thread.sleep(500);

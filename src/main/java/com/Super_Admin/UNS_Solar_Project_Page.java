@@ -65,7 +65,7 @@ public class UNS_Solar_Project_Page extends Base_Pace{
 	@FindBy(xpath = "//input[@id='check-eligibility']")
 	WebElement Submit_Btn;
 	
-	@FindBy(id = "wma-wizard-btn") 
+	@FindBy(xpath = "(//div[@class='wmawb-img text-center'])[1]") 
 	WebElement Next_Btn;
 	
 // View Project
@@ -583,7 +583,7 @@ public class UNS_Solar_Project_Page extends Base_Pace{
 	
 			Click_Yes.click();
 			
-			
+			Thread.sleep(5000);
 			
 		//	Term Confirmation Call
 			TCC_Success_Btn.click();
@@ -773,7 +773,8 @@ public class UNS_Solar_Project_Page extends Base_Pace{
 		
 			Click_Yes.click();
 			Thread.sleep(5000);
-		
+			JavascriptExecutor Buld = (JavascriptExecutor) driver;
+			Buld.executeScript("window.scrollBy(0,400)", "");
 			Click_Approved.click();
 			
 			Thread.sleep(1000);
