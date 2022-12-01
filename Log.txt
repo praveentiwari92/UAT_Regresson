@@ -1,50 +1,459 @@
-Title Matched
+Runnig Add_Bank_Page
+
+******* No More Activity Available Now *******
+1
+UCS report executed for "Jems testcase"
+System
+System
+07/15/2022   05:01 AM
+2
+Successfully posted to lien registry for invoice paid | $45074.27
+System
+System
+07/15/2022   04:51 AM
+3
+Project status updated to Funded
+System
+System
+07/15/2022   04:50 AM
+4
+Status for Invoice 70476 for amount $33204 for Dell COntractor is changed to Paid
+System
+System
+07/15/2022   04:50 AM
+5
+Status for Invoice 70476 for amount $33,204.00 for Dell COntractor is changed to Payment Initiated
+System
+System
+07/15/2022   04:49 AM
+6
+Lien registry attestation sent for invoice paid | $45074.27
+System
+System
+07/15/2022   04:49 AM
+7
+Completion invoice to Contractor company Dell COntractor generated for amount $40,000.00
+System
+System
+07/15/2022   04:49 AM
+8
+Max based on JPA cltv set to "$0"
+Available equity set to "$0"
+Admin User
+Super Admin
+07/15/2022   04:49 AM
+9
+Received response from lien registry indicating no other PACE assessments on the property for invoice approval
+System
+System
+07/15/2022   04:49 AM
+10
+Lien registry inquiry sent prior to invoice approval
+System
+System
+07/15/2022   04:49 AM
+11
+Max based on JPA cltv set to "$0"
+Available equity set to "$0"
+Admin User
+Super Admin
+07/15/2022   04:49 AM
+12
+No existing own PACE assessment found on the property for invoice approval
+System
+System
+07/15/2022   04:49 AM
+13
+Building Permit Approved
+Admin User
+Super Admin
+07/15/2022   04:49 AM
+14
+Building Permit - Building Permit doc uploaded to project
+Admin User
+Super Admin
+07/15/2022   04:48 AM
+15
+Successfully posted to lien registry for NTP | $56072.88
+System
+System
+07/15/2022   04:48 AM
+16
+Completion Call attempt-1 successful in English language
+Admin User
+Super Admin
+07/15/2022   04:48 AM
+17
+Inspection Report Manual Approved
+Admin User
+Super Admin
+07/15/2022   04:48 AM
+18
+Inspections - Inspection Report Manual doc uploaded to project
+Admin User
+Super Admin
+07/15/2022   04:48 AM
+19
+Completion Ceritificate document manually uploaded to project
+Admin User
+Super Admin
+07/15/2022   04:47 AM
+20
+Installation Certificate sent for total project cost of $40,000.00
+Admin User
+Super Admin
+07/15/2022   04:47 AM
+21
+Inspection request sent
+System
+System
+07/15/2022   04:47 AM
+22
+Installation Certificate for total project cost $50,000.00 voided and resent
+Admin User
+Super Admin
+07/15/2022   04:47 AM
+23
+Validation check run for Total Assessment amount and Annual Assessment Payment on contract
+Admin User
+Super Admin
+07/15/2022   04:47 AM
+24
+Lien registry attestation sent for NTP | $56072.88
+System
+System
+07/15/2022   04:46 AM
+25
+Project status updated to NTP
+NTP document uploaded to project
+System
+System
+07/15/2022   04:46 AM
+26
+Max based on JPA cltv set to "$0"
+Available equity set to "$0"
+Admin User
+Super Admin
+07/15/2022   04:46 AM
+27
+Received response from lien registry indicating no other PACE assessments on the property for NTP
+System
+System
+07/15/2022   04:46 AM
+28
+Lien registry inquiry sent prior to NTP
+System
+System
+07/15/2022   04:46 AM
+29
+Max based on JPA cltv set to "$0"
+Available equity set to "$0"
+Admin User
+Super Admin
+07/15/2022   04:46 AM
+30
+No existing own PACE assessment found on the property for NTP
+System
+System
+07/15/2022   04:46 AM
+31
+Additional Review Completed
+Admin User
+Super Admin
+07/15/2022   04:46 AM
+32
+Project under Additional Review
+System
+System
+07/15/2022   04:46 AM
+33
+Special Jurisdiction form -AB1551 Approved
+Admin User
+Super Admin
+07/15/2022   04:45 AM
+34
+Courtesy Call attempt-1 successful in English language
+Admin User
+Super Admin
+07/15/2022   04:45 AM
+35
+Successfully posted to lien registry for contract signed | $56072.88
+System
+System
+07/15/2022   04:45 AM
+36
+Max based on JPA cltv set to "$0"
+Available equity set to "$0"
+System
+System
+07/15/2022   04:45 AM
+37
+Received response from lien registry indicating no other PACE assessments on the property for contract signed
+System
+System
+07/15/2022   04:45 AM
+38
+Max based on JPA cltv set to "$0"
+Available equity set to "$0"
+System
+System
+07/15/2022   04:45 AM
+39
+Received response from lien registry indicating no other PACE assessments on the property for credit app approved
+System
+System
+07/15/2022   04:45 AM
+40
+Max based on JPA cltv set to "$0"
+Available equity set to "$0"
+System
+System
+07/15/2022   04:45 AM
+41
+Received response from lien registry indicating no other PACE assessments on the property for credit app received
+System
+System
+07/15/2022   04:45 AM
+42
+Term Confirmation Call attempt-1 successful in English language
+Admin User
+Super Admin
+07/15/2022   04:45 AM
+43
+Special Jurisdiction Form - AB1551 doc uploaded to project
+Dellprimaryadmin admin
+Primary Admin
+07/15/2022   04:44 AM
+44
+Contract document signed by applicants uploaded to project
+System
+System
+07/15/2022   04:44 AM
+45
+Contract signed by all applicants
+System
+System
+07/15/2022   04:44 AM
+46
+Lien registry attestation sent for contract signed | $56072.88
+System
+System
+07/15/2022   04:44 AM
+47
+Lien registry inquiry sent for contract signed
+System
+System
+07/15/2022   04:44 AM
+48
+Max based on JPA cltv set to "$0"
+Available equity set to "$0"
+System
+System
+07/15/2022   04:44 AM
+49
+No existing own PACE assessment found on the property for contract signed
+System
+System
+07/15/2022   04:44 AM
+50
+PACE Application status changed from "Ready For Final Approval" to "Credit Finalled"
+Admin Credit
+Admin
+07/15/2022   04:44 AM
+51
+PACE Application status changed from "Auto Decision Done" to "Ready For Final Approval"
+Admin Credit
+Admin
+07/15/2022   04:44 AM
+52
+Lien registry inquiry sent for credit app approved
+System
+System
+07/15/2022   04:43 AM
+53
+Max for JPA set to "$200000"
+Max based on JPA cltv set to "$0"
+Available equity set to "$0"
+System
+System
+07/15/2022   04:43 AM
+54
+No existing own PACE assessment found on the property for credit app approved
+System
+System
+07/15/2022   04:43 AM
+55
+Gross Annual Income Document 1 (Version 1) for applicant peter testcase uploaded to file
+Admin Credit
+Admin
+07/15/2022   04:43 AM
+56
+Income documentation reminder sent to "peter testcase, Jems testcase"
+Admin Credit
+Admin
+07/15/2022   04:43 AM
+57
+Special Offer Application status changed from "Ready For Final Approval" to "Credit Finalled"
+System
+System
+07/15/2022   04:42 AM
+58
+Special Offer Application status changed from "Auto Decision Done" to "Ready For Final Approval"
+System
+System
+07/15/2022   04:42 AM
+59
+Datatree SDX failed.
+Reason: Document Identifier and CMT Identifier are required.
+System
+System
+07/15/2022   04:42 AM
+60
+Special Offer Auto Credit decision set to "Declined"
+System
+System
+07/15/2022   04:42 AM
+61
+UNS Auto Credit decision set to "Manual Review"
+System
+System
+07/15/2022   04:42 AM
+62
+Pace Auto Credit decision set to "Manual Review"
+System
+System
+07/15/2022   04:42 AM
+63
+Lien registry inquiry sent for credit app received
+System
+System
+07/15/2022   04:42 AM
+64
+Max based on AVM set to "$0"
+Max for JPA set to "$200000"
+Max based on JPA cltv set to "$0"
+Available equity set to "$0"
+Existing Other PACE Payments set to "0"
+System
+System
+07/15/2022   04:42 AM
+65
+No existing own PACE assessment found on the property for credit app received
+System
+System
+07/15/2022   04:42 AM
+66
+Veros API failed.
+Reason: cURL Error (28) Operation timed out after 30001 milliseconds with 0 bytes received
+System
+System
+07/15/2022   04:42 AM
+67
+Special Offer Max annual payment set to "$3491360"
+Admin Credit
+Admin
+07/15/2022   04:42 AM
+68
+UNS Max annual payment set to "$3491360"
+Admin Credit
+Admin
+07/15/2022   04:42 AM
+69
+PACE Max annual payment set to "$6986360"
+Admin Credit
+Admin
+07/15/2022   04:42 AM
+70
+Verified Income set to "$7000000" for "peter testcase"
+Admin Credit
+Admin
+07/15/2022   04:42 AM
+71
+Credit report run for Applicant Jems testcase
+System
+System
+07/15/2022   04:42 AM
+72
+Credit report run for Applicant peter testcase
+System
+System
+07/15/2022   04:42 AM
+73
+UCS report executed for "peter testcase Jems testcase"
+System
+System
+07/15/2022   04:42 AM
+74
+UCS report executed for "peter testcase"
+System
+System
+07/15/2022   04:42 AM
+75
+Contract Sent (In Browser) Successfully
+Dellprimaryadmin admin
+Primary Admin
+07/15/2022   04:41 AM
+76
+Validation check run for Total Assessment amount and Annual Assessment Payment on contract
+Dellprimaryadmin admin
+Primary Admin
+07/15/2022   04:41 AM
+77
+Datatree TV failed.
+Reason: Multiple Matching Properties Found.
+System
+System
+07/15/2022   04:41 AM
+78
+Datatree ILS failed.
+Reason: PropertyLocator returned zero properties for the Address, City, State. Please review the address or provide Zip Code or County.
+System
+System
+07/15/2022   04:41 AM
+79
+Datatree VLB failed.
+Reason: NO RECORDS FOUND FOR THE SEARCH CRITERIA
+System
+System
+07/15/2022   04:41 AM
+80
+Fraud scores obtained for peter testcase
+System
+System
+07/15/2022   04:40 AM
+81
+Credit Application is being processed
+System
+System
+07/15/2022   04:40 AM
+82
+Credit application submitted.
+Dellprimaryadmin admin
+Primary Admin
+07/15/2022   04:40 AM
+83
+Requested to fill application now.
+Dellprimaryadmin admin
+Primary Admin
+07/15/2022   04:39 AM
+84
+Estimated property Value: $0.00
+System
+System
+07/15/2022   04:39 AM
+85
+Owner Information could not be obtained
+System
+System
+07/15/2022   04:38 AM
+86
+Address eligibility check done for address "2315 Stockton Boulevard, Sacramento, CA, 95817"
+Property eligible for PACE,Unsecured,Special Offer
+Dellprimaryadmin admin
+Primary Admin
+07/15/2022   04:38 AM
+******************** Activity Logs Started **********************
+Total Number of Pages:9
+Total Numbe of Displayed Activity:86
+***************** Activity Logs Ended **************************
 This is Windows
-******* PACE Project  ******
-Project is eligible for contract
-**** Address Eligible Verified Successfully ****
-New tab title: Start Application | Home Run Financing
-**** Applicant Details Send to Credit Portal Successfully ****
-**** Credit Portal Login Successfully ****
-**** Credit Status Final Successfully ****
-***** Doc-sign Started *******
-***** Doc-sign completed *******
-**** Contract Send Successfully ****
-**** User On NTP Screen****
-Project Number is : 7003192
-Element found using text: 
-**** NTP API Running ****
-**** NTP Send Successfully ****
-**** User On Funding Tab ****
-Project Number is : 7003192
-70599
-Invoice Id has been Written in the File
-**** Project Status: Paid
-This is Windows
-****** Increasing_price_Project *******
-Project is eligible for contract
-**** Address Eligible Verified Successfully ****
-New tab title: Start Application | Home Run Financing
-**** Applicant Details Send to Credit Portal Successfully ****
-**** Credit Portal Login Successfully ****
-**** Credit Status Final Successfully ****
-******* User On Contract Screen *******
-******* User Click on Sign Contract Button *******
-******* User Signing Documents *******
-******* Documents Signed Successfully *******
-**** Contract Send Successfully ****
-**** User On NTP Screen ****
-**** TCC Call Submited****
-**** CC Call Submited****
-Project Number is : 7003193
-**** Checking Additional Review ****
-**** NTP Send Successfully ****
-**** User On Funding Screen ****
-**** COI Send Successfully ****
-Project Number is : 7003193
-70600
-Invoice Id has been Written in the File
-**** Project Status: Paid
-This is Windows
-****** Decrease_Price_Project *******
-Project is eligible for contract
