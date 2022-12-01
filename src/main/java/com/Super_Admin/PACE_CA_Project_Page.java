@@ -437,7 +437,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Search_Contractor.sendKeys("Dell Contractor");
 		Select_Contractor.click();
 		Enter_Address.clear();
-		Enter_Address.sendKeys("2367 Cottonwood Avenue");
+		Enter_Address.sendKeys("2368 Cottonwood Avenue");
 		Thread.sleep(2000);
 		Enter_Address.sendKeys(Keys.DOWN);
 		Enter_Address.sendKeys(Keys.ENTER);
@@ -480,9 +480,9 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Thread.sleep(1000);
 		L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Email.sendKeys("josh11@yopmail.com");
+		Email.sendKeys("josh12@yopmail.com");
 		Thread.sleep(1000);
-		Phone.sendKeys("(963) 710-5533");
+		Phone.sendKeys("(963) 710-7533");
 		Thread.sleep(1000);
 		EstProjectCost.sendKeys("500000");
 
