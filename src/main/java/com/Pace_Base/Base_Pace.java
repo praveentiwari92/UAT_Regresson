@@ -79,7 +79,7 @@ public class Base_Pace {
 		
 			ChromeOptions options =new ChromeOptions();
 			options.addArguments("window-size=1820,1080");
-		//	options.addArguments("headless", "no-sandbox");
+			options.addArguments("headless", "no-sandbox");
 			options.addArguments("enable-automation");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--disable-infobars");
