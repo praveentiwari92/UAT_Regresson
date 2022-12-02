@@ -17,7 +17,7 @@ jobs:
 
       - name: Download and start selenoid (Windows)
         if: runner.os == 'Windows'
-        run: curl -s https://aerokube.com/cm/posh | powershell.cm version.cm.exe selenoid start
+        run: curl -s https://aerokube.com/cm/posh | powershell./cm version./cm.exe selenoid start
         shell: pwsh
 
       - name: run the web test
