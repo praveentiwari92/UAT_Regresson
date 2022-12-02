@@ -128,10 +128,16 @@
 				</configuration>
 			</plugin>
 			<!-- Below plug-in is used to execute tests -->
+<<<<<<< HEAD
 			<plugin>
 
 
   	 <groupId>org.apache.maven.plugins</groupId>
+=======
+			<plugin>				
+     
+   <groupId>org.apache.maven.plugins</groupId>
+>>>>>>> ee1b3a8b9ced79484d2f401ff4b51c7f961af32e
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M7</version>
 
