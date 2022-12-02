@@ -3,7 +3,7 @@ name: pace web test in github action
 on: workflow_dispatch
 jobs:
   run-web-test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: pull the project in to the runner
@@ -15,15 +15,10 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
-      - name: Start Selenoid server
-        uses: n-ton4/selenoid-github-action@main
-        id: start-selenoid
-        continue-on-error: false
-        with:
-          version: 1.10.1
-          args: -limit 10
-          browsers: chrome
-          last-versions: 1
+      - name: Download and start selenoid (Windows)
+        if: runner.os == 'Windows'
+        run: curl -s https://aerokube.com/cm/posh | powershell.\cm version.\cm.exe selenoid start
+        shell: pwsh
 
       - name: run the web test
         run:
