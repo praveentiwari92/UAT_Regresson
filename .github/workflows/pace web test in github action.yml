@@ -16,7 +16,7 @@ jobs:
           java-version: '11'
 
       - name: Start Selenoid server
-        uses: n-ton4/selenoid-github-action@master
+        uses: n-ton4/selenoid-github-action@main
         id: start-selenoid
         continue-on-error: false
         with:
