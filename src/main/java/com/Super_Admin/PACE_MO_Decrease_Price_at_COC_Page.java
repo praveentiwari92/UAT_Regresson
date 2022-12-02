@@ -21,7 +21,7 @@ import org.openqa.selenium.support.ui.Select;
 import com.Pace_Base.Base_Pace;	
 import com.qa.Util.TC_TestUtil;
 
-import io.opentelemetry.exporter.logging.SystemOutLogExporter;
+
 
 public class PACE_MO_Decrease_Price_at_COC_Page extends Base_Pace 
 {

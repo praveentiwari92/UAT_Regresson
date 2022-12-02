@@ -10,7 +10,6 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.devtools.v100.browser.Browser;
 import org.testng.annotations.AfterTest;
 
 import com.qa.Util.TC_TestUtil;
