@@ -10,86 +10,85 @@
 <!-- 		<listener class-name="com.listeners.TestJiraListener" /> -->
 <!-- 	</listeners> -->
 
-	<test thread-count="1" name="TC_Doc_Sign_History">
-		<classes>
-			<class name="com.Super_Admin.TC_Doc_Sign_History" />
-		</classes>
-	</test>
+<!-- 	<test thread-count="1" name="TC_Doc_Sign_History"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.TC_Doc_Sign_History" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
-	<test thread-count="1" name="TC_Login_Test">
-		<classes>
-			<class name="com.Super_Admin.TC_Login_Test" />
-		</classes>
-	</test>
+<!-- 	<test thread-count="1" name="TC_Login_Test"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.TC_Login_Test" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
-	<test thread-count="1" name="PACE_CA_Project_Test">
-		<classes>
-			<class name="com.Super_Admin.PACE_CA_Project_Test" />
-		</classes>
-	</test>
+<!-- 	<test thread-count="1" name="PACE_CA_Project_Test"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.PACE_CA_Project_Test" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
-	<test thread-count="1" name="PACE_FL_Increasing_price_at_COC">
-		<classes>
-			<class name="com.Super_Admin.PACE_FL_Increasing_price_at_COC" />
-		</classes>
-	</test>
+<!-- 	<test thread-count="1" name="PACE_FL_Increasing_price_at_COC"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.PACE_FL_Increasing_price_at_COC" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
-	<test thread-count="1" name="PACE_MO_Decrease_Price_at_COC">
-		<classes>
-			<class name="com.Super_Admin.PACE_MO_Decrease_Price_at_COC" />
-		</classes>
-	</test>
+<!-- 	<test thread-count="1" name="PACE_MO_Decrease_Price_at_COC"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.PACE_MO_Decrease_Price_at_COC" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
-	<test thread-count="1" name="TC_UNS_Non_Solar_Project">
-		<classes>
-			<class name="com.Super_Admin.TC_UNS_Non_Solar_Project" />
-		</classes>
-	</test>
-
-
-	<test thread-count="1" name="TC_UNS_Solar_Project">
-		<classes>
-			<class name="com.Super_Admin.TC_UNS_Solar_Project" />
-		</classes>
-	</test>
-
-	<test thread-count="1" name="UNS_Solar_FL_Vanity_URL_Project_Page">
-		<classes>
-			<class name="com.Super_Admin.UNS_Solar_FL_Vanity_URL_Project" />
-		</classes>
-	</test>
+<!-- 	<test thread-count="1" name="TC_UNS_Non_Solar_Project"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.TC_UNS_Non_Solar_Project" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
 
+<!-- 	<test thread-count="1" name="TC_UNS_Solar_Project"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.TC_UNS_Solar_Project" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
-	<test thread-count="1" name="TC_Income_Reminder">
-		<classes>
-			<class name="com.Super_Admin.TC_Income_Reminder" />
-		</classes>
-	</test>
-
-	<test thread-count="1"
-		name="TC_Sign_on_browser_mail_and_reminder_function">
-		<classes>
-			<class
-				name="com.Super_Admin.TC_Sign_on_browser_mail_and_reminder_function" />
-		</classes>
-	</test>
+<!-- 	<test thread-count="1" name="UNS_Solar_FL_Vanity_URL_Project_Page"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.UNS_Solar_FL_Vanity_URL_Project" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
 
-	<test thread-count="1" name="Test_With_Two_Signer">
-		<classes>
-			<class name="com.Super_Admin.TC_Test_With_Two_Signer" />
-		</classes>
-	</test>
+<!-- 	<test thread-count="1" name="TC_Income_Reminder"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.TC_Income_Reminder" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test thread-count="1" -->
+<!-- 		name="TC_Sign_on_browser_mail_and_reminder_function"> -->
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="com.Super_Admin.TC_Sign_on_browser_mail_and_reminder_function" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
 
-	<test thread-count="1"
-		name="TC_Add_Applicant_After_Submit_Contract">
-		<classes>
-			<class
-				name="com.Super_Admin.TC_Add_Applicant_After_Submit_Contract" />
-		</classes>
-	</test>
+<!-- 	<test thread-count="1" name="Test_With_Two_Signer"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.TC_Test_With_Two_Signer" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+
+<!-- 	<test thread-count="1" -->
+<!-- 		name="TC_Add_Applicant_After_Submit_Contract"> -->
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="com.Super_Admin.TC_Add_Applicant_After_Submit_Contract" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
 
 	<test thread-count="1" name="TC_Add_Bank">
