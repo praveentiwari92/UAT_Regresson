@@ -36,6 +36,8 @@ public class Income_Reminder_Page extends Base_Pace {
 
 	public void View_PACE_Project() throws InterruptedException
 	{
+		
+		System.out.println("************* Income Reminder On Credit Portal Details Page  *************");
 		project_no.click();
 		Thread.sleep(2000);
 		PACE_Project.click();

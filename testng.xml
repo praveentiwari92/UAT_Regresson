@@ -61,11 +61,11 @@
 
 
 
-<!-- 	<test thread-count="1" name="TC_Income_Reminder"> -->
-<!-- 		<classes> -->
-<!-- 			<class name="com.Super_Admin.TC_Income_Reminder" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
+	<test thread-count="1" name="TC_Income_Reminder">
+		<classes>
+			<class name="com.Super_Admin.TC_Income_Reminder" />
+		</classes>
+	</test>
 
 <!-- 	<test thread-count="1" -->
 <!-- 		name="TC_Sign_on_browser_mail_and_reminder_function"> -->
@@ -83,13 +83,13 @@
 <!-- 	</test> -->
 
 
-<!-- 	<test thread-count="1" -->
-<!-- 		name="TC_Add_Applicant_After_Submit_Contract"> -->
-<!-- 		<classes> -->
-<!-- 			<class -->
-<!-- 				name="com.Super_Admin.TC_Add_Applicant_After_Submit_Contract" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
+	<test thread-count="1"
+		name="TC_Add_Applicant_After_Submit_Contract">
+		<classes>
+			<class
+				name="com.Super_Admin.TC_Add_Applicant_After_Submit_Contract" />
+		</classes>
+	</test>
 
 
 	<test thread-count="1" name="TC_Add_Bank">
