@@ -155,7 +155,7 @@
 				<executions>
 					<execution>
 						<id>first-execution</id>
-						<phase>install</phase>
+						<phase>test</phase>
 						<goals>
 							<goal>java</goal>
 						</goals>
