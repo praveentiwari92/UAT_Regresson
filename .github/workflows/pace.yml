@@ -3,7 +3,7 @@ name: pace web test in github action
 on: workflow_dispatch
 jobs:
   run-web-test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: pull the project in to the runner
