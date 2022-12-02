@@ -82,7 +82,7 @@
 <!-- 		</classes> -->
 <!-- 	</test> -->
 
-
+	<!--
 	<test thread-count="1"
 		name="TC_Add_Applicant_After_Submit_Contract">
 		<classes>
@@ -98,7 +98,7 @@
 		</classes>
 	</test>
 </suite>
-
+-->
 
 
 
