@@ -1,16 +1,16 @@
 name: pace web test in github action
 
-on: workflows_dispatch
+on: workflow_dispatch
 jobs:
   run-web-test:
-    runs on: windows-latest
+    runs-on: windows-latest
 
     steps:
       - name: pull the project in to the runner
         uses: actions/checkout@v3
 
       - name: set up java
-        uses: actions/setup-java2v3
+        uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '11'
