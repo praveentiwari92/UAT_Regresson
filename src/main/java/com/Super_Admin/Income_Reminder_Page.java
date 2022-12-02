@@ -64,7 +64,7 @@ public class Income_Reminder_Page extends Base_Pace {
 		else {
 			System.out.println("Something Went Wrong......");
 		}
-			
+		System.out.println("************* Income Reminder Completed  *************");
 	}		
 			
 }
