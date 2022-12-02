@@ -154,9 +154,9 @@
 				<executions>
 					<execution>
 						<id>execution</id>
-						<phase>verify</phase>
+						<phase>test</phase>
 						<goals>
-							<goal>generate</goal>
+							<goal>java</goal>
 						</goals>
 						<configuration>
 							<classpathScope>test</classpathScope>
