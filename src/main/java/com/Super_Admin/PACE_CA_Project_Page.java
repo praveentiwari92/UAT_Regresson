@@ -432,6 +432,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 
 	public void Select_Contractor() throws InterruptedException
 	{
+		System.out.println("********* Launch PACE CA Project ************");
 		Thread.sleep(2000);
 		OpenContractorDrp.click();
 		Search_Contractor.sendKeys("Dell Contractor");
