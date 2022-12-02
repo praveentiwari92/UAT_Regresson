@@ -157,7 +157,7 @@
 						</goals>
 						<configuration>
 							<classpathScope>test</classpathScope>
-						<mainClass>com.Super_Admin.SendMailSSLWithMessage</mainClass>
+							<mainClass>com.Super_Admin.SendMailSSLWithMessage</mainClass>
 						</configuration>
 					</execution>
 				</executions>
