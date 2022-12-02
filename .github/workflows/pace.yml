@@ -1,0 +1,30 @@
+name: pace web test in github action
+
+on: workflows_dispatch
+jobs:
+  run-web-test:
+    runs on: windows-latest
+
+    steps:
+      - name: pull the project in to the runner
+        uses: actions/checkout@v3
+
+      - name: set up java
+        uses: actions/setup-java2v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - name: Start Selenoid server
+        uses: n-ton4/selenoid-github-action@master
+        id: start-selenoid
+        continue-on-error: false
+        with:
+          version: 108.0.5359.72
+          args: -limit 10
+          browsers: chrome
+          last-versions: 107
+
+      - name: run the web test
+        run:
+          mvn clean install test -Dsurefire.suiteXmlFiles=testng.xml

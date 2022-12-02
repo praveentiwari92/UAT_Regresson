@@ -443,7 +443,7 @@ public class PACE_FL_Increasing_price_at_COC_Page extends Base_Pace
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,450)", "");
 
-		Thread.sleep(10000);	
+		Thread.sleep(15000);	
 		Next_Btn.click();
 		System.out.println("**** Address Eligible Verified Successfully ****");
 		
