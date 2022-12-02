@@ -9,8 +9,8 @@
 <name>PACE_Admin_Test</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
 	</properties>
 
 <dependencies>
@@ -154,10 +154,10 @@
  
 				<executions>
 					<execution>
-						<id>first-execution</id>
-						<phase>test</phase>
+						<id>execution</id>
+						<phase>verify</phase>
 						<goals>
-							<goal>java</goal>
+							<goal>generate</goal>
 						</goals>
 						<configuration>
 							<classpathScope>test</classpathScope>
