@@ -48,7 +48,7 @@ public class PACE_CA_Project_Test extends Base_Pace
 	@Description("Test Case Description: Verifying Create New Project")
 	@Test(priority = 1, description = "Verifying Select New Project")
 	public void New_Project() throws InterruptedException {
-		System.out.println("******* PACE Project  ******");
+		
 		create_project.New_Project();
 	}
 	

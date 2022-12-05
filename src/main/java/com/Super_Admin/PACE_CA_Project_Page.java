@@ -22,6 +22,7 @@ import com.Pace_Base.Base_Pace;
 import com.qa.Util.TC_TestUtil;
 
 import io.qameta.allure.Step;
+import junit.framework.Assert;
 
 public class PACE_CA_Project_Page  extends Base_Pace
 {
@@ -453,7 +454,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 
 		if(driver.findElement(By.xpath("//strong[@id='AER-eligible-list']")).isDisplayed())
 		{
-			System.out.println("Project is eligible for contract");
+			System.out.println("********* Project is eligible for contract *********");
 		}
 
 		else {
@@ -465,9 +466,23 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,450)", "");
 
-		Thread.sleep(15000);
-		Next_Btn.click();
-		System.out.println("**** Address Eligible Verified Successfully ****");
+		Thread.sleep(19000);
+		
+		
+		 WebElement nextBtn= driver.findElement(By.xpath("(//div[@class='wmawb-img text-center'])[1]"));
+		
+		 boolean isEmailBoxPresent = nextBtn.isDisplayed();
+         if(isEmailBoxPresent) {
+        	 nextBtn.click();
+             System.out.println("********* Next Button is present *********");
+         }
+         else {
+             Assert.fail("********* No Botton is present in the webpage *********");
+		
+	}
+		
+//		Next_Btn.click();
+		System.out.println("********** Address Eligible Verified Successfully *********");
 
 	}
 	@Step("Going to Create New Project Step....")
