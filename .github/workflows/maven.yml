@@ -31,7 +31,7 @@ jobs:
       run: mvn test
 
     - name: Report
-      uses: praveentiwari92/UAT_Regresson
+      uses: praveentiwari92/UAT_Regresson@v2
       with:
         branch: main
         folder: ./Documents
