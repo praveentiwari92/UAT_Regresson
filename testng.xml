@@ -10,17 +10,17 @@
 <!-- 		<listener class-name="com.listeners.TestJiraListener" /> -->
 <!-- 	</listeners> -->
 
-<!-- 	<test thread-count="1" name="TC_Doc_Sign_History"> -->
-<!-- 		<classes> -->
-<!-- 			<class name="com.Super_Admin.TC_Doc_Sign_History" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
+	<test thread-count="1" name="TC_Doc_Sign_History">
+		<classes>
+			<class name="com.Super_Admin.TC_Doc_Sign_History" />
+		</classes>
+	</test>
 
-<!-- 	<test thread-count="1" name="TC_Login_Test"> -->
-<!-- 		<classes> -->
-<!-- 			<class name="com.Super_Admin.TC_Login_Test" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
+	<test thread-count="1" name="TC_Login_Test">
+		<classes>
+			<class name="com.Super_Admin.TC_Login_Test" />
+		</classes>
+	</test>
 
 	<test thread-count="1" name="PACE_CA_Project_Test">
 		<classes>

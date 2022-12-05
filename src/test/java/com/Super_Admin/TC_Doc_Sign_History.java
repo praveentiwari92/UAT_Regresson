@@ -27,7 +27,7 @@ public class TC_Doc_Sign_History extends Base_Pace {
 	@BeforeClass
 	public void TestSetup() throws InterruptedException, FileNotFoundException {
 		Initialization();
-		System.setOut(new PrintStream(new FileOutputStream("C:\\Users\\User\\git\\Regresson_On_UAT\\Log.txt")));
+//		System.setOut(new PrintStream(new FileOutputStream("C:\\Users\\User\\git\\Regresson_On_UAT\\Log.txt")));
 		Login_page = new Login_Page();
 		PACE = new PACE_CA_Project_Page();
 		Doc_History = new Doc_Sign_History_Page();
