@@ -455,11 +455,11 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		try {
 			if(driver.findElement(By.id("AER-eligible-list")).isDisplayed())
 			{
-				System.out.println("********* Project is eligible for contract");
+				System.out.println(" Project is eligible for contract");
 			}
 
 			else {
-				System.out.println("********* Project is not eligible for contract");
+				System.out.println(" Project is not eligible for contract");
 
 			}
 			}
