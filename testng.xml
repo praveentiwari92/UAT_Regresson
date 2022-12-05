@@ -44,24 +44,24 @@
 	</classes>
 	</test>
 
-	<test thread-count="1" name="TC_UNS_Non_Solar_Project">
-	<classes>
-	<class name="com.Super_Admin.TC_UNS_Non_Solar_Project" />
-	</classes>
-	</test>
+<!-- 	<test thread-count="1" name="TC_UNS_Non_Solar_Project"> -->
+<!-- 	<classes> -->
+<!-- 	<class name="com.Super_Admin.TC_UNS_Non_Solar_Project" /> -->
+<!-- 	</classes> -->
+<!-- 	</test> -->
 
 
-	<test thread-count="1" name="TC_UNS_Solar_Project">
-	<classes>
-	<class name="com.Super_Admin.TC_UNS_Solar_Project" />
-	</classes>
-	</test>
+<!-- 	<test thread-count="1" name="TC_UNS_Solar_Project"> -->
+<!-- 	<classes> -->
+<!-- 	<class name="com.Super_Admin.TC_UNS_Solar_Project" /> -->
+<!-- 	</classes> -->
+<!-- 	</test> -->
 
-	<test thread-count="1" name="UNS_Solar_FL_Vanity_URL_Project_Page">
-	<classes>
-	<class name="com.Super_Admin.UNS_Solar_FL_Vanity_URL_Project" />
-	</classes>
-	</test>
+<!-- 	<test thread-count="1" name="UNS_Solar_FL_Vanity_URL_Project_Page"> -->
+<!-- 	<classes> -->
+<!-- 	<class name="com.Super_Admin.UNS_Solar_FL_Vanity_URL_Project" /> -->
+<!-- 	</classes> -->
+<!-- 	</test> -->
 
 
 <!-- 	<test thread-count="1" name="TC_Income_Reminder"> -->
