@@ -32,7 +32,7 @@ public class TC_Doc_Sign_History extends Base_Pace {
 		PACE = new PACE_CA_Project_Page();
 		Doc_History = new Doc_Sign_History_Page();
 		PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
-		logger.info("****** Verify Login Successfully ******");
+	
 		Thread.sleep(3000);
 			
 }

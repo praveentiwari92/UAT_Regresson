@@ -868,7 +868,7 @@ public class Special_Offer_Project_Page extends Base_Pace
 						
 						Thread.sleep(3000);
 						driver.findElement(By.xpath("//div[@class='modal-dialog modal-add custom-modal modal-lock-project']//button[@aria-label='Close']")).click();
-						logger.info("***** Additional Review  *****");
+						
 						
 						driver.switchTo().newWindow(WindowType.TAB);
 						ArrayList<String> ww = new ArrayList<String>(driver.getWindowHandles());

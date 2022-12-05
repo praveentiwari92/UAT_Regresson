@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,7 +17,6 @@ public class Base_Pace {
 	
 	public static WebDriver driver;
 	public static Properties prop;
-	public static Logger logger;
 
 	public Base_Pace()  {
 
@@ -52,7 +50,7 @@ public class Base_Pace {
 	public static void Initialization() {
 
 		String browsername = prop.getProperty("browser");
-		logger= Logger.getLogger(Base_Pace.class);
+//		logger= Logger.getLogger(Base_Pace.class);
 	//	PropertyConfigurator.configure("Log4j.properties");
 
 		if(browsername.equals("chrome"))

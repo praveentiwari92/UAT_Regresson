@@ -21,6 +21,8 @@ import org.openqa.selenium.support.ui.Select;
 import com.Pace_Base.Base_Pace;
 import com.qa.Util.TC_TestUtil;
 
+import io.qameta.allure.Step;
+
 public class PACE_CA_Project_Page  extends Base_Pace
 {
 	String Send_NTP = "https://uat.homerunportal.com/crons/sendProjectNtp/";
@@ -422,14 +424,15 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		PageFactory.initElements(driver, this);
 	}
 
-
+	@Step("Going to Create New Project step....")
 	public void New_Project() throws InterruptedException
 	{
 		New_Project.click();
 		Thread.sleep(2000);
 		Eligibility.click();
 	}
-
+	
+	@Step("Going to verifying address eligibility step....")
 	public void Select_Contractor() throws InterruptedException
 	{
 		System.out.println("********* Launch PACE CA Project ************");
@@ -467,7 +470,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		System.out.println("**** Address Eligible Verified Successfully ****");
 
 	}
-
+	@Step("Going to Create New Project Step....")
 	public void Credit_Application_Tab() throws InterruptedException
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -540,7 +543,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 
 
 	}
-
+	@Step("Going to login on credit portal step.....")
 	public void Credit_portal_Login()
 	{
 
@@ -549,7 +552,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		CreditLogin_Btn.click();
 		System.out.println("**** Credit Portal Login Successfully ****");
 	}
-
+	@Step("Going view project details on credit portal.....")
 	public void View_Project() throws InterruptedException
 	{
 		project_no.click();
@@ -602,7 +605,8 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Thread.sleep(1000);
 		System.out.println("**** Credit Status Final Successfully ****");
 	}
-
+	
+	@Step("Going to submit contract....")
 	public void Submit_Contract() throws InterruptedException
 	{
 		// store window handle ids
@@ -746,7 +750,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		System.out.println("**** Contract Send Successfully ****");
 
 	}
-
+	@Step("Going to submit NTP.....t")
 	public void Submit_NTP() throws InterruptedException
 	{
 
@@ -945,7 +949,8 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		System.out.println("**** NTP Send Successfully ****");
 
 	}
-
+	
+	@Step("Going to complete Funding Process....")
 	@SuppressWarnings("deprecation")
 	public void Funding_Tab() throws InterruptedException, IOException
 	{

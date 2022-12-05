@@ -30,7 +30,7 @@ public class TC_Special_Offer_Project extends Base_Pace{
 		SO = new Special_Offer_Project_Page();
 		PACE = login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
 		
-		logger.info("******* Verify Login Successfully ********");
+	
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
 		Thread.sleep(3000);

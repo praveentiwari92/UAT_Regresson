@@ -28,7 +28,7 @@ public class PACE_MO_Decrease_Price_at_COC extends Base_Pace {
 		PACE = new PACE_CA_Project_Page();
 		Decrease_Amount = new PACE_MO_Decrease_Price_at_COC_Page();
 		PACE = Login_Page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
-		logger.info("****** Verify Login Successfully ******");
+	
 		
 //		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
 //		Thread.sleep(3000);

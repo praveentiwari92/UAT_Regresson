@@ -22,7 +22,7 @@ public class TC_Add_Applicant_After_Submit_Contract extends Base_Pace{
 		login_Page = new Login_Page();
 		Submit_Contract = new Add_Applicant_After_Submit_Contract();
 		PACE = login_Page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
-		logger.info("****** Verify Login Successfully ******");
+	
 		Thread.sleep(1000);
 //		driver.navigate().refresh();
 //		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();

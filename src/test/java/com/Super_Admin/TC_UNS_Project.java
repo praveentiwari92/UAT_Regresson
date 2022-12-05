@@ -30,7 +30,7 @@ public class TC_UNS_Project extends Base_Pace
 		PACE = new PACE_CA_Project_Page();
 		UNS = new UNS_Project_Page();
 		PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
-		logger.info("****** Verify Login Successfully ******");
+
 		Thread.sleep(1000);
 
 //		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();

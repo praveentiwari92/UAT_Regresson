@@ -5,19 +5,17 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import com.qa.Util.TC_TestUtil;
 
 public class Base_Mobile_View {
-	private static final ChromeDriverService Capabilities = null;
+
 	public static WebDriver driver;
 	public static Properties prop;
-	public static Logger logger;
+
 
 	public Base_Mobile_View()  {
 
@@ -50,7 +48,7 @@ public class Base_Mobile_View {
 	public static void Initialization() {
 
 		String browsername = prop.getProperty("browser");
-		logger= Logger.getLogger(Base_Mobile_View.class);
+		
 		
 	//	PropertyConfigurator.configure("Log4j.properties");
 

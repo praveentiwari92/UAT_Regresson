@@ -28,7 +28,7 @@ public class TC_Sign_on_browser_mail_and_reminder_function extends Base_Pace
 		PACE = new PACE_CA_Project_Page();
 		notification = new Sign_on_browser_mail_and_reminder_function_Page();
 		PACE = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
-		logger.info("****** Verify Login Successfully ******");
+	
 		Thread.sleep(1000);
 
 //		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();

@@ -10,6 +10,10 @@ import org.testng.annotations.Test;
 
 import com.Pace_Base.Base_Pace;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class PACE_CA_Project_Test extends Base_Pace
 {
 		
@@ -27,7 +31,7 @@ public class PACE_CA_Project_Test extends Base_Pace
 		Initialization();
 		Login_page = new Login_Page();
 		create_project = Login_page.Create_New_Project(prop.getProperty("user_email"),prop.getProperty("user_pass"));
-		logger.info("****** Verify Login Successfully ******");
+	
 		Thread.sleep(1000);
 		
 //		driver.findElement(By.xpath("//div[@id='toggleWrapper']//li[1]")).click();
@@ -40,28 +44,33 @@ public class PACE_CA_Project_Test extends Base_Pace
 		//9587262253
 	}
 	
-	@Test(priority = 1)
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Test Case Description: Verifying Create New Project")
+	@Test(priority = 1, description = "Verifying Select New Project")
 	public void New_Project() throws InterruptedException {
 		System.out.println("******* PACE Project  ******");
 		create_project.New_Project();
 	}
 	
 	// Eligibility Tab
-	@Test(priority = 2)
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(priority = 2, description = "Verfying Address Eligibility")
 	public void Select_Contractor() throws InterruptedException
 	{		
 		create_project.Select_Contractor();
 		
 	}
-
-	@Test(priority = 3)
+	
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(priority = 3, description = "Verfying Applicant Details")
 	public void Credit_Application_Tab() throws InterruptedException
 	{		
 		create_project.Credit_Application_Tab();
 	
 	}
 	
-	@Test(priority = 4)
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(priority = 4, description = "Verfying Login to Credit Portal")
 	public void Login_to_Credit_Portal() throws InterruptedException
 	{	
 		Thread.sleep(3000);
@@ -70,15 +79,16 @@ public class PACE_CA_Project_Test extends Base_Pace
 						
 	}
 	
-	@Test(priority = 5)
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(priority = 5, description = "Verfying Application Status")
 	public void View_Project() throws InterruptedException
 	{	
 		Thread.sleep(3000);
 		create_project.View_Project();
 						
 	}
-	
-	@Test(priority = 6)
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(priority = 6, description = "Verfying Contract Sign and Send")
 	public void Submit_Contract() throws InterruptedException
 	{	
 		Thread.sleep(3000);
@@ -86,7 +96,8 @@ public class PACE_CA_Project_Test extends Base_Pace
 						
 	}
 	
-	@Test(priority = 7)
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(priority = 7, description = "Verfying NTP Process ")
 	public void Submit_NTP() throws InterruptedException
 	{	
 		Thread.sleep(3000);
@@ -95,7 +106,8 @@ public class PACE_CA_Project_Test extends Base_Pace
 						
 	}
 	
-	@Test(priority = 8)
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(priority = 8, description = "Verfying Funding Process")
 	public void Funding_Tab() throws InterruptedException, IOException
 	{
 		
