@@ -18,26 +18,26 @@
 	<!-- </classes> -->
 	<!-- </test> -->
 
-	<test thread-count="1" name="PACE_CA_Project_Test">
-		<classes>
-			<class name="com.Super_Admin.PACE_CA_Project_Test" />
-		</classes>
+<!-- 	<test thread-count="1" name="PACE_CA_Project_Test"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.PACE_CA_Project_Test" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+
+<!-- 	<test thread-count="1" name="TC_Doc_Sign_History"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.TC_Doc_Sign_History" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+
+
+	<test thread-count="1" name="PACE_FL_Increasing_price_at_COC">
+	<classes>
+	<class name="com.Super_Admin.PACE_FL_Increasing_price_at_COC" />
+	</classes>
 	</test>
-
-
-	<test thread-count="1" name="TC_Doc_Sign_History">
-		<classes>
-			<class name="com.Super_Admin.TC_Doc_Sign_History" />
-		</classes>
-	</test>
-
-
-
-	<!-- <test thread-count="1" name="PACE_FL_Increasing_price_at_COC"> -->
-	<!-- <classes> -->
-	<!-- <class name="com.Super_Admin.PACE_FL_Increasing_price_at_COC" /> -->
-	<!-- </classes> -->
-	<!-- </test> -->
 
 	<!-- <test thread-count="1" name="PACE_MO_Decrease_Price_at_COC"> -->
 	<!-- <classes> -->
