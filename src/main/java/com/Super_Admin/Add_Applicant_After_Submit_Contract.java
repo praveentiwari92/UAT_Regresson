@@ -308,15 +308,20 @@ public class Add_Applicant_After_Submit_Contract extends Base_Pace
 		Submit_Btn.click();
 		Thread.sleep(4000);
 		
-		if(driver.findElement(By.xpath("//strong[@id='AER-eligible-list']")).isDisplayed())
-		{
-			System.out.println("Project is eligible for contract");
-		}
+		try {
+			if(driver.findElement(By.id("AER-eligible-list")).isDisplayed())
+			{
+				System.out.println("********* Project is eligible for contract");
+			}
 
-		else {
-			System.out.println("Project is not eligible for contract");
+			else {
+				System.out.println("********* Project is not eligible for contract");
 
-		}
+			}
+			}
+			catch (Exception e) {
+				System.out.println(e);
+			}
 		
 		Thread.sleep(20000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
