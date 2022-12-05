@@ -425,10 +425,10 @@ public class PACE_FL_Increasing_price_at_COC_Page extends Base_Pace
 		Enter_Unit.sendKeys("100");
 		Thread.sleep(2000);
 		Submit_Btn.click();
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		
-		
-		if(driver.findElement(By.xpath("//strong[@id='AER-eligible-list']")).isDisplayed())
+		try {
+		if(driver.findElement(By.id("AER-eligible-list")).isDisplayed())
 		{
 			System.out.println("Project is eligible for contract");
 		}
@@ -436,6 +436,10 @@ public class PACE_FL_Increasing_price_at_COC_Page extends Base_Pace
 		else {
 			System.out.println("Project is not eligible for contract");
 
+		}
+		}
+		catch (Exception e) {
+			System.out.println(e);
 		}
 		
 		
