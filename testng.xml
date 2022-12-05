@@ -22,11 +22,11 @@
 <!-- 		</classes> -->
 <!-- 	</test> -->
 
-<!-- 	<test thread-count="1" name="PACE_CA_Project_Test"> -->
-<!-- 		<classes> -->
-<!-- 			<class name="com.Super_Admin.PACE_CA_Project_Test" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
+	<test thread-count="1" name="PACE_CA_Project_Test">
+		<classes>
+			<class name="com.Super_Admin.PACE_CA_Project_Test" />
+		</classes>
+	</test>
 
 <!-- 	<test thread-count="1" name="PACE_FL_Increasing_price_at_COC"> -->
 <!-- 		<classes> -->
@@ -91,11 +91,11 @@
 <!-- 	</test> -->
 
 
-	<test thread-count="1" name="TC_Add_Bank">
-		<classes>
-			<class name="com.Super_Admin.TC_Add_Bank" />
-		</classes>
-	</test>
+<!-- 	<test thread-count="1" name="TC_Add_Bank"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.Super_Admin.TC_Add_Bank" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 </suite>
 
 
