@@ -391,20 +391,20 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			Submit_Btn.click();
 			
 			Thread.sleep(4000);
+			System.out.println("Click on Submit button");
+			
+			String expectedHeading = "is eligible";
+			
 			try {
-				if(driver.findElement(By.id("AER-eligible-list")).isDisplayed())
-				{
-					System.out.println("********* Project is eligible for contract");
-				}
-
-				else {
-					System.out.println("********* Project is not eligible for contract");
-
-				}
-				}
-				catch (Exception e) {
-					System.out.println(e);
-				}
+			String heading = driver.findElement(By.id("AER-eligible-list")).getText();
+	    	if(expectedHeading.equalsIgnoreCase(heading))
+	          	System.out.println("**** Address Is Eligible For Loan");
+	    	else
+	          	System.out.println("**** Address Not Eligible For Loan");
+			
+			}catch (Exception e) {
+				System.out.println(e);
+			}
 			
 			Thread.sleep(20000);
 			JavascriptExecutor js = (JavascriptExecutor) driver;

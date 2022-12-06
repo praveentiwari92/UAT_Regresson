@@ -218,17 +218,23 @@ public class Add_Bank_Page extends Base_Pace{
 			Thread.sleep(2000);
 			Submit_Btn.click();
 			Thread.sleep(4000);
-
-			if(driver.findElement(By.xpath("//strong[@id='AER-eligible-list']")).isDisplayed())
-			{
-				System.out.println("Project is eligible for contract");
+			
+			System.out.println("Click on Submit button");
+			
+			String expectedHeading = "is eligible";
+			
+			try {
+			String heading = driver.findElement(By.id("AER-eligible-list")).getText();
+	    	if(expectedHeading.equalsIgnoreCase(heading))
+	          	System.out.println("**** Address Is Eligible For Loan");
+	    	else
+	          	System.out.println("**** Address Not Eligible For Loan");
+			
+			}catch (Exception e) {
+				System.out.println(e);
 			}
-
-			else {
-				System.out.println("Project is not eligible for contract");
-
-			}
-
+			
+			
 			Thread.sleep(20000);
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0,450)", "");

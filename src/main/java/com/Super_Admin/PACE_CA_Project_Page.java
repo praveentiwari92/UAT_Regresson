@@ -434,7 +434,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Thread.sleep(2000);
 		Eligibility.click();
 	}
-	
+
 	@Step("Going to verifying address eligibility step....")
 	public void Select_Contractor() throws InterruptedException
 	{
@@ -452,37 +452,40 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Enter_Unit.sendKeys("100");
 		Thread.sleep(2000);
 		Submit_Btn.click();
-		Thread.sleep(12000);
 
+		Thread.sleep(4000);
+		String expectedHeading = "is eligible";
+		
 		try {
-			
-			String s = driver.findElement(By.xpath("//strong[contains(text(),'is')]")).getText();
-			System.out.println("Project "+s);
-			
-			}
-			catch (Exception e) {
-				System.out.println(e);
-			}
-
+		String heading = driver.findElement(By.id("AER-eligible-list")).getText();
+    	if(expectedHeading.equalsIgnoreCase(heading))
+          	System.out.println("**** Address Is Eligible For Loan");
+    	else
+          	System.out.println("**** Address Not Eligible For Loan");
+		
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+		
+		
+		
 		Thread.sleep(20000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,450)", "");
 
-	
-		
-		 WebElement nextBtn= driver.findElement(By.xpath("(//div[@class='wmawb-img text-center'])[1]"));
-		
-		 boolean isEmailBoxPresent = nextBtn.isDisplayed();
-         if(isEmailBoxPresent) {
-        	 nextBtn.click();
-             System.out.println("**** Next Button is present *********");
-         }
-         else {
-             Assert.fail("**** No Botton is present in the webpage *********");
-		
-	}
-		
-//		Next_Btn.click();
+		WebElement nextBtn= driver.findElement(By.xpath("(//div[@class='wmawb-img text-center'])[1]"));
+
+		boolean isEmailBoxPresent = nextBtn.isDisplayed();
+		if(isEmailBoxPresent) {
+			nextBtn.click();
+			System.out.println("**** Next Button is present *********");
+		}
+		else {
+			Assert.fail("**** No Botton is present in the webpage *********");
+
+		}
+
+		//		Next_Btn.click();
 		System.out.println("**** Address Eligible Verified Successfully *********");
 
 	}
@@ -621,7 +624,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Thread.sleep(1000);
 		System.out.println("**** Credit Status Final Successfully ****");
 	}
-	
+
 	@Step("Going to submit contract....")
 	public void Submit_Contract() throws InterruptedException
 	{
@@ -791,11 +794,11 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
 
-		
+
 		// Upload Assessment Documents
 		Thread.sleep(5000);
 		WebElement Assessment = driver.findElement(By.xpath("//div[@class='notice-form-upload long-notice-upload S3filesContainer']//div[@class='custom-upload-box S3filesContainer']//input[@name='file']"));
-				
+
 		if(TC_TestUtil.isWindows()) {
 			Assessment.sendKeys(projectRootPath + "\\" +"Documents\\Document.pdf"); //Uploading the file using sendKeys
 		}else {
@@ -965,29 +968,29 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		System.out.println("**** NTP Send Successfully ****");
 
 	}
-	
+
 	@Step("Going to complete Funding Process....")
 	@SuppressWarnings("deprecation")
 	public void Funding_Tab() throws InterruptedException, IOException
 	{
-		String actualTitle = driver.getTitle();
-		String expectedTitle = "Funding | Home Run Financing";
-		assertEquals(expectedTitle,actualTitle);
+				
+		String heading = driver.findElement(By.xpath("(//p[contains(text(),'All actions below must be completed in order to ge')])[1]")).getText();
+		System.out.println(heading);
 		
-		if(expectedTitle==actualTitle) {	
-		System.out.println("**** User On Funding Tab ****");
+		if(heading.startsWith("All")&& heading.endsWith("funded")) 
+		{	
+			System.out.println("**** User On Funding Tab ****");
 		}
-		
+
 		else {
-			
 			System.out.println("**** User Not on Funding Tab ****");
 		}
 		Thread.sleep(2000);
 		Generate_coi.click();	
 
-//				driver.findElement(By.xpath("//button[@data-type='resend']")).click();
-//				Thread.sleep(2000);
-//				driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
+		//				driver.findElement(By.xpath("//button[@data-type='resend']")).click();
+		//				Thread.sleep(2000);
+		//				driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
 
 
 		Thread.sleep(2000);
@@ -1007,7 +1010,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		// Upload Installment certificate
 		Thread.sleep(15000);
 		WebElement browse = driver.findElement(By.xpath("//form[@id='completion-ceritificate']//input[@name='file']"));
-		
+
 		String projectRootPath = TC_TestUtil.getProjectDirectory();
 
 		if(TC_TestUtil.isWindows()) {
@@ -1029,8 +1032,8 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		}else {
 			Inspection.sendKeys(projectRootPath + "/" +"Documents/Document.pdf"); 
 		}
-		
-		
+
+
 		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
 		Thread.sleep(3000);
 
@@ -1088,7 +1091,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 
 		driver.navigate().refresh();
 		Thread.sleep(2000);
-		
+
 		driver.close();
 		driver.switchTo().window(w.get(0));
 		Thread.sleep(2000);

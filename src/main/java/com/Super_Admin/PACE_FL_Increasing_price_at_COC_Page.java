@@ -423,23 +423,22 @@ public class PACE_FL_Increasing_price_at_COC_Page extends Base_Pace
 		Enter_Address.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
 		Enter_Unit.sendKeys("100");
-		Thread.sleep(2000);
-		
+		Thread.sleep(2000);	
 		Submit_Btn.click();
+		
+		Thread.sleep(4000);
 		System.out.println("Click on Submit button");
 		
+		String expectedHeading = "is eligible";
+		
 		try {
-		if(driver.findElement(By.id("AER-eligible-list")).isDisplayed())
-		{
-			System.out.println("Project is eligible for contract");
-		}
-
-		else {
-			System.out.println("Project is not eligible for contract");
-
-		}
-		}
-		catch (Exception e) {
+		String heading = driver.findElement(By.id("AER-eligible-list")).getText();
+    	if(expectedHeading.equalsIgnoreCase(heading))
+          	System.out.println("**** Address Is Eligible For Loan");
+    	else
+          	System.out.println("**** Address Not Eligible For Loan");
+		
+		}catch (Exception e) {
 			System.out.println(e);
 		}
 		

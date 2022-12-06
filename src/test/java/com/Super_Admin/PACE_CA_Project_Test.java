@@ -39,9 +39,7 @@ public class PACE_CA_Project_Test extends Base_Pace
 //		driver.findElement(By.xpath("//div[@class='project-details-box']//li[4]")).click();
 //		Thread.sleep(1000);
 //		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Funding')]")).click();
-//	
-		
-		//9587262253
+
 	}
 	
 	@Severity(SeverityLevel.NORMAL)

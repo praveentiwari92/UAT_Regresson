@@ -399,33 +399,40 @@ public class PACE_MO_Decrease_Price_at_COC_Page extends Base_Pace
 	{
 		Thread.sleep(2000);
 		OpenContractorDrp.click();
+		
 		Search_Contractor.sendKeys("Dell Contractor");
 		Select_Contractor.click();
+		
 		Enter_Address.clear();
+		
 		Enter_Address.sendKeys("5144 Walrond Avenue"); // MO State
 		Thread.sleep(2000);
+		
 		Enter_Address.sendKeys(Keys.DOWN);
 		Enter_Address.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
+		
 		Enter_Unit.sendKeys("100");
 		Thread.sleep(2000);
+		
 		Submit_Btn.click();
 		Thread.sleep(4000);
-
+		
+		System.out.println("Click on Submit button");
+		
+		String expectedHeading = "is eligible";
+		
 		try {
-			if(driver.findElement(By.id("AER-eligible-list")).isDisplayed())
-			{
-				System.out.println("********* Project is eligible for contract");
-			}
-
-			else {
-				System.out.println("********* Project is not eligible for contract");
-
-			}
-			}
-			catch (Exception e) {
-				System.out.println(e);
-			}
+		String heading = driver.findElement(By.id("AER-eligible-list")).getText();
+    	if(expectedHeading.equalsIgnoreCase(heading))
+          	System.out.println("**** Address Is Eligible For Loan");
+    	else
+          	System.out.println("**** Address Not Eligible For Loan");
+		
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+		
 		Thread.sleep(20000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,450)", "");
