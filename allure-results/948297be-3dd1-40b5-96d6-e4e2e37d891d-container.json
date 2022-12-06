@@ -1,0 +1,1 @@
+{"uuid":"948297be-3dd1-40b5-96d6-e4e2e37d891d","name":"com.Super_Admin.TC_Login_Test","children":["f5bac5cc-1c54-46c8-97f9-741c6e9811d4"],"befores":[{"name":"TestSetup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1670302139039,"stop":1670302147341}],"afters":[],"start":1670302138989,"stop":1670302155615}
