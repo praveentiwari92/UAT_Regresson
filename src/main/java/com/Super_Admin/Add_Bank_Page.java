@@ -14,6 +14,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.Pace_Base.Base_Pace;
 
+import io.qameta.allure.Step;
+
 public class Add_Bank_Page extends Base_Pace{
 	
 	String Send_NTP = "https://uat.homerunportal.com/crons/sendProjectNtp/";
@@ -193,7 +195,7 @@ public class Add_Bank_Page extends Base_Pace{
 		PageFactory.initElements(driver, this);
 	}
 	
-		
+	@Step("Going to verifying add bank step....")
 		public void New_Project() throws InterruptedException
 		{
 			System.out.println("Runnig Add_Bank_Page");
@@ -201,7 +203,7 @@ public class Add_Bank_Page extends Base_Pace{
 			Thread.sleep(2000);
 			Eligibility.click();
 		}
-
+	@Step("Going to select contractor step....")
 		public void Select_Contractor() throws InterruptedException
 		{
 			Thread.sleep(2000);
@@ -245,6 +247,7 @@ public class Add_Bank_Page extends Base_Pace{
 
 		}
 
+		@Step("Going to add bank from crdit app tab step....")
 		public void Credit_Application_Tab() throws InterruptedException
 		{
 			JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -410,6 +413,7 @@ public class Add_Bank_Page extends Base_Pace{
 			System.out.println("Bank Added Successfully from Application Screen");
 		}
 	
+		@Step("Going to add bank from more meun step....")
 		public void Add_Bank_From_More_Menu() throws InterruptedException
 		{
 			JavascriptExecutor js12 = (JavascriptExecutor) driver;

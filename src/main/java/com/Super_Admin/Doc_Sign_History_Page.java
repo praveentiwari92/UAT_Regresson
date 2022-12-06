@@ -14,6 +14,8 @@ import org.testng.Assert;
 import com.Pace_Base.Base_Pace;
 import com.gargoylesoftware.htmlunit.javascript.host.webkitURL;
 
+import io.qameta.allure.Step;
+
 public class Doc_Sign_History_Page extends Base_Pace {
 	
 	@FindBy(xpath = "//div[@class='PRAMS-search']//input[@id='search']") 
@@ -39,6 +41,7 @@ public class Doc_Sign_History_Page extends Base_Pace {
 		PageFactory.initElements(driver, this);
 	}
 
+	@Step("Going to search project step....")
 	public void Search_Projects() throws InterruptedException
 	{
 		
@@ -53,6 +56,7 @@ public class Doc_Sign_History_Page extends Base_Pace {
 		
 	}
 	
+	@Step("Going to verifying Doc sign history step....")
 	public void Doc_Sign_History() throws InterruptedException {
 		Open_More_Menu.click();
 		Thread.sleep(1000);
@@ -76,6 +80,7 @@ public class Doc_Sign_History_Page extends Base_Pace {
         Close_popup.click();
 	}
 	
+	@Step("Going to verifying Activity log step....")
 	public void Activity_Logs() throws InterruptedException {
 	
 	  // Open Activity Log
