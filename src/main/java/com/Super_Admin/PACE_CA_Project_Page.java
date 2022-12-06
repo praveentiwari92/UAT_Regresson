@@ -1,5 +1,7 @@
 package com.Super_Admin;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -436,7 +438,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 	@Step("Going to verifying address eligibility step....")
 	public void Select_Contractor() throws InterruptedException
 	{
-		System.out.println("********* Launch PACE CA Project ************");
+		System.out.println("**** Launch PACE CA Project ************");
 		Thread.sleep(2000);
 		OpenContractorDrp.click();
 		Search_Contractor.sendKeys("Dell Contractor");
@@ -461,7 +463,6 @@ public class PACE_CA_Project_Page  extends Base_Pace
 			catch (Exception e) {
 				System.out.println(e);
 			}
-		
 
 		Thread.sleep(20000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -474,15 +475,15 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		 boolean isEmailBoxPresent = nextBtn.isDisplayed();
          if(isEmailBoxPresent) {
         	 nextBtn.click();
-             System.out.println("********* Next Button is present *********");
+             System.out.println("**** Next Button is present *********");
          }
          else {
-             Assert.fail("********* No Botton is present in the webpage *********");
+             Assert.fail("**** No Botton is present in the webpage *********");
 		
 	}
 		
 //		Next_Btn.click();
-		System.out.println("********** Address Eligible Verified Successfully *********");
+		System.out.println("**** Address Eligible Verified Successfully *********");
 
 	}
 	@Step("Going to Create New Project Step....")
@@ -499,9 +500,9 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Thread.sleep(1000);
 		L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Email.sendKeys("josh12@yopmail.com");
+		Email.sendKeys("josh122@yopmail.com");
 		Thread.sleep(1000);
-		Phone.sendKeys("(963) 710-7533");
+		Phone.sendKeys("(962) 710-7533");
 		Thread.sleep(1000);
 		EstProjectCost.sendKeys("500000");
 
@@ -515,7 +516,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		ArrayList<String> w = new ArrayList<String>(driver.getWindowHandles());
 		//switch to open tab
 		driver.switchTo().window(w.get(1));
-		System.out.println("New tab title: " + driver.getTitle());
+		System.out.println("**** New tab title is: " + driver.getTitle());
 		Submit_Application.click();
 
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
@@ -674,7 +675,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		//		Thread.sleep(2000);
 		//		driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
 
-		Thread.sleep(35000);
+		Thread.sleep(55000);
 		Signature_Btn.click();
 
 		ArrayList<String> w = new ArrayList<String>(driver.getWindowHandles());
@@ -969,9 +970,20 @@ public class PACE_CA_Project_Page  extends Base_Pace
 	@SuppressWarnings("deprecation")
 	public void Funding_Tab() throws InterruptedException, IOException
 	{
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "Funding | Home Run Financing";
+		assertEquals(expectedTitle,actualTitle);
+		
+		if(expectedTitle==actualTitle) {	
 		System.out.println("**** User On Funding Tab ****");
+		}
+		
+		else {
+			
+			System.out.println("**** User Not on Funding Tab ****");
+		}
 		Thread.sleep(2000);
-		Generate_coi.click();
+		Generate_coi.click();	
 
 //				driver.findElement(By.xpath("//button[@data-type='resend']")).click();
 //				Thread.sleep(2000);
