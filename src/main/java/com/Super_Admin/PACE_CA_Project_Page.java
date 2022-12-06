@@ -450,18 +450,13 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Enter_Unit.sendKeys("100");
 		Thread.sleep(2000);
 		Submit_Btn.click();
-		Thread.sleep(7000);
+		
 
 		try {
-			if(driver.findElement(By.id("AER-eligible-list")).isDisplayed())
-			{
-				System.out.println(" Project is eligible for contract");
-			}
-
-			else {
-				System.out.println(" Project is not eligible for contract");
-
-			}
+			
+			String s = driver.findElement(By.id("AER-eligible-list")).getText();
+			System.out.println("Project is "+s);
+			
 			}
 			catch (Exception e) {
 				System.out.println(e);
@@ -471,8 +466,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,450)", "");
 
-		Thread.sleep(19000);
-		
+	
 		
 		 WebElement nextBtn= driver.findElement(By.xpath("(//div[@class='wmawb-img text-center'])[1]"));
 		
