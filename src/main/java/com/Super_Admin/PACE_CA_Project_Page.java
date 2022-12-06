@@ -442,7 +442,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Search_Contractor.sendKeys("Dell Contractor");
 		Select_Contractor.click();
 		Enter_Address.clear();
-		Enter_Address.sendKeys("2367 Cottonwood Avenue");
+		Enter_Address.sendKeys("2369 Cottonwood Avenue");
 		Thread.sleep(2000);
 		Enter_Address.sendKeys(Keys.DOWN);
 		Enter_Address.sendKeys(Keys.ENTER);
@@ -450,12 +450,12 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Enter_Unit.sendKeys("100");
 		Thread.sleep(2000);
 		Submit_Btn.click();
-		Thread.sleep(8000);
+		Thread.sleep(12000);
 
 		try {
 			
 			String s = driver.findElement(By.id("AER-eligible-list")).getText();
-			System.out.println("Project is "+s);
+			System.out.println("Project "+s);
 			
 			}
 			catch (Exception e) {
