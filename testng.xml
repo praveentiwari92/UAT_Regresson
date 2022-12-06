@@ -19,11 +19,11 @@
 <!-- 	</classes> -->
 <!-- 	</test> -->
 
-<!-- 	<test thread-count="1" name="PACE_CA_Project_Test"> -->
-<!-- 	<classes> -->
-<!-- 	<class name="com.Super_Admin.PACE_CA_Project_Test" /> -->
-<!-- 	</classes> -->
-<!-- 	</test> -->
+	<test thread-count="1" name="PACE_CA_Project_Test">
+	<classes>
+	<class name="com.Super_Admin.PACE_CA_Project_Test" />
+	</classes>
+	</test>
 	
 <!-- 	<test thread-count="1" name="PACE_MO_Decrease_Price_at_COC"> -->
 <!-- 	<classes> -->

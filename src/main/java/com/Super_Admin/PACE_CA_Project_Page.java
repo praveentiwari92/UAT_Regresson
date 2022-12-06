@@ -450,7 +450,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Enter_Unit.sendKeys("100");
 		Thread.sleep(2000);
 		Submit_Btn.click();
-		
+		Thread.sleep(8000);
 
 		try {
 			
