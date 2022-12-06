@@ -287,6 +287,7 @@ public class Add_Bank_Page extends Base_Pace{
 			
 			// Add Bank 
 			Add_Bank_Btn.click();
+			System.out.println("Click on Add Bank Link");
 			Thread.sleep(2000);
 			
 			Open_Here_Btn.click();
@@ -400,6 +401,7 @@ public class Add_Bank_Page extends Base_Pace{
 			ArrayList<String> pr_win = new ArrayList<String>(driver.getWindowHandles());
 			//switch to open tab
 			driver.switchTo().window(pr_win.get(0));
+			System.out.println("Bank Added Successfully from Application Screen");
 		}
 	
 		public void Add_Bank_From_More_Menu() throws InterruptedException
@@ -409,6 +411,7 @@ public class Add_Bank_Page extends Base_Pace{
 			Thread.sleep(2000);
 			More_Btn.click();
 			Thread.sleep(2000);
+			System.out.println("Adding Second bank from more menu");
 			Add_Bank_Link.click();
 			Thread.sleep(2000);
 			
