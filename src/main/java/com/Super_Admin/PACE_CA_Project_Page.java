@@ -454,7 +454,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 
 		try {
 			
-			String s = driver.findElement(By.id("AER-eligible-list")).getText();
+			String s = driver.findElement(By.xpath("//strong[contains(text(),'is')]")).getText();
 			System.out.println("Project "+s);
 			
 			}
