@@ -424,8 +424,9 @@ public class PACE_FL_Increasing_price_at_COC_Page extends Base_Pace
 		Thread.sleep(2000);
 		Enter_Unit.sendKeys("100");
 		Thread.sleep(2000);
+		
 		Submit_Btn.click();
-		Thread.sleep(5000);
+		System.out.println("Click on Submit button");
 		
 		try {
 		if(driver.findElement(By.id("AER-eligible-list")).isDisplayed())
