@@ -134,11 +134,11 @@ public class Base_Pace {
 
 	}
 	
-	@AfterTest
-	public void teardown()
-	{
-		
-		driver.close();
-	}
+//	@AfterTest
+//	public void teardown()
+//	{
+//		
+//		driver.close();
+//	}
 
 }

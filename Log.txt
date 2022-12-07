@@ -1,14 +1,7 @@
 Title Matched
-PASSED: Admin_Login
 
 ===============================================
-    Default test
-    Tests run: 1, Failures: 0, Skips: 0
-===============================================
-
-
-===============================================
-Default suite
+Suite
 Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
 ===============================================
 
