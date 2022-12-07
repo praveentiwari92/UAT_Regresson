@@ -1,7 +1,14 @@
-Title Matched
+Login Successfully
+PASSED: com.Super_Admin.TC_Login_Test.Admin_Login
 
 ===============================================
-Suite
+    Default test
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
 Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
 ===============================================
 

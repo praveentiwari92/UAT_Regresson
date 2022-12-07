@@ -32,8 +32,9 @@ public class Login_Page extends Base_Pace
 		user_email.sendKeys(un);
 		user_pass.sendKeys(pw);
 		Login_Btn.click();
+		
 		return new PACE_CA_Project_Page();
-
+		
 	}
 
 	
