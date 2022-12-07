@@ -625,12 +625,30 @@ public class UNS_Project_Page extends Base_Pace{
 			ArrayList<String> sndNtp = new ArrayList<String>(driver.getWindowHandles());
 			driver.switchTo().window(sndNtp.get(0));
 			
+			try {
+
+				WebElement switch_Mode = driver.findElement(By.xpath("//span[@data-original-title='NTP Sent']"));
+
+
+				if(switch_Mode.isDisplayed())
+				{
+					System.out.println("********* NTP Sent Successfully *********");
+
+				}
+
+			}
+			catch (Exception e) 
+			{
+				System.out.println("********* NTP Not Sent ***********");
+			}
+			
+			
 			JavascriptExecutor jss = (JavascriptExecutor) driver;
 			jss.executeScript("window.scrollBy(0,1050)", "");
 			
 			Thread.sleep(2000);
 			NTP_Next_Btn.click();
-			System.out.println("**** NTP Send Successfully ****");
+			
 		}
 		
 		
@@ -638,6 +656,7 @@ public class UNS_Project_Page extends Base_Pace{
 		@SuppressWarnings("deprecation")
 		public void Funding_Tab() throws Exception
 		{
+			
 			Generate_coi.click();
 			Thread.sleep(2000);
 			TPC_Confirm_Btn.click();

@@ -444,7 +444,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Search_Contractor.sendKeys("Dell Contractor");
 		Select_Contractor.click();
 		Enter_Address.clear();
-		Enter_Address.sendKeys("2369 Cottonwood Avenue");
+		Enter_Address.sendKeys("2359 Cottonwood Avenue");
 		Thread.sleep(2000);
 		Enter_Address.sendKeys(Keys.DOWN);
 		Enter_Address.sendKeys(Keys.ENTER);
@@ -497,15 +497,15 @@ public class PACE_CA_Project_Page  extends Base_Pace
 		Thread.sleep(1000);
 		F_Name.clear();
 		Thread.sleep(1000);
-		F_Name.sendKeys("Josh");
+		F_Name.sendKeys("Marco");
 		Thread.sleep(1000);
 		L_Name.clear();
 		Thread.sleep(1000);
 		L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Email.sendKeys("josh122@yopmail.com");
+		Email.sendKeys("marco122@yopmail.com");
 		Thread.sleep(1000);
-		Phone.sendKeys("(962) 710-7533");
+		Phone.sendKeys("(962) 710-7503");
 		Thread.sleep(1000);
 		EstProjectCost.sendKeys("500000");
 
@@ -773,7 +773,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 	public void Submit_NTP() throws InterruptedException
 	{
 
-		System.out.println("**** User On NTP Screen****");
+		System.out.println("**** User On NTP Screen ****");
 		//Upoad_Jurisdiction_Form.click();
 		Thread.sleep(3000);
 		WebElement Jurisdiction_Form = driver.findElement(By.xpath("//div[@class='NFU-form-left S3filesContainer']//input[@name='file']"));
@@ -782,7 +782,7 @@ public class PACE_CA_Project_Page  extends Base_Pace
 
 		if(TC_TestUtil.isWindows()) {
 			Jurisdiction_Form.sendKeys(projectRootPath + "\\" +"Documents\\Document.pdf"); //Uploading the file using sendKeys
-		}else {
+		}else {	
 			Jurisdiction_Form.sendKeys(projectRootPath + "/" +"Documents/Document.pdf"); //Uploading the file using sendKeys
 		}
 		Thread.sleep(5000);
@@ -958,14 +958,29 @@ public class PACE_CA_Project_Page  extends Base_Pace
 
 		driver.navigate().back();
 
+		try {
 
+			WebElement switch_Mode = driver.findElement(By.xpath("//span[@data-original-title='NTP Sent']"));
+
+
+			if(switch_Mode.isDisplayed())
+			{
+				System.out.println("********* NTP Sent Successfully *********");
+
+			}
+
+		}
+		catch (Exception e) 
+		{
+			System.out.println("********* NTP Not Sent ***********");
+		}
 
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("window.scrollBy(0,1050)", "");
 
 		Thread.sleep(2000);
 		NTP_Next_Btn.click();
-		System.out.println("**** NTP Send Successfully ****");
+		
 
 	}
 

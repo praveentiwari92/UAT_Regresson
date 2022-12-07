@@ -73,9 +73,10 @@
 	</test>
 
 	<test thread-count="1" name="Test_With_Two_Signer">
+	
 		<classes>
-			<class name="com.Super_Admin.TC_Test_With_Two_Signer" />
-		</classes>
+			<class name="com.Super_Admin.TC_Test_With_Two_Signe" />
+			</classes>
 	</test>
 
 

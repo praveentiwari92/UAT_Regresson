@@ -664,7 +664,7 @@ public class Test_With_Two_Signer_Page extends Base_Pace{
 			// hide
 		//	driver.findElement(By.xpath("//button[normalize-space()='Proceed']")).click();
 		
-			Thread.sleep(35000);
+			Thread.sleep(55000);
 			Signature_Btn.click();
 		
 		

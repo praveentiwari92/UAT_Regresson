@@ -405,7 +405,7 @@ public class PACE_MO_Decrease_Price_at_COC_Page extends Base_Pace
 		
 		Enter_Address.clear();
 		
-		Enter_Address.sendKeys("5144 Walrond Avenue"); // MO State
+		Enter_Address.sendKeys("5143 Walrond Avenue"); // MO State
 		Thread.sleep(2000);
 		
 		Enter_Address.sendKeys(Keys.DOWN);
@@ -452,15 +452,15 @@ public class PACE_MO_Decrease_Price_at_COC_Page extends Base_Pace
 		Thread.sleep(1000);
 		F_Name.clear();
 		Thread.sleep(1000);
-		F_Name.sendKeys("Nehru");
+		F_Name.sendKeys("Ponting");
 		Thread.sleep(1000);
 		L_Name.clear();
 		Thread.sleep(1000);
 		L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Email.sendKeys("nehru4@yopmail.com");
+		Email.sendKeys("ponting4@yopmail.com");
 		Thread.sleep(1000);
-		Phone.sendKeys("(945) 344-6724");
+		Phone.sendKeys("(945) 344-6924");
 		Thread.sleep(1000);
 		EstProjectCost.sendKeys("500000");
 
@@ -887,12 +887,29 @@ public class PACE_MO_Decrease_Price_at_COC_Page extends Base_Pace
 
 		driver.navigate().back();
 
+		try {
+
+			WebElement switch_Mode = driver.findElement(By.xpath("//span[@data-original-title='NTP Sent']"));
+
+
+			if(switch_Mode.isDisplayed())
+			{
+				System.out.println("********* NTP Sent Successfully *********");
+
+			}
+
+		}
+		catch (Exception e) 
+		{
+			System.out.println("********* NTP Not Sent ***********");
+		}
+		
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("window.scrollBy(0,1050)", "");
 
 		Thread.sleep(2000);
 		NTP_Next_Btn.click();
-		System.out.println("**** NTP Send Successfully ****");
+		
 
 	}
 	@SuppressWarnings("deprecation")

@@ -417,7 +417,7 @@ public class PACE_FL_Increasing_price_at_COC_Page extends Base_Pace
 		Search_Contractor.sendKeys("Dell Contractor");
 		Select_Contractor.click();
 		Enter_Address.clear();
-		Enter_Address.sendKeys("3718 West Oakland Park Boulevard"); // PACE FL State
+		Enter_Address.sendKeys("3715 West Oakland Park Boulevard"); // PACE FL State
 		Thread.sleep(2000);
 		Enter_Address.sendKeys(Keys.DOWN);
 		Enter_Address.sendKeys(Keys.ENTER);
@@ -461,15 +461,15 @@ public class PACE_FL_Increasing_price_at_COC_Page extends Base_Pace
 		Thread.sleep(1000);
 		F_Name.clear();
 		Thread.sleep(2000);
-		F_Name.sendKeys("Love");
+		F_Name.sendKeys("Rahim");
 		Thread.sleep(1000);
 		L_Name.clear();
 		Thread.sleep(1000);
 		L_Name.sendKeys("Testcase");
 		Thread.sleep(1000);
-		Email.sendKeys("ram5@yopmail.com");
+		Email.sendKeys("rahim5@yopmail.com");
 		Thread.sleep(1000);
-		Phone.sendKeys("(945) 390-6383");
+		Phone.sendKeys("(945) 390-6483");
 		Thread.sleep(1000);
 		EstProjectCost.sendKeys("500000");
 		
@@ -921,16 +921,34 @@ public class PACE_FL_Increasing_price_at_COC_Page extends Base_Pace
 		
 		driver.navigate().back();
 		
+		try {
+
+			WebElement switch_Mode = driver.findElement(By.xpath("//span[@data-original-title='NTP Sent']"));
+
+
+			if(switch_Mode.isDisplayed())
+			{
+				System.out.println("********* NTP Sent Successfully *********");
+
+			}
+
+		}
+		catch (Exception e) 
+		{
+			System.out.println("********* NTP Not Sent ***********");
+		}
+		
+		
 		JavascriptExecutor jss = (JavascriptExecutor) driver;
 		jss.executeScript("window.scrollBy(0,1050)", "");
 		
 		Thread.sleep(2000);
 		NTP_Next_Btn.click();
-		System.out.println("**** NTP Send Successfully ****");
+
 	
 	}
 		@SuppressWarnings("deprecation")
-	public void Funding_Tab() throws InterruptedException, IOException
+		public void Funding_Tab() throws InterruptedException, IOException
 		{
 			System.out.println("**** User On Funding Screen ****");
 			Thread.sleep(2000);
