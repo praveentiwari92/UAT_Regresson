@@ -11,6 +11,9 @@ import org.testng.annotations.Test;
 
 import com.Pace_Base.Base_Pace;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class TC_Doc_Sign_History extends Base_Pace {
 	
 	Login_Page Login_page;
@@ -36,7 +39,7 @@ public class TC_Doc_Sign_History extends Base_Pace {
 		Thread.sleep(3000);
 			
 }
-	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	public void Search_Project() throws InterruptedException
 	{
@@ -44,7 +47,7 @@ public class TC_Doc_Sign_History extends Base_Pace {
 		
 	}
 	
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void Doc_Sign_History() throws InterruptedException
 	{
@@ -52,7 +55,7 @@ public class TC_Doc_Sign_History extends Base_Pace {
 		
 	}
 	
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 3)
 	public void Activity_Logs() throws InterruptedException
 	{

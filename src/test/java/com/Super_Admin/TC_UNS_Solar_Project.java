@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 
 import com.Pace_Base.Base_Pace;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class TC_UNS_Solar_Project extends Base_Pace
 {
 
@@ -48,13 +51,14 @@ public class TC_UNS_Solar_Project extends Base_Pace
 	
 	}
 	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	public void New_Project() throws InterruptedException {
 		System.out.println("****** UNS_Project *******");
 		PACE.New_Project();
 	}
 	
-	// Eligibility Tab
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void Select_Contractor() throws InterruptedException
 	{		
@@ -62,6 +66,7 @@ public class TC_UNS_Solar_Project extends Base_Pace
 
 	}
 	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 3)
 	public void Credit_Application_Tab() throws InterruptedException
 	{		
@@ -69,6 +74,7 @@ public class TC_UNS_Solar_Project extends Base_Pace
 	
 	}
 	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 4)
 	public void Login_to_Credit_Portal() throws InterruptedException
 	{	
@@ -78,6 +84,7 @@ public class TC_UNS_Solar_Project extends Base_Pace
 						
 	}
 	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 5)
 	public void View_UNS_Solar_Project() throws InterruptedException
 	{	
@@ -86,7 +93,7 @@ public class TC_UNS_Solar_Project extends Base_Pace
 						
 	}
 	
-	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 6)
 	public void Submit_UNS_Solar_Contract() throws InterruptedException
 	{	
@@ -95,6 +102,7 @@ public class TC_UNS_Solar_Project extends Base_Pace
 						
 	}
 	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 7)
 	public void Submit_NTP() throws InterruptedException
 	{	
@@ -104,6 +112,7 @@ public class TC_UNS_Solar_Project extends Base_Pace
 						
 	}
 	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 8)
 	public void Funding_Tab() throws Exception
 	{	

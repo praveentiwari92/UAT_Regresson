@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 
 import com.Pace_Base.Base_Pace;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class PACE_MO_Decrease_Price_at_COC extends Base_Pace {
 	
 	PACE_MO_Decrease_Price_at_COC_Page Decrease_Amount;
@@ -37,21 +40,21 @@ public class PACE_MO_Decrease_Price_at_COC extends Base_Pace {
 //		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Funding')]")).click();
 }
 	
-	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	public void New_Project() throws InterruptedException {
 		System.out.println("****** Decrease_Price_Project *******");
 		Decrease_Amount.New_Project();
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void Select_Contractor() throws InterruptedException
 	{		
 		Decrease_Amount.Select_Contractor();
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 3)
 	public void Credit_Application_Tab() throws InterruptedException
 	{	
@@ -59,7 +62,7 @@ public class PACE_MO_Decrease_Price_at_COC extends Base_Pace {
 		Decrease_Amount.Credit_Application_Tab();				
 	}
 
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 4)
 	public void Login_to_Credit_Portal() throws InterruptedException
 	{	
@@ -68,7 +71,7 @@ public class PACE_MO_Decrease_Price_at_COC extends Base_Pace {
 		Decrease_Amount.Credit_portal_Login();
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 5)
 	public void View_Project() throws InterruptedException
 	{	
@@ -76,7 +79,7 @@ public class PACE_MO_Decrease_Price_at_COC extends Base_Pace {
 		Decrease_Amount.View_Project();
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 6)
 	public void Submit_Contract() throws InterruptedException
 	{	
@@ -84,7 +87,7 @@ public class PACE_MO_Decrease_Price_at_COC extends Base_Pace {
 		Decrease_Amount.Submit_Contract();
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 7)
 	public void Submit_NTP() throws InterruptedException
 	{	
@@ -93,7 +96,7 @@ public class PACE_MO_Decrease_Price_at_COC extends Base_Pace {
 
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 8)
 	public void Funding_Tab() throws InterruptedException, IOException
 	{

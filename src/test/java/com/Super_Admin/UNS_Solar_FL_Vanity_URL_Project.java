@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 import com.Pace_Base.Base_Pace;
 import com.gargoylesoftware.htmlunit.javascript.host.URL;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class UNS_Solar_FL_Vanity_URL_Project extends Base_Pace
 {
 
@@ -31,6 +34,7 @@ public class UNS_Solar_FL_Vanity_URL_Project extends Base_Pace
 		Thread.sleep(1000);
 	}	
 
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	public void Submit_Application() throws InterruptedException
 	{
@@ -41,7 +45,8 @@ public class UNS_Solar_FL_Vanity_URL_Project extends Base_Pace
 
 
 	}
-
+	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void Login_to_Credit_Portal() throws InterruptedException
 	{	
@@ -51,7 +56,7 @@ public class UNS_Solar_FL_Vanity_URL_Project extends Base_Pace
 
 	}
 
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 3)
 	public void View_Project() throws InterruptedException
 	{	
@@ -61,7 +66,7 @@ public class UNS_Solar_FL_Vanity_URL_Project extends Base_Pace
 
 	}
 
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 4)
 	public void Contract_page() throws InterruptedException
 	{
@@ -80,6 +85,7 @@ public class UNS_Solar_FL_Vanity_URL_Project extends Base_Pace
 
 	}
 
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 5)
 	public void Submit_NTP() throws InterruptedException
 	{	
@@ -89,6 +95,7 @@ public class UNS_Solar_FL_Vanity_URL_Project extends Base_Pace
 
 	}
 
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 6)
 	public void Funding_Tab() throws Exception
 	{	

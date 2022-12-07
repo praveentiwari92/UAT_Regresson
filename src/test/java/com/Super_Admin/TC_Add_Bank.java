@@ -6,6 +6,9 @@ import org.testng.annotations.Test;
 
 import com.Pace_Base.Base_Pace;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class TC_Add_Bank extends Base_Pace{
 	
 	Login_Page Login_page;
@@ -35,27 +38,28 @@ public class TC_Add_Bank extends Base_Pace{
 		
 	}
 	
-	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	public void New_Project() throws InterruptedException {
 		Add_Bank.New_Project();
 	}
 	
 	// Eligibility Tab
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void Select_Contractor() throws InterruptedException
 	{		
 		Add_Bank.Select_Contractor();
 
 	}
-	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 3)
 	public void Credit_Application_Tab() throws InterruptedException
 	{		
 		Add_Bank.Credit_Application_Tab();
 	
 	}
-	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 4)
 	public void Add_Bank_From_More_Menu() throws InterruptedException
 	{		

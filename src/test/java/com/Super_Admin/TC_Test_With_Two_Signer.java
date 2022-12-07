@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 
 import com.Pace_Base.Base_Pace;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class TC_Test_With_Two_Signer extends Base_Pace{
 	
 	Login_Page Login_page;
@@ -34,20 +37,21 @@ public class TC_Test_With_Two_Signer extends Base_Pace{
 //		driver.findElement(By.xpath("//h2[@class='title']//a[contains(text(),'Contract')]")).click();
 
 }
-	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	public void New_Project() throws InterruptedException {
 		Multi_Signer_project.New_Project();
 	}
 	
-	// Eligibility Tab
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void Select_Contractor() throws InterruptedException
 	{		
 		Multi_Signer_project.Select_Contractor();
 		
 	}
-
+	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 3)
 	public void Credit_Application_Tab() throws InterruptedException
 	{		
@@ -55,6 +59,7 @@ public class TC_Test_With_Two_Signer extends Base_Pace{
 	
 	}
 	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 4)
 	public void Login_to_Credit_Portal() throws InterruptedException
 	{	
@@ -63,6 +68,7 @@ public class TC_Test_With_Two_Signer extends Base_Pace{
 		Multi_Signer_project.Credit_portal_Login();
 	}
 	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 5)
 	public void View_Project() throws InterruptedException
 	{	
@@ -71,6 +77,7 @@ public class TC_Test_With_Two_Signer extends Base_Pace{
 						
 	}
 	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 6)
 	public void Submit_Contract() throws InterruptedException
 	{	

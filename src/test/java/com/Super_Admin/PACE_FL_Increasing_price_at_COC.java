@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 
 import com.Pace_Base.Base_Pace;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class PACE_FL_Increasing_price_at_COC extends Base_Pace
 {
 
@@ -39,28 +42,28 @@ public class PACE_FL_Increasing_price_at_COC extends Base_Pace
 
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	public void New_Project() throws InterruptedException {
 		System.out.println("****** Increasing_price_Project *******");
 		Increasing_price.New_Project();
 
 	}	
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void Select_Contractor() throws InterruptedException
 	{		
 		Increasing_price.Select_Contractor();
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 3)
 	public void Credit_Application_Tab() throws InterruptedException
 	{	
 		Thread.sleep(3000);
 		Increasing_price.Credit_Application_Tab();				
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 4)
 	public void Login_to_Credit_Portal() throws InterruptedException
 	{	
@@ -69,7 +72,7 @@ public class PACE_FL_Increasing_price_at_COC extends Base_Pace
 		Increasing_price.Credit_portal_Login();
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 5)
 	public void View_Project() throws InterruptedException
 	{	
@@ -77,7 +80,7 @@ public class PACE_FL_Increasing_price_at_COC extends Base_Pace
 		Increasing_price.View_Project();
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 6)
 	public void Submit_Contract() throws InterruptedException
 	{	
@@ -85,7 +88,7 @@ public class PACE_FL_Increasing_price_at_COC extends Base_Pace
 		Increasing_price.Submit_Contract();
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 7)
 	public void Submit_NTP() throws InterruptedException
 	{	
@@ -93,7 +96,7 @@ public class PACE_FL_Increasing_price_at_COC extends Base_Pace
 		Increasing_price.Submit_NTP();
 
 	}
-
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 8)
 	public void Funding_Tab() throws InterruptedException, IOException
 	{

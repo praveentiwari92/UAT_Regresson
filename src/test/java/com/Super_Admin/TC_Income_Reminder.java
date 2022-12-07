@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 
 import com.Pace_Base.Base_Pace;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class TC_Income_Reminder extends Base_Pace
 {
 
@@ -33,26 +36,27 @@ Login_Page Login_page;
 		
 	}
 	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1)
 	public void New_Project() throws InterruptedException {
 		PACE.New_Project();
 	}
 	
-	// Eligibility Tab
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void Select_Contractor() throws InterruptedException
 	{		
 		PACE.Select_Contractor();
 
 	}
-	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 3)
 	public void Credit_Application_Tab() throws InterruptedException
 	{		
 		PACE.Credit_Application_Tab();
 	
 	}
-	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 4)
 	public void Login_to_Credit_Portal() throws InterruptedException
 	{	
@@ -61,7 +65,7 @@ Login_Page Login_page;
 		PACE.Credit_portal_Login();
 						
 	}
-	
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 5)
 	public void View_UNS_Project() throws InterruptedException
 	{	

@@ -19,6 +19,9 @@ import com.Pace_Base.Base_Pace;
 import com.qa.Util.JiraPolicy;
 import com.qa.Util.TC_TestUtil;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 
 public class TC_Login_Test extends Base_Pace
 {
@@ -48,7 +51,7 @@ public class TC_Login_Test extends Base_Pace
 	
 	}
 	
-	
+	@Severity(SeverityLevel.NORMAL)
 	@JiraPolicy(logTicketReady=false)
 	@Test(priority = 1)
 	public void Admin_Login()
