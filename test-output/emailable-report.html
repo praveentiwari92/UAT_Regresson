@@ -8,48 +8,20 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">20,885</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">TC_Add_Bank</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">210,930</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TC_Doc_Sign_History</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">343,159</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">554,089</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.Super_Admin.PACE_CA_Project_Test</td><td><a href="#m0">Funding_Tab</a></td><td rowspan="1">1670309969649</td><td rowspan="1">115</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_Add_Bank &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.Super_Admin.TC_Add_Bank</td><td><a href="#m0">Add_Bank_From_More_Menu</a></td><td rowspan="1">1670396345229</td><td rowspan="1">47370</td></tr><tr class="passedeven"><td><a href="#m1">Credit_Application_Tab</a></td><td rowspan="1">1670396260600</td><td rowspan="1">84625</td></tr><tr class="passedeven"><td><a href="#m2">New_Project</a></td><td rowspan="1">1670396205775</td><td rowspan="1">4559</td></tr><tr class="passedeven"><td><a href="#m3">Select_Contractor</a></td><td rowspan="1">1670396210525</td><td rowspan="1">50069</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TC_Doc_Sign_History &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.Super_Admin.TC_Doc_Sign_History</td><td><a href="#m4">Activity_Logs</a></td><td rowspan="1">1670396418682</td><td rowspan="1">317099</td></tr><tr class="passedeven"><td><a href="#m5">Doc_Sign_History</a></td><td rowspan="1">1670396413477</td><td rowspan="1">5201</td></tr><tr class="passedeven"><td><a href="#m6">Search_Project</a></td><td rowspan="1">1670396405709</td><td rowspan="1">7763</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.Super_Admin.PACE_CA_Project_Test#Funding_Tab</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Funding | Home Run Financing] but found [	        Funding | Home Run Financing    ]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.Super_Admin.PACE_CA_Project_Page.Funding_Tab(PACE_CA_Project_Page.java:976)
-	at com.Super_Admin.PACE_CA_Project_Test.Funding_Tab(PACE_CA_Project_Test.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TC_Add_Bank</h2><h3 id="m0">com.Super_Admin.TC_Add_Bank#Add_Bank_From_More_Menu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.Super_Admin.TC_Add_Bank#Credit_Application_Tab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.Super_Admin.TC_Add_Bank#New_Project</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.Super_Admin.TC_Add_Bank#Select_Contractor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TC_Doc_Sign_History</h2><h3 id="m4">com.Super_Admin.TC_Doc_Sign_History#Activity_Logs</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.Super_Admin.TC_Doc_Sign_History#Doc_Sign_History</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.Super_Admin.TC_Doc_Sign_History#Search_Project</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
