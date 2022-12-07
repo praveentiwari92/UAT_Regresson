@@ -45,7 +45,7 @@ public class Doc_Sign_History_Page extends Base_Pace {
 	public void Search_Projects() throws InterruptedException
 	{
 		
-		System.out.println("Runnig Add_Bank_Page");
+		System.out.println("Doc Sign History");
 		
 		Search_Project.sendKeys("7002251");
 		Search_Project.sendKeys(Keys.ENTER);
